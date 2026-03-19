@@ -156,6 +156,11 @@ img {
   box-shadow: 0 14px 34px rgba(8, 52, 73, 0.12);
 }
 
+.hero-home .brand-icon {
+  width: 84px;
+  height: 84px;
+}
+
 .eyebrow,
 .card-label {
   margin: 0 0 10px;
