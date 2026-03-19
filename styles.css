@@ -1,0 +1,335 @@
+@font-face {
+  font-family: "SF Pro Rounded Custom";
+  src: url("/assets/SF-Pro-Rounded-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Text Custom";
+  src: url("/assets/SF-Pro-Text-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Text Custom";
+  src: url("/assets/SF-Pro-Text-RegularItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+:root {
+  --bg-base: #eef9fb;
+  --bg-glow: rgba(140, 233, 216, 0.28);
+  --bg-glow-2: rgba(173, 236, 243, 0.22);
+  --bg-warm: rgba(255, 238, 184, 0.18);
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --card-border: rgba(191, 231, 223, 0.9);
+  --text-heading: #184e57;
+  --text-body: #5f6873;
+  --text-soft: #7b8793;
+  --accent: #1198a7;
+  --accent-hover: #0e8694;
+  --accent-soft: #ddf5f1;
+  --accent-border: #bfe7df;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "SF Pro Text Custom", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+  color: var(--text-heading);
+  background:
+    radial-gradient(circle at 15% 12%, var(--bg-glow), transparent 24%),
+    radial-gradient(circle at 82% 20%, var(--bg-glow-2), transparent 22%),
+    radial-gradient(circle at 78% 80%, var(--bg-warm), transparent 24%),
+    linear-gradient(180deg, #f2fcfe 0%, var(--bg-base) 100%);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.page-shell {
+  width: min(100%, 1080px);
+  margin: 0 auto;
+  padding: 28px 18px 48px;
+}
+
+.hero,
+.content-card,
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(14px);
+}
+
+.hero,
+.content-card {
+  border-radius: 34px;
+  box-shadow: 0 22px 58px rgba(24, 78, 87, 0.07);
+}
+
+.hero {
+  padding: 34px 28px;
+  margin-bottom: 24px;
+}
+
+.hero-home {
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 76% 24%, rgba(255, 255, 255, 0.34), transparent 18%),
+    radial-gradient(circle at 82% 78%, rgba(255, 239, 184, 0.18), transparent 20%);
+  pointer-events: none;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-actions {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.brand-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.content-brand {
+  margin-bottom: 40px;
+}
+
+.brand-row > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand-icon {
+  width: 88px;
+  height: 88px;
+  border-radius: 22%;
+  box-shadow: 0 18px 44px rgba(8, 52, 73, 0.16);
+}
+
+.brand-icon-small {
+  width: 84px;
+  height: 84px;
+  box-shadow: 0 14px 34px rgba(8, 52, 73, 0.12);
+}
+
+.eyebrow,
+.card-label {
+  margin: 0 0 10px;
+  color: var(--accent);
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-family: "SF Pro Rounded Custom", -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "SF Pro Display", sans-serif;
+  color: var(--text-heading);
+}
+
+h1 {
+  font-size: clamp(2.4rem, 6vw, 4.6rem);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  font-size: clamp(1.25rem, 3vw, 1.6rem);
+  line-height: 1.08;
+  margin-bottom: 10px;
+}
+
+p,
+li {
+  margin: 0;
+  color: var(--text-body);
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+.lede {
+  max-width: 860px;
+  color: var(--text-soft);
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-card > .lede:first-of-type {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.app-store-button {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 240px;
+  padding: 14px 18px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 16px 38px rgba(24, 78, 87, 0.08);
+  color: var(--text-heading);
+}
+
+.app-store-overline {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.app-store-title {
+  font-family: "SF Pro Rounded Custom", -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "SF Pro Display", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+.landing-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.landing-section {
+  padding: 30px 28px;
+}
+
+.landing-copy + .landing-copy {
+  margin-top: 14px;
+}
+
+.feature-list {
+  margin: 6px 0 0;
+  padding-left: 20px;
+}
+
+.feature-list li + li {
+  margin-top: 8px;
+}
+
+.landing-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  padding: 8px 0 4px;
+}
+
+.landing-footer a {
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.back-link {
+  display: inline-block;
+  margin: 6px 0 16px;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.content-card {
+  padding: 34px 28px;
+}
+
+.section + .section {
+  margin-top: 28px;
+}
+
+ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+}
+
+@media (max-width: 720px) {
+  .page-shell {
+    padding: 18px 14px 32px;
+  }
+
+  .hero,
+  .content-card {
+    border-radius: 28px;
+  }
+
+  .hero {
+    padding: 28px 22px;
+  }
+
+  .hero-home {
+    min-height: auto;
+  }
+
+  .brand-row {
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 24px;
+  }
+
+  .brand-icon {
+    width: 76px;
+    height: 76px;
+  }
+
+  .brand-icon-small {
+    width: 76px;
+    height: 76px;
+  }
+
+  .content-card {
+    padding: 28px 22px;
+  }
+
+  .landing-section {
+    padding: 26px 22px;
+  }
+}
