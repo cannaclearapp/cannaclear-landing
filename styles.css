@@ -206,6 +206,22 @@ li {
   margin-bottom: 60px;
 }
 
+.legal-card .content-brand {
+  margin-bottom: 24px;
+}
+
+.legal-card .brand-row,
+.legal-card .brand-row > div {
+  text-align: center;
+  align-items: center;
+}
+
+.legal-card .lede:first-of-type {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 760px;
+}
+
 .app-store-button {
   display: inline-flex;
   flex-direction: column;
