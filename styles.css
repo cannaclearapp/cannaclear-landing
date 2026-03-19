@@ -180,13 +180,13 @@ h2 {
 
 h1 {
   font-size: clamp(2.4rem, 6vw, 4.6rem);
-  line-height: 0.98;
+  line-height: 1.06;
   letter-spacing: -0.03em;
 }
 
 h2 {
   font-size: clamp(1.25rem, 3vw, 1.6rem);
-  line-height: 1.08;
+  line-height: 1.2;
   margin-bottom: 10px;
 }
 
@@ -195,7 +195,7 @@ li {
   margin: 0;
   color: var(--text-body);
   font-size: 1rem;
-  line-height: 1.72;
+  line-height: 1.8;
 }
 
 .lede {
@@ -204,6 +204,7 @@ li {
   margin-top: 16px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.32;
 }
 
 .content-card > .lede:first-of-type {
