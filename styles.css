@@ -1,24 +1,3 @@
-@font-face {
-  font-family: "SF Pro Rounded Custom";
-  src: url("/assets/SF-Pro-Rounded-Semibold.otf") format("opentype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SF Pro Text Custom";
-  src: url("/assets/SF-Pro-Text-Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SF Pro Text Custom";
-  src: url("/assets/SF-Pro-Text-RegularItalic.otf") format("opentype");
-  font-weight: 400;
-  font-style: italic;
-}
-
 :root {
   --bg-base: #eef9fb;
   --bg-glow: rgba(140, 233, 216, 0.28);
@@ -46,7 +25,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: "SF Pro Text Custom", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   color: var(--text-heading);
   background:
     radial-gradient(circle at 15% 12%, var(--bg-glow), transparent 24%),
@@ -174,7 +153,7 @@ img {
 h1,
 h2 {
   margin: 0;
-  font-family: "SF Pro Rounded Custom", -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "SF Pro Display", sans-serif;
+  font-family: "SF Pro Rounded", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   color: var(--text-heading);
 }
 
@@ -250,7 +229,7 @@ li {
 }
 
 .app-store-title {
-  font-family: "SF Pro Rounded Custom", -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "SF Pro Display", sans-serif;
+  font-family: "SF Pro Rounded", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.1rem;
   line-height: 1.2;
 }
