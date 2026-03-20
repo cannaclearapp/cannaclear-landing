@@ -265,6 +265,10 @@ li {
   padding: 30px 28px;
 }
 
+.learn-more {
+  padding: 30px 28px;
+}
+
 .landing-copy + .landing-copy {
   margin-top: 14px;
 }
@@ -276,6 +280,32 @@ li {
 
 .feature-list li + li {
   margin-top: 8px;
+}
+
+.seo-card h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.08;
+  margin-bottom: 18px;
+}
+
+.seo-card h2 {
+  font-size: clamp(1.3rem, 3.2vw, 1.9rem);
+}
+
+.seo-copy + .seo-copy {
+  margin-top: 12px;
+}
+
+.related-links {
+  border-top: 1px solid var(--card-border);
+  padding-top: 30px;
+}
+
+.related-links a {
+  display: block;
+  color: var(--accent);
+  font-weight: 600;
+  margin-top: 10px;
 }
 
 .landing-footer {
@@ -352,6 +382,10 @@ ul {
   }
 
   .landing-section {
+    padding: 26px 22px;
+  }
+
+  .learn-more {
     padding: 26px 22px;
   }
 }
