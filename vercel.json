@@ -1,3 +1,11 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/support", "destination": "/support/index.html" },
+    { "source": "/privacy", "destination": "/privacy/index.html" },
+    { "source": "/terms", "destination": "/terms/index.html" },
+    { "source": "/quit-weed", "destination": "/quit-weed/index.html" },
+    { "source": "/weed-detox", "destination": "/weed-detox/index.html" },
+    { "source": "/stop-smoking-weed", "destination": "/stop-smoking-weed/index.html" }
+  ]
 }
