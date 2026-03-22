@@ -299,6 +299,10 @@ li {
   font-size: clamp(1.3rem, 3.2vw, 1.9rem);
 }
 
+.seo-card > .section {
+  margin-top: 34px;
+}
+
 .seo-copy + .seo-copy {
   margin-top: 12px;
 }
