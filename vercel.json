@@ -6,6 +6,7 @@
     { "source": "/terms", "destination": "/terms/index.html" },
     { "source": "/quit-weed", "destination": "/quit-weed/index.html" },
     { "source": "/weed-detox", "destination": "/weed-detox/index.html" },
-    { "source": "/stop-smoking-weed", "destination": "/stop-smoking-weed/index.html" }
+    { "source": "/stop-smoking-weed", "destination": "/stop-smoking-weed/index.html" },
+    { "source": "/newsletter/confirm", "destination": "/newsletter/confirm/index.html" }
   ]
 }

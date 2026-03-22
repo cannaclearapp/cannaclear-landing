@@ -74,6 +74,25 @@
               </div>
             </div>
           </div>
+          <section class="newsletter-box" aria-label="Early access signup">
+            <h3>Be the first to try the app</h3>
+            <p>Get early access and launch updates. We only email launch news.</p>
+            <form class="newsletter-form" data-newsletter-form>
+              <label class="sr-only" for="newsletter-email-home">Email address</label>
+              <input id="newsletter-email-home" name="email" type="email" inputmode="email" autocomplete="email" placeholder="Enter your email" required />
+              <div class="newsletter-consent">
+                <input id="consent-home" name="consent" type="checkbox" required />
+                <label for="consent-home">
+                  I agree to receive launch updates from CannaClear and accept the
+                  <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+                </label>
+              </div>
+              <div data-turnstile-container></div>
+              <input name="sourcePath" type="hidden" value="/" />
+              <button type="submit">Notify me at launch</button>
+              <p class="newsletter-feedback" data-newsletter-feedback></p>
+            </form>
+          </section>
         </div>
       </header>
 
@@ -145,5 +164,6 @@
         </footer>
       </main>
     </div>
+    <script src="/assets/newsletter.js" defer></script>
   </body>
 </html>

@@ -117,8 +117,24 @@
               <img class="app-store-badge" src="/assets/download-on-the-app-store.svg" alt="Download on the App Store" />
             </div>
           </div>
+          <form class="newsletter-form newsletter-form-compact" data-newsletter-form>
+            <label class="sr-only" for="newsletter-email-quit-weed">Email address</label>
+            <input id="newsletter-email-quit-weed" name="email" type="email" inputmode="email" autocomplete="email" placeholder="Get early access updates" required />
+            <div class="newsletter-consent">
+              <input id="consent-quit-weed" name="consent" type="checkbox" required />
+              <label for="consent-quit-weed">
+                I agree to receive launch updates and accept the
+                <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+              </label>
+            </div>
+            <div data-turnstile-container></div>
+            <input name="sourcePath" type="hidden" value="/quit-weed" />
+            <button type="submit">Inform me when it's live</button>
+            <p class="newsletter-feedback" data-newsletter-feedback></p>
+          </form>
         </section>
       </main>
     </div>
+    <script src="/assets/newsletter.js" defer></script>
   </body>
 </html>

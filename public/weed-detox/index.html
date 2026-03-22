@@ -114,8 +114,24 @@
               <img class="app-store-badge" src="/assets/download-on-the-app-store.svg" alt="Download on the App Store" />
             </div>
           </div>
+          <form class="newsletter-form newsletter-form-compact" data-newsletter-form>
+            <label class="sr-only" for="newsletter-email-weed-detox">Email address</label>
+            <input id="newsletter-email-weed-detox" name="email" type="email" inputmode="email" autocomplete="email" placeholder="Get early access updates" required />
+            <div class="newsletter-consent">
+              <input id="consent-weed-detox" name="consent" type="checkbox" required />
+              <label for="consent-weed-detox">
+                I agree to receive launch updates and accept the
+                <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+              </label>
+            </div>
+            <div data-turnstile-container></div>
+            <input name="sourcePath" type="hidden" value="/weed-detox" />
+            <button type="submit">Get early access</button>
+            <p class="newsletter-feedback" data-newsletter-feedback></p>
+          </form>
         </section>
       </main>
     </div>
+    <script src="/assets/newsletter.js" defer></script>
   </body>
 </html>
