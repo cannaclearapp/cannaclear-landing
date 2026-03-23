@@ -510,6 +510,21 @@ li {
   margin-top: 30px;
 }
 
+.mockup-copy {
+  margin: 0 auto 14px;
+  max-width: 860px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--text-soft);
+}
+
+.mockup-copy--small {
+  margin-top: 18px;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
 .mockup-stack {
   display: grid;
   grid-template-areas:
