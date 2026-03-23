@@ -237,6 +237,88 @@ async function runUnsubscribeFlow() {
   }
 }
 
+function initMockupCarousel() {
+  const carousel = document.querySelector("[data-mockup-carousel]");
+  if (!carousel) return;
+
+  const track = carousel.querySelector("[data-mockup-track]");
+  const dots = Array.from(carousel.querySelectorAll("[data-slide]"));
+  if (!track || !dots.length) return;
+
+  const desktopQuery = window.matchMedia("(min-width: 920px)");
+  let rafId = null;
+
+  const slides = () => Array.from(track.querySelectorAll(".mockup-phone"));
+
+  const setActiveDot = (index) => {
+    dots.forEach((dot, dotIndex) => {
+      const active = dotIndex === index;
+      dot.classList.toggle("is-active", active);
+      dot.setAttribute("aria-current", active ? "true" : "false");
+    });
+  };
+
+  const scrollToSlide = (index) => {
+    const target = slides()[index];
+    if (!target) return;
+
+    const left = target.offsetLeft - (track.clientWidth - target.clientWidth) / 2;
+    track.scrollTo({ left, behavior: "smooth" });
+    setActiveDot(index);
+  };
+
+  const syncActiveFromScroll = () => {
+    if (desktopQuery.matches) {
+      setActiveDot(1);
+      return;
+    }
+
+    const trackCenter = track.scrollLeft + track.clientWidth / 2;
+    let bestIndex = 0;
+    let smallestDistance = Number.POSITIVE_INFINITY;
+
+    slides().forEach((slide, index) => {
+      const slideCenter = slide.offsetLeft + slide.clientWidth / 2;
+      const distance = Math.abs(trackCenter - slideCenter);
+      if (distance < smallestDistance) {
+        smallestDistance = distance;
+        bestIndex = index;
+      }
+    });
+
+    setActiveDot(bestIndex);
+  };
+
+  dots.forEach((dot) => {
+    dot.addEventListener("click", () => {
+      const index = Number(dot.getAttribute("data-slide"));
+      if (Number.isNaN(index)) return;
+      scrollToSlide(index);
+    });
+  });
+
+  track.addEventListener(
+    "scroll",
+    () => {
+      if (rafId) window.cancelAnimationFrame(rafId);
+      rafId = window.requestAnimationFrame(syncActiveFromScroll);
+    },
+    { passive: true }
+  );
+
+  window.addEventListener(
+    "resize",
+    () => {
+      if (rafId) window.cancelAnimationFrame(rafId);
+      rafId = window.requestAnimationFrame(syncActiveFromScroll);
+    },
+    { passive: true }
+  );
+
+  syncActiveFromScroll();
+}
+
 enhanceNewsletterForms();
 runConfirmFlow();
 runUnsubscribeFlow();
+initMockupCarousel();
