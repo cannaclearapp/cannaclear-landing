@@ -7,6 +7,12 @@
     { "source": "/quit-weed", "destination": "/quit-weed/index.html" },
     { "source": "/weed-detox", "destination": "/weed-detox/index.html" },
     { "source": "/stop-smoking-weed", "destination": "/stop-smoking-weed/index.html" },
+    { "source": "/quit-weed-app", "destination": "/quit-weed-app/index.html" },
+    { "source": "/weed-withdrawal", "destination": "/weed-withdrawal/index.html" },
+    { "source": "/how-to-quit-weed", "destination": "/how-to-quit-weed/index.html" },
+    { "source": "/weed-addiction", "destination": "/weed-addiction/index.html" },
+    { "source": "/quit-weed-timeline", "destination": "/quit-weed-timeline/index.html" },
+    { "source": "/best-quit-weed-app", "destination": "/best-quit-weed-app/index.html" },
     { "source": "/newsletter/confirm", "destination": "/newsletter/confirm/index.html" },
     { "source": "/newsletter/unsubscribe", "destination": "/newsletter/unsubscribe/index.html" }
   ]
