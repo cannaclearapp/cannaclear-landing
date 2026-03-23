@@ -312,11 +312,29 @@ li {
   padding-top: 30px;
 }
 
-.related-links a {
+.related-grid {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px 24px;
+}
+
+.related-grid a {
   display: block;
   color: var(--accent);
   font-weight: 600;
-  margin-top: 10px;
+}
+
+@media (min-width: 720px) {
+  .related-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .related-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 .landing-footer {
