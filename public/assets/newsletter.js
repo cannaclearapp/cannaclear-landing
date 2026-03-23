@@ -1,5 +1,6 @@
 const NEWSLETTER_ENDPOINT = "/api/newsletter-subscribe";
 const NEWSLETTER_CONFIRM_ENDPOINT = "/api/newsletter-confirm";
+const NEWSLETTER_UNSUBSCRIBE_ENDPOINT = "/api/newsletter-unsubscribe";
 const NEWSLETTER_CONFIG_ENDPOINT = "/api/newsletter-config";
 
 function normalizePath(path) {
@@ -191,5 +192,51 @@ async function runConfirmFlow() {
   }
 }
 
+async function runUnsubscribeFlow() {
+  const statusEl = document.querySelector("[data-newsletter-unsubscribe-status]");
+  if (!statusEl) return;
+
+  const params = new URLSearchParams(window.location.search);
+  const token = params.get("token");
+  if (!token) {
+    statusEl.textContent = "Invalid unsubscribe link.";
+    statusEl.classList.add("is-error");
+    return;
+  }
+
+  statusEl.textContent = "Processing your unsubscribe request...";
+  statusEl.classList.add("is-info");
+
+  try {
+    const response = await fetch(NEWSLETTER_UNSUBSCRIBE_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ token }),
+    });
+    const data = await response.json().catch(() => ({}));
+
+    statusEl.classList.remove("is-info", "is-error", "is-success");
+    if (!response.ok) {
+      statusEl.textContent = data.error || "Could not unsubscribe right now. Please try again.";
+      statusEl.classList.add("is-error");
+      return;
+    }
+
+    if (data.status === "already_unsubscribed") {
+      statusEl.textContent = "You're already unsubscribed from launch emails.";
+      statusEl.classList.add("is-success");
+      return;
+    }
+
+    statusEl.textContent = "Done. You won't receive launch emails anymore.";
+    statusEl.classList.add("is-success");
+  } catch (_err) {
+    statusEl.classList.remove("is-info");
+    statusEl.classList.add("is-error");
+    statusEl.textContent = "Network issue while unsubscribing. Please try again.";
+  }
+}
+
 enhanceNewsletterForms();
 runConfirmFlow();
+runUnsubscribeFlow();

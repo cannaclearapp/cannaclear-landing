@@ -16,7 +16,7 @@ module.exports = async function handler(req, res) {
 
     const tokenHash = crypto.createHash("sha256").update(token).digest("hex");
     const lookup = await supabaseFetch(
-      `/rest/v1/newsletter_subscribers?confirmation_token_hash=eq.${tokenHash}&select=id,status,confirmation_token_expires_at&limit=1`,
+      `/rest/v1/newsletter_subscribers?unsubscribe_token_hash=eq.${tokenHash}&select=id,email,status&limit=1`,
       { method: "GET" }
     );
     if (!lookup.ok) {
@@ -25,44 +25,35 @@ module.exports = async function handler(req, res) {
 
     const rows = await lookup.json();
     if (!Array.isArray(rows) || !rows.length) {
-      return res.status(400).json({ error: "This confirmation link is invalid or already used." });
+      return res.status(400).json({ error: "This unsubscribe link is invalid or expired." });
     }
 
     const row = rows[0];
-    if (row.status === "confirmed") {
-      await insertNewsletterEvent({
-        subscriberId: row.id,
-        eventType: "subscribe_confirmed",
-        metadata: { result: "already_confirmed" },
-      });
-      return res.status(200).json({ ok: true, status: "already_confirmed" });
-    }
-
-    if (!row.confirmation_token_expires_at || new Date(row.confirmation_token_expires_at) < new Date()) {
-      return res.status(400).json({ error: "This confirmation link has expired. Please request a new one." });
+    if (row.status === "unsubscribed") {
+      return res.status(200).json({ ok: true, status: "already_unsubscribed" });
     }
 
     const update = await supabaseFetch(`/rest/v1/newsletter_subscribers?id=eq.${row.id}`, {
       method: "PATCH",
       headers: { Prefer: "return=minimal" },
       body: JSON.stringify({
-        status: "confirmed",
-        confirmed_at: new Date().toISOString(),
+        status: "unsubscribed",
         confirmation_token_hash: null,
         confirmation_token_expires_at: null,
       }),
     });
     if (!update.ok) {
-      return res.status(500).json({ error: "Could not confirm subscription right now." });
+      return res.status(500).json({ error: "Could not unsubscribe right now." });
     }
 
     await insertNewsletterEvent({
       subscriberId: row.id,
-      eventType: "subscribe_confirmed",
+      email: row.email || null,
+      eventType: "unsubscribe_clicked",
     });
 
-    return res.status(200).json({ ok: true, status: "confirmed" });
+    return res.status(200).json({ ok: true, status: "unsubscribed" });
   } catch (_error) {
-    return res.status(500).json({ error: "Unexpected error while confirming." });
+    return res.status(500).json({ error: "Unexpected error while unsubscribing." });
   }
 };

@@ -37,6 +37,12 @@ function createConfirmationToken() {
   return { token, tokenHash };
 }
 
+function createTokenPair() {
+  const token = crypto.randomBytes(32).toString("base64url");
+  const tokenHash = crypto.createHash("sha256").update(token).digest("hex");
+  return { token, tokenHash };
+}
+
 function addHours(date, hours) {
   const next = new Date(date);
   next.setHours(next.getHours() + hours);
@@ -100,6 +106,7 @@ async function supabaseFetch(path, options = {}) {
 async function sendConfirmationEmail({
   email,
   confirmUrl,
+  unsubscribeUrl,
 }) {
   const resendApiKey = getEnv("RESEND_API_KEY");
   const fromEmail = getEnv("RESEND_FROM_EMAIL");
@@ -124,21 +131,52 @@ async function sendConfirmationEmail({
             </a>
           </p>
           <p style="margin:0 0 8px;color:#4d6372;">This link expires in 48 hours.</p>
-          <p style="margin:0;color:#4d6372;">You can ignore this email if you did not request it.</p>
+          <p style="margin:0 0 8px;color:#4d6372;">You can ignore this email if you did not request it.</p>
+          <p style="margin:0;color:#4d6372;">
+            Want to stop these emails?
+            <a href="${unsubscribeUrl}" style="color:#1198a7;">Unsubscribe here</a>.
+          </p>
         </div>
       `,
-      text: `Confirm your CannaClear early access: ${confirmUrl}\n\nThis link expires in 48 hours.`,
+      text: `Confirm your CannaClear early access: ${confirmUrl}\n\nThis link expires in 48 hours.\n\nUnsubscribe: ${unsubscribeUrl}`,
     }),
   });
 
   return response.ok;
 }
 
+async function insertNewsletterEvent({
+  subscriberId = null,
+  email = null,
+  eventType,
+  sourcePath = null,
+  metadata = null,
+}) {
+  if (!eventType) return false;
+  const payload = [
+    {
+      subscriber_id: subscriberId,
+      email,
+      event_type: eventType,
+      source_path: sourcePath,
+      metadata: metadata || {},
+    },
+  ];
+  const response = await supabaseFetch("/rest/v1/newsletter_events", {
+    method: "POST",
+    headers: { Prefer: "return=minimal" },
+    body: JSON.stringify(payload),
+  });
+  return response.ok;
+}
+
 module.exports = {
   addHours,
   createConfirmationToken,
+  createTokenPair,
   getClientIp,
   getEnv,
+  insertNewsletterEvent,
   isAllowedStatus,
   isValidEmail,
   normalizeEmail,
