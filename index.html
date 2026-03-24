@@ -35,31 +35,71 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "MobileApplication",
-        "name": "CannaClear: Quit Weed & Reset",
-        "operatingSystem": "iOS",
-        "applicationCategory": "HealthApplication",
-        "description": "Quit weed, detox from cannabis, and reset your habits. Track sober days, stay motivated, and build discipline with CannaClear.",
-        "keywords": "quit weed app, cannabis detox, weed detox app, stop smoking weed, sobriety tracker, dopamine reset",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD"
-        },
-        "author": {
-          "@type": "Organization",
-          "name": "CannaClear"
-        }
+        "@graph": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "CannaClear",
+            "applicationCategory": "HealthApplication",
+            "operatingSystem": "iOS",
+            "description": "CannaClear is a quit weed app and cannabis detox companion for people who want to stop smoking weed, manage cannabis cravings, and track sober-day progress with clear daily structure.",
+            "url": "https://www.cannaclear.app",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "EUR"
+            },
+            "featureList": [
+              "Sober day tracker with withdrawal milestone markers",
+              "Daily check-in for mood, sleep and craving intensity",
+              "Craving log with trigger context",
+              "SOS screen with box breathing and grounding tools",
+              "Money saved calculator",
+              "Progress dashboard"
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is CannaClear?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "CannaClear is a quit weed app built specifically for people who want to stop smoking cannabis. It provides a sober day tracker, daily check-ins, craving management tools, withdrawal milestone guidance, and a money saved calculator."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is CannaClear free?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "CannaClear is currently in pre-launch. You can join the early access list at cannaclear.app to be first to try the app when it launches on the App Store."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does CannaClear work for gradual reduction as well as quitting completely?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. CannaClear supports both controlled reduction and full cessation. You do not need to set a fixed goal upfront - the app supports whichever approach you choose."
+                }
+              }
+            ]
+          }
+        ]
       }
     </script>
-    <link rel="stylesheet" href="/styles.css?v=5" />
+    <link rel="preload" as="image" href="/assets/app-icon.avif?v=1" fetchpriority="high" />
+    <link rel="preload" href="/styles.css?v=6" as="style" />
+    <link rel="stylesheet" href="/styles.css?v=6" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="/styles.css?v=6" /></noscript>
   </head>
   <body>
     <div class="page-shell">
       <header class="hero hero-home">
         <div class="hero-copy">
           <div class="brand-row">
-            <img class="brand-icon" src="/assets/app-icon.avif?v=1" alt="CannaClear icon" />
+            <img class="brand-icon" src="/assets/app-icon.avif?v=1" alt="CannaClear icon" width="84" height="84" decoding="async" fetchpriority="high" />
             <div>
               <p class="eyebrow">CannaClear</p>
               <h1>Quit Weed. Take Back Control with CannaClear</h1>
@@ -70,7 +110,7 @@
             <div class="app-store-wrap" aria-label="App Store download coming soon">
               <span class="coming-soon-badge">Coming soon</span>
               <div class="app-store-button">
-                <img class="app-store-badge" src="/assets/download-on-the-app-store.svg" alt="Download on the App Store" />
+                <img class="app-store-badge" src="/assets/download-on-the-app-store.svg" alt="Download on the App Store" width="204" height="68" decoding="async" />
               </div>
             </div>
           </div>
@@ -101,13 +141,13 @@
             <div class="mockup-carousel" data-mockup-carousel>
               <div class="mockup-stack" data-mockup-track>
                 <figure class="mockup-phone mockup-phone--left">
-                  <img src="/assets/home-dashboard-cannaclear-quit-cannabis-tracker.avif" alt="Cannaclear Home-Dashboard der Quit-Weed-App mit Tagen seit letztem Konsum, gespartem Geld, Journaleinträgen und Gesamtmenge nicht konsumiertes Cannabis in Gramm." title="Cannaclear Dashboard - Tage ohne Cannabis und gespartes Geld" loading="lazy" decoding="async" />
+                  <img src="/assets/home-dashboard-cannaclear-quit-cannabis-tracker.avif" alt="CannaClear dashboard showing sober days tracker, money saved, journal entries, and reduced cannabis consumption in grams." title="CannaClear dashboard - sober day tracker and money saved" loading="lazy" decoding="async" fetchpriority="low" width="886" height="1920" />
                 </figure>
                 <figure class="mockup-phone mockup-phone--center">
-                  <img src="/assets/progress-insights-cannaclear-cannabis-entwoehnung.avif" alt="Cannaclear Fortschrittsscreen mit Stimmung, Cannabis-Craving-Trend, Triggern wie Angst und Meilensteinen wie Blutbahn-Detox und besserem Schlaf nach dem Aufhören mit Weed." title="Cannaclear Fortschritt - Muster, Trigger und Detox-Meilensteine erkennen" loading="lazy" decoding="async" />
+                  <img src="/assets/progress-insights-cannaclear-cannabis-entwoehnung.avif" alt="CannaClear progress screen showing mood trends, weed withdrawal milestones, triggers, and cannabis detox insights over time." title="CannaClear progress insights - mood trends and detox milestones" loading="lazy" decoding="async" fetchpriority="low" width="886" height="1920" />
                 </figure>
                 <figure class="mockup-phone mockup-phone--right">
-                  <img src="/assets/sos-screen-cannaclear-quit-weed-app.avif" alt="Cannaclear App SOS-Bildschirm mit Notfalltipps gegen Cannabis-Cravings, Box-Breathing-Übung und kurzen Handlungsanweisungen, um Rückfälle beim Kiffen zu vermeiden." title="Cannaclear SOS - Hilfe bei akuten Cannabis-Cravings" loading="lazy" decoding="async" />
+                  <img src="/assets/sos-screen-cannaclear-quit-weed-app.avif" alt="CannaClear SOS screen with cannabis craving support tips, box breathing, and quick actions to prevent weed relapse." title="CannaClear SOS - support for cannabis cravings and relapse prevention" loading="lazy" decoding="async" fetchpriority="low" width="886" height="1920" />
                 </figure>
               </div>
               <div class="mockup-dots" data-mockup-dots aria-label="Mockup slider controls">

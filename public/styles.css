@@ -14,25 +14,6 @@
   --accent-border: #bfe7df;
 }
 
-@font-face {
-  font-family: "CannaText";
-  src: url("/assets/SF-Pro-Text-Regular.otf") format("opentype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "CannaText";
-  src: url("/assets/SF-Pro-Text-RegularItalic.otf") format("opentype");
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "CannaRounded";
-  src: url("/assets/SF-Pro-Rounded-Semibold.otf") format("opentype");
-  font-display: swap;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -44,7 +25,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: "CannaText", -apple-system, BlinkMacSystemFont, system-ui, "SF Pro Text", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   color: var(--text-heading);
   background:
     radial-gradient(circle at 15% 12%, var(--bg-glow), transparent 24%),
@@ -74,7 +55,8 @@ img {
 .card {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
-  backdrop-filter: blur(14px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .hero,
@@ -142,6 +124,7 @@ img {
 }
 
 .brand-icon {
+  display: block;
   width: 88px;
   height: 88px;
   border-radius: 22%;
@@ -149,6 +132,7 @@ img {
 }
 
 .brand-icon-small {
+  display: block;
   width: 84px;
   height: 84px;
   box-shadow: 0 14px 34px rgba(8, 52, 73, 0.12);
@@ -172,7 +156,7 @@ img {
 h1,
 h2 {
   margin: 0;
-  font-family: "CannaRounded", "SF Pro Rounded", "SF Pro Display", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family: "SF Pro Rounded", "SF Pro Display", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   color: var(--text-heading);
 }
 
@@ -232,6 +216,7 @@ li {
 }
 
 .app-store-badge {
+  display: block;
   width: 204px;
   height: auto;
 }
@@ -411,7 +396,7 @@ li {
 
 .newsletter-box h3 {
   margin: 0 0 6px;
-  font-family: "CannaRounded", "SF Pro Rounded", "SF Pro Display", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family: "SF Pro Rounded", "SF Pro Display", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   color: var(--text-heading);
   font-size: clamp(1.1rem, 2.4vw, 1.5rem);
 }
@@ -471,7 +456,7 @@ li {
   padding: 0 16px;
   background: linear-gradient(140deg, #1198a7, #22a6b7);
   color: #ffffff;
-  font-family: "CannaRounded", "SF Pro Rounded", "SF Pro Display", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family: "SF Pro Rounded", "SF Pro Display", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
@@ -508,6 +493,8 @@ li {
 
 .mockup-showcase {
   margin-top: 30px;
+  content-visibility: auto;
+  contain-intrinsic-size: 1100px;
 }
 
 .mockup-carousel {
@@ -562,7 +549,7 @@ li {
   height: 100%;
   object-fit: contain;
   object-position: center bottom;
-  filter: drop-shadow(0 16px 32px rgba(12, 52, 65, 0.18));
+  box-shadow: 0 12px 26px rgba(12, 52, 65, 0.14);
 }
 
 .mockup-phone--left {
