@@ -649,8 +649,8 @@ li {
 
 .seo-card .faq-section h3 {
   margin: 34px 0 0;
-  font-size: clamp(1.4rem, 2.3vw, 2rem);
-  line-height: 1.25;
+  font-size: clamp(1.05rem, 1.75vw, 1.24rem);
+  line-height: 1.35;
   color: var(--text-heading);
 }
 
