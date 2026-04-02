@@ -27,11 +27,14 @@ body {
   min-height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   color: var(--text-heading);
+  background-color: #eaf7f9;
   background:
     radial-gradient(circle at 15% 12%, var(--bg-glow), transparent 24%),
     radial-gradient(circle at 82% 20%, var(--bg-glow-2), transparent 22%),
     radial-gradient(circle at 78% 80%, var(--bg-warm), transparent 24%),
-    linear-gradient(180deg, #f2fcfe 0%, var(--bg-base) 100%);
+    linear-gradient(180deg, rgba(242, 252, 254, 0.62) 0%, rgba(238, 249, 251, 0.72) 100%),
+    url('/assets/background.avif') center / 100% 100% no-repeat;
+  background-attachment: fixed, fixed, fixed, fixed, fixed;
 }
 
 a {
