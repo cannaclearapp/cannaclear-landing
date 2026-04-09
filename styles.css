@@ -447,12 +447,26 @@ li {
   padding-top: 28px;
 }
 
+.seo-card .app-promo-banner {
+  text-align: center;
+}
+
 .app-promo-banner h2 {
   margin-bottom: 10px;
 }
 
 .app-promo-banner p {
   margin-bottom: 16px;
+}
+
+.seo-card .app-promo-banner .app-store-wrap {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.seo-card .app-promo-banner .newsletter-form,
+.seo-card .app-promo-banner .newsletter-form-compact {
+  display: none !important;
 }
 
 .newsletter-box {
