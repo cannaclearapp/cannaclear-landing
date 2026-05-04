@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cannaclear.app/sitemap.xml
+Sitemap: https://www.cannaclear.app/sitemap.xml

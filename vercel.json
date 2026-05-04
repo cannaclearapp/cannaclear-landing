@@ -1,5 +1,13 @@
 {
   "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "cannaclear.app" }],
+      "destination": "https://www.cannaclear.app/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { "source": "/support", "destination": "/support/index.html" },
     { "source": "/privacy", "destination": "/privacy/index.html" },
