@@ -568,29 +568,11 @@ li {
 }
 
 .faq-home__item {
-  display: grid;
-  grid-template-columns: 56px minmax(0, 1fr);
-  gap: 16px;
-  align-items: start;
-}
-
-.faq-home__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 56px;
-  height: 56px;
-  border: 1px solid rgba(24, 78, 87, 0.12);
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.88);
-  box-shadow: 0 10px 20px rgba(8, 52, 73, 0.05);
-  color: var(--text-heading);
-  font-size: 1.2rem;
-  font-weight: 700;
+  display: block;
 }
 
 .faq-home__content h3 {
-  margin: 2px 0 10px;
+  margin: 0 0 10px;
   font-family: "SF Pro Rounded", "SF Pro Display", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   color: var(--text-heading);
   font-size: clamp(1.15rem, 2vw, 1.48rem);
