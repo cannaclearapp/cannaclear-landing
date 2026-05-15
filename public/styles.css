@@ -161,6 +161,15 @@ img {
   text-align: left;
 }
 
+.hero-trust__stars {
+  margin: 0 0 8px;
+  color: #d9a441;
+  font-size: 1.2rem;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  text-shadow: 0 3px 10px rgba(217, 164, 65, 0.18);
+}
+
 .hero-trust__title {
   margin: 0 0 4px;
   color: var(--text-heading);
@@ -1101,6 +1110,11 @@ ul {
 
   .hero-trust__text {
     font-size: 0.94rem;
+  }
+
+  .hero-trust__stars {
+    font-size: 1.08rem;
+    letter-spacing: 0.12em;
   }
 
   .brand-row {
