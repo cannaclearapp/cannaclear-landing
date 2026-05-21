@@ -113,8 +113,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 18px;
-  padding: 10px 22px;
+  gap: 10px;
+  padding: 14px 22px 12px;
   border: 1px solid rgba(24, 78, 87, 0.08);
   border-radius: 28px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(240, 250, 248, 0.5));
@@ -122,15 +122,41 @@ img {
   backdrop-filter: blur(10px);
 }
 
-.hero-trust__laurel {
-  width: 46px;
-  height: 98px;
+.hero-trust__laurel-group {
+  width: 68px;
+  height: 108px;
+  position: relative;
   flex: 0 0 auto;
+}
+
+.hero-trust__laurel {
+  width: 44px;
+  height: 94px;
+  position: absolute;
+  inset: 0 auto 0 0;
   color: rgba(24, 78, 87, 0.95);
 }
 
-.hero-trust__laurel--right {
+.hero-trust__laurel--front {
+  z-index: 2;
+}
+
+.hero-trust__laurel--back {
+  left: 22px;
   transform: scaleX(-1);
+  opacity: 0.88;
+}
+
+.hero-trust__laurel-group--right .hero-trust__laurel--front {
+  left: auto;
+  right: 0;
+  transform: scaleX(-1);
+}
+
+.hero-trust__laurel-group--right .hero-trust__laurel--back {
+  left: auto;
+  right: 22px;
+  transform: none;
 }
 
 .hero-trust__laurel svg {
@@ -141,33 +167,36 @@ img {
 .hero-trust__seal {
   min-width: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-trust__stars {
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   display: flex;
   justify-content: center;
-  gap: 0.3rem;
+  gap: 0.22rem;
   color: #ffc20f;
-  font-size: 2.2rem;
+  font-size: 1.95rem;
   line-height: 1;
   text-shadow: 0 4px 12px rgba(255, 194, 15, 0.18);
 }
 
 .hero-trust__title {
-  margin: 0 0 6px;
+  margin: 0 0 4px;
   color: var(--text-heading);
   font-family: "SF Pro Rounded", "SF Pro Display", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  font-size: clamp(1.45rem, 3vw, 1.9rem);
+  font-size: clamp(1.28rem, 2.5vw, 1.6rem);
   font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -0.03em;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
 }
 
 .hero-trust__text {
   margin: 0;
   color: var(--text-body);
-  font-size: 0.96rem;
+  font-size: 0.9rem;
   line-height: 1.3;
   font-weight: 600;
 }
@@ -1079,28 +1108,41 @@ ul {
 
   .hero-trust {
     width: 100%;
-    gap: 10px;
-    padding: 10px 12px;
+    gap: 4px;
+    padding: 12px 12px 10px;
     border-radius: 22px;
     align-items: center;
   }
 
-  .hero-trust__laurel {
-    width: 34px;
+  .hero-trust__laurel-group {
+    width: 42px;
     height: 72px;
   }
 
+  .hero-trust__laurel {
+    width: 28px;
+    height: 62px;
+  }
+
+  .hero-trust__laurel--back {
+    left: 12px;
+  }
+
+  .hero-trust__laurel-group--right .hero-trust__laurel--back {
+    right: 12px;
+  }
+
   .hero-trust__title {
-    font-size: 1.45rem;
+    font-size: 1.18rem;
   }
 
   .hero-trust__text {
-    font-size: 0.88rem;
+    font-size: 0.82rem;
   }
 
   .hero-trust__stars {
-    font-size: 1.6rem;
-    gap: 0.18rem;
+    font-size: 1.45rem;
+    gap: 0.14rem;
   }
 
   .brand-row {
