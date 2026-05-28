@@ -159,6 +159,18 @@ img {
   font-weight: 600;
 }
 
+.rankinpublic-badge {
+  display: block;
+  width: min(250px, 100%);
+  line-height: 0;
+}
+
+.rankinpublic-badge img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .brand-row {
   display: flex;
   flex-direction: column;
