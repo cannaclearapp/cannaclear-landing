@@ -164,7 +164,7 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
-  width: min(100%, 520px);
+  width: min(100%, 760px);
 }
 
 .rankinpublic-badge {
@@ -187,6 +187,10 @@ img {
   height: 60px;
   margin: auto 0;
   transform: none;
+}
+
+.rankinpublic-badge--compact {
+  width: min(120px, 100%);
 }
 
 .brand-row {
