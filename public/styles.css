@@ -159,6 +159,14 @@ img {
   font-weight: 600;
 }
 
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  width: min(100%, 520px);
+}
+
 .rankinpublic-badge {
   display: block;
   width: min(250px, 100%);
