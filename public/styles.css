@@ -184,8 +184,9 @@ img {
 }
 
 .rankinpublic-badge--rankin img {
-  transform: scaleY(0.92);
-  transform-origin: center;
+  height: 60px;
+  margin: auto 0;
+  transform: none;
 }
 
 .brand-row {
