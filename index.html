@@ -205,24 +205,25 @@ a:hover>.store-badge{transform:translateY(-2px)}
 @keyframes spark{to{opacity:1;transform:rotate(14deg)}}
 .hero p.lead{font-size:1.15rem;color:var(--ink-soft);max-width:33rem;margin-bottom:1.9rem}
 .hero-cta{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+.hero-cta-meta{display:flex;align-items:center;gap:.8rem;flex-wrap:wrap}
 .trial-note{font-size:.82rem;color:#557983;margin-top:1rem;font-weight:500}
-.hero-proof{display:flex;gap:1.6rem;flex-wrap:wrap;margin-top:2.3rem;padding-top:1.6rem;border-top:1px solid var(--line)}
-.proof-item{font-size:.86rem;color:var(--ink-soft);display:flex;align-items:center;gap:.5rem;font-weight:500}
+.hero-proof{display:flex;gap:1.2rem 1.5rem;flex-wrap:wrap;margin-top:2.3rem;padding-top:1.6rem;border-top:1px solid var(--line)}
+.proof-item{font-size:.82rem;color:var(--ink-soft);display:flex;align-items:center;gap:.45rem;font-weight:500}
 .proof-item svg{width:17px;height:17px;flex:none;stroke:var(--teal-deep)}
-.hero-trust-stack{display:grid;gap:1rem;margin-top:1.4rem}
-.hero-trust-seal{display:inline-flex;align-items:center;gap:.9rem;width:fit-content;padding:1rem 1.15rem;border-radius:20px;background:rgba(255,255,255,.88);border:1px solid var(--line);box-shadow:0 18px 40px -24px rgba(14,58,68,.28)}
-.hero-trust-stars{display:flex;gap:.22rem;color:var(--gold);font-size:1rem;line-height:1}
-.hero-trust-copy{display:grid;gap:.12rem}
-.hero-trust-copy strong{font-family:var(--display);font-size:1rem;color:var(--ink)}
-.hero-trust-copy span{font-size:.86rem;color:var(--ink-soft)}
-.hero-badges{display:flex;flex-wrap:wrap;gap:1rem;align-items:center}
-.hero-badge{display:inline-flex;align-items:center;justify-content:center;min-height:60px;padding:.3rem 0}
-.hero-badge img{display:block;width:auto;max-height:60px}
-.hero-badge--fazier-compact img{max-height:60px}
-.hero-badge--rankin img{max-height:60px}
+.hero-trust-inline{display:inline-flex;align-items:center;gap:.65rem;min-height:52px}
+.hero-trust-stars{display:flex;gap:.2rem;color:var(--gold);font-size:1rem;line-height:1}
+.hero-trust-inline strong{font-family:var(--display);font-size:.98rem;color:var(--ink)}
+.hero-trust-inline span{font-size:.84rem;color:var(--ink-soft)}
+.hero-trust-stack{display:grid;gap:.65rem;margin-top:1.4rem}
+.hero-badges{display:flex;flex-wrap:nowrap;gap:.65rem;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0;flex:0 0 auto}
+.hero-badge img{display:block;width:auto;max-height:48px}
+.hero-badge--fazier-compact img{max-height:48px}
+.hero-badge--rankin img{max-height:48px}
 @media(max-width:760px){
-  .hero-trust-seal{width:100%}
-  .hero-badges{justify-content:flex-start}
+  .hero-cta-meta{width:100%}
+  .hero-trust-inline{min-height:auto}
+  .hero-badges{justify-content:flex-start;flex-wrap:wrap}
 }
 
 /* phones */
@@ -426,32 +427,32 @@ footer a:hover{color:#fff}
       <div class="hero-cta">
         <a href="/download" aria-label="Download CannaClear on the App Store"><img class="store-badge" src="/assets/new/download-on-the-app-store.svg" alt="Download on the App Store"></a>
         <a class="btn btn-ghost" href="#timeline">See the recovery timeline</a>
-      </div>
-      <p class="trial-note">3-day free trial · cancel anytime · from $2.50/month billed yearly</p>
-      <div class="hero-proof">
-        <span class="proof-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>Science-backed withdrawal insights</span>
-        <span class="proof-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Your data stays anonymous</span>
-        <span class="proof-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>Supportive, never judgmental</span>
-      </div>
-      <div class="hero-trust-stack">
-        <div class="hero-trust-seal" aria-label="Five star trust badge">
-          <div class="hero-trust-stars" aria-hidden="true">
-            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-          </div>
-          <div class="hero-trust-copy">
+        <div class="hero-cta-meta" aria-label="Five star trust badge">
+          <div class="hero-trust-inline">
+            <div class="hero-trust-stars" aria-hidden="true">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
             <strong>Top-rated</strong>
             <span>Cannabis recovery support</span>
           </div>
         </div>
+      </div>
+      <p class="trial-note">3-day free trial · cancel anytime · from $2.50/month billed yearly</p>
+      <div class="hero-proof">
+        <span class="proof-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>Science-backed insights</span>
+        <span class="proof-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Private by default</span>
+        <span class="proof-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>Supportive and calm</span>
+      </div>
+      <div class="hero-trust-stack">
         <div class="hero-badges" aria-label="Featured badges">
           <a class="hero-badge hero-badge--fazier-compact" href="https://fazier.com/launches/www.cannaclear.app" target="_blank" rel="noopener">
-            <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=neutral" alt="Featured on Fazier launch badge" width="120" height="60" decoding="async">
+            <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=neutral" alt="Featured on Fazier launch badge" width="96" height="48" decoding="async">
           </a>
           <a class="hero-badge hero-badge--rankin" href="https://rankinpublic.xyz/products/www.cannaclear.app" target="_blank" rel="noopener">
-            <img src="https://rankinpublic.xyz/api/badges/badge-featured.png?site=www.cannaclear.app" alt="Featured on RankInPublic" title="Featured on RankInPublic" width="188" height="60" decoding="async">
+            <img src="https://rankinpublic.xyz/api/badges/badge-featured.png?site=www.cannaclear.app" alt="Featured on RankInPublic" title="Featured on RankInPublic" width="150" height="48" decoding="async">
           </a>
           <a class="hero-badge" href="https://fazier.com/launches/www.cannaclear.app" target="_blank" rel="noopener">
-            <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&theme=dark" alt="Featured on Fazier" width="188" height="60" decoding="async">
+            <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&theme=dark" alt="Featured on Fazier" width="150" height="48" decoding="async">
           </a>
         </div>
       </div>
