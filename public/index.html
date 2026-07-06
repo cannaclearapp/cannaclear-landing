@@ -1,411 +1,782 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="apple-itunes-app" content="app-id=6761284274" />
-    <link rel="icon" type="image/png" href="/favicon.png?v=4" />
-    <link rel="shortcut icon" href="/favicon.ico?v=4" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=4" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png?v=4" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png?v=4" />
-    <title>Quit Weed with a Cannabis Sobriety Tracker | CannaClear</title>
-    <meta
-      name="description"
-      content="Quit weed with a cannabis sobriety tracker that helps you track sober days, manage cravings, and stay steady through weed withdrawal."
-    />
-    <link rel="canonical" href="https://www.cannaclear.app/" />
-
-    <meta property="og:title" content="Quit Weed with a Cannabis Sobriety Tracker | CannaClear" />
-    <meta
-      property="og:description"
-      content="Track sober days, manage cannabis cravings, and move through weed withdrawal with calm daily structure."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.cannaclear.app/" />
-    <meta property="og:image" content="https://www.cannaclear.app/assets/og-image-v2.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Quit Weed with a Cannabis Sobriety Tracker" />
-    <meta
-      name="twitter:description"
-      content="Track sober days, manage cannabis cravings, and build steady momentum through your cannabis detox."
-    />
-    <meta name="twitter:image" content="https://www.cannaclear.app/assets/og-image-v2.png" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "SoftwareApplication",
-            "name": "CannaClear",
-            "applicationCategory": "HealthApplication",
-            "applicationSubCategory": "Lifestyle",
-            "operatingSystem": "iOS",
-            "description": "CannaClear is a quit weed app and cannabis detox companion for people who want to stop smoking weed, manage cannabis cravings, and track sober-day progress with clear daily structure.",
-            "url": "https://www.cannaclear.app/",
-            "downloadUrl": "https://apps.apple.com/app/cannaclear-quit-weed-reset/id6761284274",
-            "sameAs": [
-              "https://apps.apple.com/app/cannaclear-quit-weed-reset/id6761284274"
-            ],
-            "image": "https://www.cannaclear.app/assets/og-image-v2.png",
-            "screenshot": [
-              "https://www.cannaclear.app/assets/home-dashboard-cannaclear-quit-cannabis-tracker.avif",
-              "https://www.cannaclear.app/assets/progress-insights-cannaclear-cannabis-entwoehnung.avif",
-              "https://www.cannaclear.app/assets/sos-screen-cannaclear-quit-weed-app.avif"
-            ],
-            "offers": {
-              "@type": "Offer",
-              "price": "0",
-              "priceCurrency": "USD"
-            },
-            "featureList": [
-              "Sober day tracker with withdrawal milestone markers",
-              "Daily check-in for mood, sleep and craving intensity",
-              "Craving log with trigger context",
-              "SOS screen with box breathing and grounding tools",
-              "Money saved calculator",
-              "Progress dashboard"
-            ],
-            "publisher": {
-              "@type": "Organization",
-              "name": "CannaClear",
-              "url": "https://www.cannaclear.app/"
-            }
-          },
-          {
-            "@type": "Organization",
-            "name": "CannaClear",
-            "url": "https://www.cannaclear.app/",
-            "logo": "https://www.cannaclear.app/assets/app-icon.avif",
-            "sameAs": [
-              "https://apps.apple.com/app/cannaclear-quit-weed-reset/id6761284274"
-            ]
-          },
-          {
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "What is CannaClear and who is it for?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "CannaClear is an iOS app for people who want to quit weed, reduce cannabis use, or get more structure during a cannabis detox. It combines a sobriety tracker, craving tools, and progress check-ins so recovery feels more visible and less chaotic. It is designed for everyday support, not pressure or shame."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Can a sobriety tracker really help you quit weed?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "A sobriety tracker helps because it turns vague effort into something you can actually see. Tracking sober days, cravings, and routines can make progress feel more real, especially during the hard first weeks. It also helps you notice patterns instead of relying on memory when things feel intense."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What does weed withdrawal usually feel like?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Weed withdrawal often includes poor sleep, irritability, anxiety, cravings, lower appetite, and mood swings. Many people notice the strongest symptoms in the first week, especially around days 3 to 7. The experience can feel intense, but it usually improves with time and consistency."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How long do cannabis cravings usually last?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Cannabis cravings usually come in waves rather than lasting all day at full intensity. A single urge often rises, peaks, and fades within minutes, even if it returns later. Over time, cravings usually become less frequent and easier to manage."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Is stopping weed the same as a cannabis detox?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "People often use the term cannabis detox to describe the first recovery phase after they stop smoking weed. In practice, it usually means getting through withdrawal, rebuilding routines, and allowing the brain and body to rebalance. It is less about a quick cleanse and more about steady recovery."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Can CannaClear support both cutting down and quitting completely?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes. Some people use CannaClear to stop smoking weed completely, while others use it to reduce use first and build more control. The app is meant to support both paths with tracking, structure, and calm daily guidance."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What helps most when cannabis cravings hit?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "The most helpful response is usually immediate and simple: change your environment, breathe slowly, move your body, or delay the urge for a few minutes. Cravings often get stronger when you try to argue with them for too long. A short response plan is usually more effective than relying on willpower alone."
-                }
-              }
-            ]
-          }
-        ]
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quit Weed & Get Your Clarity Back | CannaClear – Cannabis Sobriety Tracker</title>
+<meta name="description" content="CannaClear helps you quit weed with a day-by-day recovery timeline, craving SOS tools, and a sobriety tracker. Start your 3-day free trial on the App Store.">
+<meta name="apple-itunes-app" content="app-id=6761284274">
+<link rel="canonical" href="https://www.cannaclear.app/">
+<meta property="og:title" content="Quit Weed & Get Your Clarity Back | CannaClear">
+<meta property="og:description" content="Track sober days, understand withdrawal day by day, and beat cravings with calm SOS tools.">
+<meta property="og:image" content="https://www.cannaclear.app/assets/og-image-v2.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.cannaclear.app/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Quit Weed with a Cannabis Sobriety Tracker">
+<meta name="twitter:description" content="Track sober days, manage cannabis cravings, and build steady momentum through your cannabis detox.">
+<meta name="twitter:image" content="https://www.cannaclear.app/assets/og-image-v2.png">
+<link rel="icon" href="/assets/new/app-icon.webp">
+<link rel="shortcut icon" href="/favicon.ico?v=4">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=4">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png?v=4">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png?v=4">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "CannaClear",
+      "applicationCategory": "HealthApplication",
+      "applicationSubCategory": "Lifestyle",
+      "operatingSystem": "iOS",
+      "description": "CannaClear is a quit weed app and cannabis detox companion for people who want to stop smoking weed, manage cannabis cravings, and track sober-day progress with clear daily structure.",
+      "url": "https://www.cannaclear.app/",
+      "downloadUrl": "https://apps.apple.com/app/cannaclear-quit-weed-reset/id6761284274",
+      "sameAs": [
+        "https://apps.apple.com/app/cannaclear-quit-weed-reset/id6761284274"
+      ],
+      "image": "https://www.cannaclear.app/assets/og-image-v2.png",
+      "screenshot": [
+        "https://www.cannaclear.app/assets/home-dashboard-cannaclear-quit-cannabis-tracker.avif",
+        "https://www.cannaclear.app/assets/progress-insights-cannaclear-cannabis-entwoehnung.avif",
+        "https://www.cannaclear.app/assets/sos-screen-cannaclear-quit-weed-app.avif"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Sober day tracker with withdrawal milestone markers",
+        "Daily check-in for mood, sleep and craving intensity",
+        "Craving log with trigger context",
+        "SOS screen with box breathing and grounding tools",
+        "Money saved calculator",
+        "Progress dashboard"
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "CannaClear",
+        "url": "https://www.cannaclear.app/"
       }
-    </script>
-    <link rel="preload" as="image" href="/assets/app-icon.avif?v=1" fetchpriority="high" />
-    <link rel="stylesheet" href="/styles.css?v=8" />
-  </head>
-  <body>
-    <div class="page-shell">
-      <header class="hero hero-home">
-        <div class="hero-copy">
-          <div class="brand-row">
-            <img class="brand-icon" src="/assets/app-icon.avif?v=1" alt="CannaClear icon" width="84" height="84" decoding="async" fetchpriority="high" />
-            <div>
-              <p class="eyebrow">CannaClear</p>
-              <h1>Quit Weed with a Cannabis Sobriety Tracker That Helps</h1>
-            </div>
-          </div>
-          <h2 class="lede">Stop smoking cannabis and get your clarity back with calm daily support.</h2>
-          <div class="hero-actions">
-            <div class="hero-primary-cta">
-              <div class="app-store-wrap" aria-label="Download CannaClear on the App Store">
-                <a class="app-store-button" href="/download" aria-label="Download CannaClear on the App Store">
-                  <img class="app-store-badge" src="/assets/download-on-the-app-store.svg" alt="Download on the App Store" width="204" height="68" decoding="async" />
-                </a>
-              </div>
-              <a class="hero-signup-button" href="https://signup.cat/IjDRyjvFQzyOxAiK/" target="_blank" rel="noopener" aria-label="Start Free Today">
-                <span class="hero-signup-button__label">Start Free Today!</span>
-                <span class="hero-signup-button__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M5 12h14"></path>
-                    <path d="M13 5l7 7-7 7"></path>
-                  </svg>
-                </span>
-              </a>
-            </div>
-            <div class="hero-trust" aria-label="Five star trust badge">
-              <div class="hero-trust__seal">
-                <div class="hero-trust__stars" aria-label="Five star visual trust element" role="img">
-                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                </div>
-                <p class="hero-trust__title">Top-rated</p>
-                <p class="hero-trust__text">Cannabis recovery support</p>
-              </div>
-            </div>
-            <div class="hero-badges">
-              <a class="rankinpublic-badge rankinpublic-badge--compact" href="https://fazier.com/launches/www.cannaclear.app" target="_blank" rel="noopener">
-                <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=neutral" alt="Fazier badge" width="120" decoding="async" />
-              </a>
-              <a class="rankinpublic-badge rankinpublic-badge--rankin" href="https://rankinpublic.xyz/products/www.cannaclear.app" target="_blank" rel="noopener">
-                <img src="https://rankinpublic.xyz/api/badges/badge-featured.png?site=www.cannaclear.app" alt="Featured on RankInPublic" title="Featured on RankInPublic" width="250" height="80" decoding="async" />
-              </a>
-              <a class="rankinpublic-badge" href="https://fazier.com/launches/www.cannaclear.app" target="_blank" rel="noopener">
-                <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&theme=dark" alt="Fazier badge" width="250" decoding="async" />
-              </a>
-            </div>
-          </div>
+    },
+    {
+      "@type": "Organization",
+      "name": "CannaClear",
+      "url": "https://www.cannaclear.app/",
+      "logo": "https://www.cannaclear.app/assets/app-icon.avif",
+      "sameAs": [
+        "https://apps.apple.com/app/cannaclear-quit-weed-reset/id6761284274"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is CannaClear and who is it for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CannaClear is an iOS app for people who want to quit weed, reduce cannabis use, or get more structure during a cannabis detox. It combines a sobriety tracker, craving tools, and progress check-ins so recovery feels more visible and less chaotic. It is designed for everyday support, not pressure or shame."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a sobriety tracker really help you quit weed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A sobriety tracker helps because it turns vague effort into something you can actually see. Tracking sober days, cravings, and routines can make progress feel more real, especially during the hard first weeks. It also helps you notice patterns instead of relying on memory when things feel intense."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does weed withdrawal usually feel like?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Weed withdrawal often includes poor sleep, irritability, anxiety, cravings, lower appetite, and mood swings. Many people notice the strongest symptoms in the first week, especially around days 3 to 7. The experience can feel intense, but it usually improves with time and consistency."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long do cannabis cravings usually last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cannabis cravings usually come in waves rather than lasting all day at full intensity. A single urge often rises, peaks, and fades within minutes, even if it returns later. Over time, cravings usually become less frequent and easier to manage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is stopping weed the same as a cannabis detox?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "People often use the term cannabis detox to describe the first recovery phase after they stop smoking weed. In practice, it usually means getting through withdrawal, rebuilding routines, and allowing the brain and body to rebalance. It is less about a quick cleanse and more about steady recovery."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can CannaClear support both cutting down and quitting completely?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Some people use CannaClear to stop smoking weed completely, while others use it to reduce use first and build more control. The app is meant to support both paths with tracking, structure, and calm daily guidance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What helps most when cannabis cravings hit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The most helpful response is usually immediate and simple: change your environment, breathe slowly, move your body, or delay the urge for a few minutes. Cravings often get stronger when you try to argue with them for too long. A short response plan is usually more effective than relying on willpower alone."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+@font-face{
+  font-family:'SF Pro Rounded';
+  src:url(/assets/new/sf-pro-rounded-semibold.woff2) format('woff2');
+  font-weight:600;font-style:normal;font-display:swap;
+}
+:root{
+  --ink:#0E3A44;          /* deep teal text */
+  --ink-soft:#3E6570;     /* secondary text */
+  --teal:#178796;         /* primary brand teal (app buttons) */
+  --teal-deep:#0F6D7B;
+  --ice:#E8F6F9;          /* icy mint app background */
+  --mint:#D9F0EE;
+  --paper:#F7FBFC;
+  --peach:#FCEEEA;        /* SOS warmth */
+  --gold:#E0AE45;         /* icon sparkle */
+  --gold-soft:#F7E9C8;
+  --line:rgba(14,58,68,.13);
+  --shadow:0 24px 60px -24px rgba(14,58,68,.30);
+  --radius:22px;
+  --display:'SF Pro Rounded',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+  --body:-apple-system,BlinkMacSystemFont,'SF Pro Text','Segoe UI',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.6;font-size:16.5px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.1;letter-spacing:-.01em}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:var(--body);font-size:.72rem;letter-spacing:.17em;text-transform:uppercase;color:var(--teal-deep);display:inline-flex;align-items:center;gap:.6rem;font-weight:600}
+.eyebrow::before{content:"✦";color:var(--gold);font-size:.8rem;letter-spacing:0}
+.section{padding:104px 0}
+@media(max-width:760px){.section{padding:72px 0}body{font-size:15.5px}}
 
-          <section class="mockup-showcase" aria-label="App preview mockups">
-            <p class="mockup-copy">
-              CannaClear is a quit weed app and cannabis detox companion for people who want to stop smoking weed, manage cannabis cravings, and track sober-day progress with clear daily structure.
-            </p>
-            <div class="mockup-carousel" data-mockup-carousel>
-              <div class="mockup-stack" data-mockup-track>
-                <figure class="mockup-phone mockup-phone--left">
-                  <img src="/assets/home-dashboard-cannaclear-quit-cannabis-tracker.avif" alt="CannaClear dashboard showing sober days tracker and money saved since quitting weed." title="CannaClear dashboard showing sober days and money saved" loading="lazy" decoding="async" fetchpriority="low" width="886" height="1920" />
-                </figure>
-                <figure class="mockup-phone mockup-phone--center">
-                  <img src="/assets/progress-insights-cannaclear-cannabis-entwoehnung.avif" alt="CannaClear progress screen showing weed withdrawal milestones, mood trends, craving insights, and trigger patterns over time." title="CannaClear progress insights for weed withdrawal and triggers" loading="lazy" decoding="async" fetchpriority="low" width="886" height="1920" />
-                </figure>
-                <figure class="mockup-phone mockup-phone--right">
-                  <img src="/assets/sos-screen-cannaclear-quit-weed-app.avif" alt="CannaClear SOS screen with box breathing, craving support tips, and quick actions to avoid weed relapse." title="CannaClear SOS screen for cannabis craving support" loading="lazy" decoding="async" fetchpriority="low" width="886" height="1920" />
-                </figure>
-              </div>
-              <div class="mockup-dots" data-mockup-dots aria-label="Mockup slider controls">
-                <button class="mockup-dot is-active" type="button" data-slide="0" aria-label="Show Home mockup"></button>
-                <button class="mockup-dot" type="button" data-slide="1" aria-label="Show Progress mockup"></button>
-                <button class="mockup-dot" type="button" data-slide="2" aria-label="Show SOS mockup"></button>
-              </div>
-            </div>
-            <p class="mockup-copy mockup-copy--small">
-              Built for controlled reduction or a full cannabis exit: breathing and mindfulness SOS tools, craving guidance, and a progress tracker for weed withdrawal, relapse prevention, and money saved.
-            </p>
-          </section>
-        </div>
-      </header>
+/* ---------- nav ---------- */
+.nav{position:sticky;top:0;z-index:60;background:rgba(247,251,252,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{display:flex;align-items:center;gap:.65rem;font-family:var(--display);font-weight:600;font-size:1.18rem;text-decoration:none}
+.brand img{width:36px;height:36px;border-radius:9px;box-shadow:0 4px 12px rgba(14,58,68,.22)}
+.nav-links{display:flex;gap:1.8rem;font-size:.92rem;font-weight:500}
+.nav-links a{text-decoration:none;color:var(--ink);opacity:.78;transition:opacity .2s}
+.nav-links a:hover{opacity:1}
+@media(max-width:860px){.nav-links{display:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-family:var(--display);font-weight:600;text-decoration:none;border-radius:999px;transition:transform .18s ease,box-shadow .18s ease,background .18s;cursor:pointer;border:none}
+.btn:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.btn-primary{background:var(--teal);color:#fff;padding:.95rem 1.7rem;font-size:1rem;box-shadow:0 14px 32px -14px rgba(23,135,150,.6)}
+.btn-primary:hover{transform:translateY(-2px);background:var(--teal-deep);box-shadow:0 20px 40px -14px rgba(23,135,150,.65)}
+.btn-nav{padding:.6rem 1.25rem;font-size:.9rem}
+.btn-ghost{background:transparent;color:var(--teal-deep);padding:.95rem 1.4rem;font-size:1rem;border:1.5px solid var(--line)}
+.btn-ghost:hover{border-color:var(--teal);transform:translateY(-2px)}
+.store-badge{height:52px;width:auto;display:block;transition:transform .18s ease}
+a:hover>.store-badge{transform:translateY(-2px)}
+.store-badge.sm{height:44px}
 
-      <main class="landing-stack">
-        <section class="content-card landing-section">
-          <h2>Take back control of your life.</h2>
-          <p class="landing-copy">
-            Track your progress, stay motivated, and finally quit weed for
-            good.
-          </p>
-        </section>
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(1100px 560px at 80% -12%, var(--ice) 0%, transparent 62%),
+  radial-gradient(820px 520px at -12% 34%, #EAF7F4 0%, transparent 58%),
+  var(--paper)}
+.hero-in{display:grid;grid-template-columns:1.02fr .98fr;gap:48px;align-items:center;padding:84px 0 96px}
+@media(max-width:940px){.hero-in{grid-template-columns:1fr;padding:56px 0 72px;gap:44px}}
+.hero h1{font-size:clamp(2.5rem,5.4vw,4.1rem);margin:1.1rem 0 1.25rem}
+.clarity{position:relative;display:inline-block;color:var(--teal)}
+.clarity .w{display:inline-block;filter:blur(9px);opacity:.5;animation:unfog 2.1s cubic-bezier(.2,.7,.2,1) .35s forwards}
+.clarity .sp{position:absolute;top:-.42em;right:-.5em;font-size:.5em;color:var(--gold);opacity:0;animation:spark .8s ease 1.9s forwards}
+@keyframes unfog{to{filter:blur(0);opacity:1}}
+@keyframes spark{to{opacity:1;transform:rotate(14deg)}}
+.hero p.lead{font-size:1.15rem;color:var(--ink-soft);max-width:33rem;margin-bottom:1.9rem}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+.trial-note{font-size:.82rem;color:#557983;margin-top:1rem;font-weight:500}
+.hero-proof{display:flex;gap:1.6rem;flex-wrap:wrap;margin-top:2.3rem;padding-top:1.6rem;border-top:1px solid var(--line)}
+.proof-item{font-size:.86rem;color:var(--ink-soft);display:flex;align-items:center;gap:.5rem;font-weight:500}
+.proof-item svg{width:17px;height:17px;flex:none;stroke:var(--teal-deep)}
+.hero-trust-stack{display:grid;gap:1rem;margin-top:1.4rem}
+.hero-trust-seal{display:inline-flex;align-items:center;gap:.9rem;width:fit-content;padding:1rem 1.15rem;border-radius:20px;background:rgba(255,255,255,.88);border:1px solid var(--line);box-shadow:0 18px 40px -24px rgba(14,58,68,.28)}
+.hero-trust-stars{display:flex;gap:.22rem;color:var(--gold);font-size:1rem;line-height:1}
+.hero-trust-copy{display:grid;gap:.12rem}
+.hero-trust-copy strong{font-family:var(--display);font-size:1rem;color:var(--ink)}
+.hero-trust-copy span{font-size:.86rem;color:var(--ink-soft)}
+.hero-badges{display:flex;flex-wrap:wrap;gap:1rem;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;justify-content:center;min-height:60px;padding:.3rem 0}
+.hero-badge img{display:block;width:auto;max-height:60px}
+.hero-badge--fazier-compact img{max-height:60px}
+.hero-badge--rankin img{max-height:60px}
+@media(max-width:760px){
+  .hero-trust-seal{width:100%}
+  .hero-badges{justify-content:flex-start}
+}
 
-        <section class="content-card landing-section">
-          <h2>Why quitting weed is so difficult</h2>
-          <p class="landing-copy">
-            Most people fail to quit cannabis because they rely on willpower
-            alone. Without tracking progress or seeing real improvement,
-            motivation quickly fades. CannaClear changes that.
-          </p>
-        </section>
+/* phones */
+.phone-stage{position:relative;display:flex;justify-content:center;align-items:center;min-height:520px}
+.ph{filter:drop-shadow(0 34px 50px rgba(14,58,68,.3))}
+.ph-front{width:min(300px,66vw);position:relative;z-index:2}
+.ph-back{width:min(250px,50vw);position:absolute;z-index:1;right:max(-8px,3%);top:6%;transform:rotate(7deg);opacity:.94;filter:drop-shadow(0 26px 40px rgba(14,58,68,.22))}
+@media(max-width:520px){.ph-back{display:none}.phone-stage{min-height:auto}}
+.float-card{position:absolute;background:#fff;border:1px solid var(--line);border-radius:16px;padding:.8rem 1rem;box-shadow:0 18px 40px -18px rgba(14,58,68,.32);z-index:3;font-size:.82rem;color:var(--ink-soft)}
+.float-card .n{font-family:var(--display);font-weight:600;font-size:1.2rem;color:var(--teal-deep);display:block;line-height:1.2}
+.fc-days{top:10%;left:0;animation:drift 7s ease-in-out infinite}
+.fc-money{bottom:10%;left:6%;animation:drift 7s ease-in-out 1.4s infinite}
+.fc-money .n{color:var(--gold)}
+@keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
 
-        <section class="content-card landing-section">
-          <h2>How CannaClear helps you quit weed</h2>
-          <p class="landing-copy">
-            CannaClear helps you reduce or quit cannabis with more clarity,
-            structure, and support.
-          </p>
-          <p class="landing-copy">
-            Track your daily check-ins, understand your triggers, and see your
-            progress over time. When cravings hit, use calming SOS tools like
-            box breathing, grounding prompts, and simple next steps that help
-            you stay in control.
-          </p>
-          <p class="landing-copy">
-            CannaClear is designed to feel supportive, not judgmental. Whether
-            you want a short reset, a 30-day break, or a long-term change, the
-            app helps you build momentum one day at a time.
-          </p>
-          <ul class="feature-list">
-            <li>use a sobriety tracker to keep your streak visible</li>
-            <li>reset your habits with structured daily momentum</li>
-            <li>stop smoking weed with calm support during cravings</li>
-          </ul>
-        </section>
+/* ---------- loop strip (splash gradient) ---------- */
+.loop{background:linear-gradient(160deg,#14657F 0%,#1B7A90 55%,#2E96A4 100%);color:#EAF7F6;padding:84px 0;position:relative;overflow:hidden}
+.loop::after{content:"";position:absolute;right:-140px;bottom:-180px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(168,234,217,.28),transparent 70%)}
+.loop .wrap{position:relative;z-index:1}
+.loop h2{font-size:clamp(1.7rem,3.4vw,2.5rem);max-width:22ch}
+.loop-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:52px;align-items:center}
+@media(max-width:860px){.loop-grid{grid-template-columns:1fr;gap:34px}}
+.loop p{color:#C4E4E2;margin-top:1.1rem;max-width:34rem}
+.loop-list{display:grid;gap:.9rem}
+.loop-item{display:flex;gap:.9rem;align-items:flex-start;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:1rem 1.15rem;font-size:.95rem;backdrop-filter:blur(4px)}
+.loop-item strong{display:block;font-family:var(--display);font-weight:600;color:#fff;margin-bottom:.15rem}
+.loop-item span{color:#BCDEDC;font-size:.88rem}
+.loop-item .dot{width:9px;height:9px;border-radius:50%;background:#A8EAD9;margin-top:.5rem;flex:none}
+.loop .eyebrow{color:#A8EAD9}.loop .eyebrow::before{color:var(--gold-soft)}
 
-        <section class="content-card landing-section cta-conversion" aria-label="Primary conversion call to action">
-          <div class="cta-conversion__left">
-            <p class="cta-conversion__eyebrow">Start today</p>
-            <h2>Start your cannabis detox with a system that actually helps</h2>
-            <p class="landing-copy">
-              Stop smoking weed with calm, daily structure. Track sober days, manage cravings, and stay consistent one day at a time.
-            </p>
-            <ul class="feature-list cta-conversion__bullets">
-              <li>Track sober days and money saved</li>
-              <li>Use SOS tools when cravings hit</li>
-              <li>Start directly via the App Store</li>
-            </ul>
-          </div>
-          <div class="cta-conversion__right">
-            <div class="cta-conversion__proof">Available now on the App Store</div>
-            <a class="cta-conversion__button" href="/download">Download now</a>
-            <div class="app-store-wrap cta-conversion__store" aria-label="Download CannaClear on the App Store">
-              <a class="app-store-button" href="/download" aria-label="Download CannaClear on the App Store">
-                <img class="app-store-badge" src="/assets/download-on-the-app-store.svg" alt="Download on the App Store" width="204" height="68" decoding="async" />
-              </a>
-            </div>
-            <p class="cta-conversion__fineprint">Direct App Store download.</p>
-          </div>
-        </section>
+/* ---------- timeline (signature) ---------- */
+.timeline .head{max-width:44rem;margin-bottom:3rem}
+.timeline h2{font-size:clamp(1.9rem,3.8vw,2.8rem);margin:.9rem 0 1rem}
+.timeline .head p{color:var(--ink-soft)}
+.tl-card{background:#fff;border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);overflow:hidden}
+.tl-top{display:grid;grid-template-columns:220px 1fr;min-height:270px}
+@media(max-width:760px){.tl-top{grid-template-columns:1fr}}
+.tl-day{background:var(--ice);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:2rem;border-right:1px solid var(--line)}
+@media(max-width:760px){.tl-day{border-right:none;border-bottom:1px solid var(--line);padding:1.4rem}}
+.tl-day .lbl{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:#557983;font-weight:600}
+.tl-day .num{font-family:var(--display);font-weight:600;font-size:4.6rem;line-height:1.05;color:var(--teal)}
+.tl-body{position:relative;padding:2.2rem 2.4rem}
+@media(max-width:760px){.tl-body{padding:1.6rem 1.4rem}}
+.tl-body h3{font-size:1.45rem;margin-bottom:.7rem}
+.tl-body p{color:var(--ink-soft);max-width:38rem}
+.tl-tags{display:flex;gap:.55rem;flex-wrap:wrap;margin-top:1.2rem}
+.tl-tag{font-size:.76rem;font-weight:600;letter-spacing:.02em;padding:.4rem .8rem;border-radius:999px;border:1px solid var(--line);background:var(--paper);color:var(--teal-deep)}
+.tl-fog{position:absolute;inset:0;background:linear-gradient(100deg,rgba(232,246,249,.94),rgba(232,246,249,.55));backdrop-filter:blur(7px);pointer-events:none;transition:opacity .5s ease}
+.tl-slider{padding:1.7rem 2.4rem 2.1rem;border-top:1px solid var(--line);background:var(--paper)}
+@media(max-width:760px){.tl-slider{padding:1.3rem 1.4rem 1.6rem}}
+.tl-slider label{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#557983;font-weight:600;display:block;margin-bottom:.9rem}
+input[type=range]{width:100%;appearance:none;-webkit-appearance:none;height:6px;border-radius:99px;background:linear-gradient(90deg,var(--teal) var(--fill,0%),#D3E8EC var(--fill,0%));cursor:pointer}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:26px;height:26px;border-radius:50%;background:var(--teal);border:4px solid #fff;box-shadow:0 4px 14px rgba(14,58,68,.35)}
+input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:var(--teal);border:4px solid #fff;box-shadow:0 4px 14px rgba(14,58,68,.35)}
+input[type=range]:focus-visible{outline:3px solid var(--teal);outline-offset:4px}
+.tl-scale{display:flex;justify-content:space-between;font-size:.72rem;font-weight:600;color:#6E909A;margin-top:.6rem}
+.tl-note{font-size:.82rem;color:#5E828C;margin-top:2.2rem;max-width:44rem}
 
-        <section id="early-access" class="content-card newsletter-box" aria-label="Newsletter signup">
-          <h3>Sign up for updates and extra reset support</h3>
-          <p>Get practical reset tips, new feature updates, and important CannaClear news.</p>
-          <form class="newsletter-form" data-newsletter-form>
-            <label class="sr-only" for="newsletter-email-home">Email address</label>
-            <input id="newsletter-email-home" name="email" type="email" inputmode="email" autocomplete="email" placeholder="Enter your email" required />
-            <div class="newsletter-consent">
-              <input id="consent-home" name="consent" type="checkbox" required />
-              <label for="consent-home">
-                I agree to receive CannaClear news and reset support emails and accept the
-                <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
-              </label>
-            </div>
-            <div data-turnstile-container></div>
-            <input name="sourcePath" type="hidden" value="/" />
-            <button type="submit">Get app news & reset tips</button>
-            <p class="newsletter-feedback" data-newsletter-feedback></p>
-          </form>
-        </section>
+/* ---------- features ---------- */
+.features{background:linear-gradient(180deg,var(--paper),var(--ice) 60%,var(--paper))}
+.feat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:3rem}
+@media(max-width:820px){.feat-grid{grid-template-columns:1fr}}
+.feat{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.9rem;transition:transform .22s ease,box-shadow .22s ease}
+.feat:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.feat .ico{width:46px;height:46px;border-radius:14px;background:var(--ice);display:flex;align-items:center;justify-content:center;margin-bottom:1.1rem}
+.feat.sos-card .ico{background:var(--peach)}
+.feat .ico svg{width:23px;height:23px;stroke:var(--teal-deep)}
+.feat.sos-card .ico svg{stroke:#D96A4E}
+.feat h3{font-size:1.22rem;margin-bottom:.5rem}
+.feat p{font-size:.94rem;color:var(--ink-soft)}
+.feat-screens{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:3.6rem;align-items:end}
+@media(max-width:940px){.feat-screens{grid-template-columns:repeat(2,1fr);max-width:560px;margin-left:auto;margin-right:auto}}
+.feat-screens figure{text-align:center}
+.feat-screens img{filter:drop-shadow(0 22px 34px rgba(14,58,68,.24));transition:transform .25s ease}
+.feat-screens figure:hover img{transform:translateY(-6px)}
+.feat-screens figcaption{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#557983;font-weight:600;padding-top:1rem}
 
-        <section class="content-card landing-section faq-home" aria-labelledby="homepage-faq-title">
-          <div class="faq-home__intro">
-            <p class="faq-home__eyebrow">FAQs</p>
-            <h2 id="homepage-faq-title">Frequently asked questions</h2>
-            <p class="faq-home__lead">Clear answers about quit weed support, cannabis detox, weed withdrawal, and cannabis cravings in one place.</p>
-          </div>
-          <div class="faq-home__grid">
-            <article class="faq-home__item">
-              <div class="faq-home__content">
-                <h3>What is CannaClear and who is it for?</h3>
-                <p>CannaClear is an iOS app for people who want to quit weed, reduce cannabis use, or get more structure during a cannabis detox. It combines a sobriety tracker, craving tools, and progress check-ins so recovery feels more visible and less chaotic. It is designed for everyday support, not pressure or shame.</p>
-              </div>
-            </article>
-            <article class="faq-home__item">
-              <div class="faq-home__content">
-                <h3>Can a sobriety tracker really help you quit weed?</h3>
-                <p>A sobriety tracker helps because it turns vague effort into something you can actually see. Tracking sober days, cravings, and routines can make progress feel more real, especially during the hard first weeks. It also helps you notice patterns instead of relying on memory when things feel intense.</p>
-              </div>
-            </article>
-            <article class="faq-home__item">
-              <div class="faq-home__content">
-                <h3>What does weed withdrawal usually feel like?</h3>
-                <p>Weed withdrawal often includes poor sleep, irritability, anxiety, cravings, lower appetite, and mood swings. Many people notice the strongest symptoms in the first week, especially around days 3 to 7. The experience can feel intense, but it usually improves with time and consistency.</p>
-              </div>
-            </article>
-            <article class="faq-home__item">
-              <div class="faq-home__content">
-                <h3>How long do cannabis cravings usually last?</h3>
-                <p>Cannabis cravings usually come in waves rather than lasting all day at full intensity. A single urge often rises, peaks, and fades within minutes, even if it returns later. Over time, cravings usually become less frequent and easier to manage.</p>
-              </div>
-            </article>
-            <article class="faq-home__item">
-              <div class="faq-home__content">
-                <h3>Is stopping weed the same as a cannabis detox?</h3>
-                <p>People often use the term cannabis detox to describe the first recovery phase after they stop smoking weed. In practice, it usually means getting through withdrawal, rebuilding routines, and allowing the brain and body to rebalance. It is less about a quick cleanse and more about steady recovery.</p>
-              </div>
-            </article>
-            <article class="faq-home__item">
-              <div class="faq-home__content">
-                <h3>Can CannaClear support both cutting down and quitting completely?</h3>
-                <p>Yes. Some people use CannaClear to stop smoking weed completely, while others use it to reduce use first and build more control. The app is meant to support both paths with tracking, structure, and calm daily guidance.</p>
-              </div>
-            </article>
-            <article class="faq-home__item">
-              <div class="faq-home__content">
-                <h3>What helps most when cannabis cravings hit?</h3>
-                <p>The most helpful response is usually immediate and simple: change your environment, breathe slowly, move your body, or delay the urge for a few minutes. Cravings often get stronger when you try to argue with them for too long. A short response plan is usually more effective than relying on willpower alone.</p>
-              </div>
-            </article>
-          </div>
-        </section>
+/* ---------- sos split ---------- */
+.sos-split{background:var(--peach)}
+.sos-grid{display:grid;grid-template-columns:1fr .9fr;gap:56px;align-items:center}
+@media(max-width:860px){.sos-grid{grid-template-columns:1fr;gap:36px}}
+.sos-split h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin:.9rem 0 1rem}
+.sos-split .eyebrow{color:#C05A40}.sos-split .eyebrow::before{color:#C05A40}
+.sos-split p{color:#6B5049;max-width:32rem}
+.sos-steps{margin-top:1.6rem;display:grid;gap:.8rem}
+.sos-step{display:flex;gap:.85rem;align-items:flex-start;font-size:.94rem;color:#5C443D}
+.sos-step b{font-family:var(--display);color:var(--ink)}
+.sos-step .tick{width:22px;height:22px;border-radius:50%;background:#fff;color:var(--teal-deep);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;flex:none;margin-top:.15rem;box-shadow:0 2px 8px rgba(14,58,68,.14)}
+.sos-phone{display:flex;justify-content:center}
+.sos-phone img{width:min(300px,72vw);filter:drop-shadow(0 30px 44px rgba(120,60,40,.28))}
 
-        <section class="content-card learn-more">
-          <h2>Learn more</h2>
-          <div class="related-links related-grid">
-            <a href="/quit-weed">How to Quit Weed</a>
-            <a href="/weed-detox">Weed Detox</a>
-            <a href="/stop-smoking-weed">Stop Smoking Weed</a>
-            <a href="/quit-weed-app">Quit Weed App</a>
-            <a href="/weed-withdrawal">Weed Withdrawal</a>
-            <a href="/how-to-quit-weed">How to Quit Weed (Guide)</a>
-            <a href="/weed-addiction">Weed Addiction</a>
-            <a href="/quit-weed-timeline">Quit Weed Timeline</a>
-            <a href="/best-quit-weed-app">Best Quit Weed App</a>
-            <a href="/cannabis-reduction-step-by-step">Cannabis Reduction Step by Step</a>
-            <a href="/understanding-cannabis-cravings">Understanding Cannabis Cravings</a>
-            <a href="/preventing-cannabis-relapse">Preventing Cannabis Relapse</a>
-            <a href="/stop-cannabis-use-daily-life">Stopping Cannabis Use in Daily Life</a>
-            <a href="/30-days-without-cannabis">30 Days Without Cannabis</a>
-            <a href="/how-quit-weed-app-helps">How a Quit-Weed App Helps</a>
-            <a href="/weed-withdrawal-symptoms">Weed Withdrawal Symptoms Guide</a>
-            <a href="/how-to-stop-smoking-weed-permanently">Stop Smoking Weed Permanently</a>
-            <a href="/weed-brain-recovery">Weed Brain Recovery</a>
-            <a href="/benefits-of-quitting-weed-timeline">Benefits of Quitting Weed Timeline</a>
-            <a href="/why-you-feel-worse-after-quitting-weed">Why You Feel Worse After Quitting Weed</a>
-            <a href="/how-to-deal-with-weed-cravings-at-night">Deal With Weed Cravings at Night</a>
-            <a href="/download">Download on the App Store</a>
-          </div>
-        </section>
+/* ---------- calculator ---------- */
+.calc-card{background:linear-gradient(150deg,#14657F,#1F8296 70%,#2E96A4);color:#EAF7F6;border-radius:30px;padding:3.2rem;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.calc-card::after{content:"";position:absolute;left:-120px;top:-160px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(168,234,217,.25),transparent 70%)}
+.calc-card>*{position:relative;z-index:1}
+@media(max-width:860px){.calc-card{grid-template-columns:1fr;padding:2.1rem 1.5rem;gap:32px}}
+.calc-card h2{font-size:clamp(1.7rem,3.2vw,2.4rem);margin:.9rem 0 .9rem}
+.calc-card .eyebrow{color:var(--gold-soft)}.calc-card .eyebrow::before{color:var(--gold-soft)}
+.calc-card p{color:#C4E4E2;max-width:30rem}
+.calc-panel{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);border-radius:22px;padding:1.8rem;backdrop-filter:blur(4px)}
+.calc-panel label{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#BCE2DE;font-weight:600;display:flex;justify-content:space-between;margin-bottom:1rem}
+.calc-panel label output{color:#fff;font-size:.9rem;font-family:var(--display)}
+.calc-panel input[type=range]{background:linear-gradient(90deg,#F0D9A6 var(--fill,35%),rgba(255,255,255,.22) var(--fill,35%))}
+.calc-panel input[type=range]::-webkit-slider-thumb{background:#F0D9A6;border-color:#14657F}
+.calc-panel input[type=range]::-moz-range-thumb{background:#F0D9A6;border-color:#14657F}
+.calc-out{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:1.7rem}
+.calc-box{background:rgba(9,52,66,.35);border-radius:16px;padding:1.05rem 1.1rem}
+.calc-box .v{font-family:var(--display);font-weight:600;font-size:1.5rem;color:#F5DFA9;display:block;line-height:1.25}
+.calc-box .l{font-size:.76rem;color:#BCE2DE}
+.calc-cta{margin-top:1.6rem;font-size:.85rem;color:#D6EEEA}
 
-        <footer class="landing-footer">
-          <a href="/support">Support</a>
-          <a href="/privacy">Privacy</a>
-          <a href="/terms">Terms</a>
-          <a href="/legal-notice">Legal Notice</a>
-        </footer>
-      </main>
+/* ---------- pricing ---------- */
+.pricing .head{max-width:40rem;margin:0 auto 3rem;text-align:center}
+.pricing h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin:.9rem 0 .8rem}
+.pricing .head p{color:var(--ink-soft)}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:960px;margin:0 auto}
+@media(max-width:860px){.price-grid{grid-template-columns:1fr;max-width:420px}}
+.price{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.9rem;display:flex;flex-direction:column;position:relative}
+.price.hot{border:2px solid var(--teal);box-shadow:var(--shadow)}
+.price .tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--teal);color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:.35rem .85rem;border-radius:99px;white-space:nowrap}
+.price h3{font-size:1.05rem}
+.price .amt{font-family:var(--display);font-weight:600;font-size:2.3rem;margin:.7rem 0 .1rem}
+.price .per{font-size:.82rem;color:#5E828C;margin-bottom:1.1rem}
+.price ul{list-style:none;display:grid;gap:.55rem;font-size:.88rem;color:var(--ink-soft);margin-bottom:1.5rem}
+.price li{display:flex;gap:.5rem;align-items:flex-start}
+.price li::before{content:"✓";color:var(--teal);font-weight:700;flex:none}
+.price .btn{margin-top:auto}
+.price-note{text-align:center;font-size:.8rem;color:#5E828C;margin-top:1.6rem}
+
+/* ---------- faq ---------- */
+.faq{background:var(--ice)}
+.faq-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
+@media(max-width:860px){.faq-grid{grid-template-columns:1fr;gap:30px}}
+.faq h2{font-size:clamp(1.9rem,3.6vw,2.6rem);margin:.9rem 0 .9rem}
+.faq .side p{color:var(--ink-soft);max-width:26rem}
+details{background:#fff;border:1px solid var(--line);border-radius:18px;margin-bottom:12px;overflow:hidden}
+summary{cursor:pointer;list-style:none;padding:1.15rem 1.3rem;font-family:var(--display);font-weight:600;font-size:.98rem;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--display);font-size:1.3rem;color:var(--teal);transition:transform .25s;flex:none}
+details[open] summary::after{transform:rotate(45deg)}
+details .a{padding:0 1.3rem 1.2rem;font-size:.92rem;color:var(--ink-soft)}
+
+/* ---------- final cta ---------- */
+.final{background:linear-gradient(170deg,#0F5A72 0%,#1B7A90 45%,#54AFAE 85%,#A8EAD9 130%);color:#fff;text-align:center;padding:110px 0;position:relative;overflow:hidden}
+.final::before{content:"✦";position:absolute;top:14%;right:16%;color:rgba(247,233,200,.85);font-size:1.6rem;animation:drift 6s ease-in-out infinite}
+.final::after{content:"✦";position:absolute;top:26%;right:13%;color:rgba(247,233,200,.55);font-size:.9rem;animation:drift 6s ease-in-out 1s infinite}
+.final .wrap{position:relative}
+.final h2{font-size:clamp(2rem,4.6vw,3.3rem);max-width:20ch;margin:0 auto 1.1rem}
+.final p{color:#D6EEEA;max-width:32rem;margin:0 auto 2.2rem}
+.final .trial-note{color:#C4E4E2}
+.final .store-badge{margin:0 auto}
+
+/* ---------- footer ---------- */
+footer{background:#0C3540;color:#8FB6BC;padding:56px 0 40px;font-size:.85rem}
+.foot-grid{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;margin-bottom:2.2rem}
+.foot-links{display:flex;gap:1.6rem;flex-wrap:wrap}
+footer a{text-decoration:none;color:#BCDEDC}
+footer a:hover{color:#fff}
+.foot-legal{font-size:.76rem;color:#6E97A0;max-width:52rem}
+
+/* ---------- sticky mobile cta ---------- */
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:70;padding:.7rem 1rem calc(.7rem + env(safe-area-inset-bottom));background:rgba(247,251,252,.94);backdrop-filter:blur(12px);border-top:1px solid var(--line);display:none}
+.sticky-cta .btn{width:100%}
+@media(max-width:760px){.sticky-cta{display:block}body{padding-bottom:78px}}
+
+/* reveal on scroll */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+  .clarity .w{filter:none;opacity:1}
+  .clarity .sp{opacity:1}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/">
+      <img src="/assets/new/app-icon.webp" alt="CannaClear app icon" width="36" height="36">
+      CannaClear
+    </a>
+    <div class="nav-links">
+      <a href="#timeline">Recovery timeline</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
     </div>
-    <script defer src="/_vercel/insights/script.js"></script>
-    <script defer src="/_vercel/speed-insights/script.js"></script>
-    <script src="/assets/newsletter.js" defer></script>
-  </body>
+    <a class="btn btn-primary btn-nav" href="/download">Get the app</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-in">
+    <div>
+      <span class="eyebrow">Cannabis sobriety tracker for iOS</span>
+      <h1>Quit weed.<br>Get your <span class="clarity"><span class="w">clarity</span><span class="sp">✦</span></span> back.</h1>
+      <p class="lead">Brain fog, low energy, cravings — that's not you, that's withdrawal. CannaClear shows you exactly what's happening day by day and guides you through it with calm structure instead of willpower.</p>
+      <div class="hero-cta">
+        <a href="/download" aria-label="Download CannaClear on the App Store"><img class="store-badge" src="/assets/new/download-on-the-app-store.svg" alt="Download on the App Store"></a>
+        <a class="btn btn-ghost" href="#timeline">See the recovery timeline</a>
+      </div>
+      <p class="trial-note">3-day free trial · cancel anytime · from $2.50/month billed yearly</p>
+      <div class="hero-proof">
+        <span class="proof-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>Science-backed withdrawal insights</span>
+        <span class="proof-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Your data stays anonymous</span>
+        <span class="proof-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>Supportive, never judgmental</span>
+      </div>
+      <div class="hero-trust-stack">
+        <div class="hero-trust-seal" aria-label="Five star trust badge">
+          <div class="hero-trust-stars" aria-hidden="true">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <div class="hero-trust-copy">
+            <strong>Top-rated</strong>
+            <span>Cannabis recovery support</span>
+          </div>
+        </div>
+        <div class="hero-badges" aria-label="Featured badges">
+          <a class="hero-badge hero-badge--fazier-compact" href="https://fazier.com/launches/www.cannaclear.app" target="_blank" rel="noopener">
+            <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=neutral" alt="Featured on Fazier launch badge" width="120" height="60" decoding="async">
+          </a>
+          <a class="hero-badge hero-badge--rankin" href="https://rankinpublic.xyz/products/www.cannaclear.app" target="_blank" rel="noopener">
+            <img src="https://rankinpublic.xyz/api/badges/badge-featured.png?site=www.cannaclear.app" alt="Featured on RankInPublic" title="Featured on RankInPublic" width="188" height="60" decoding="async">
+          </a>
+          <a class="hero-badge" href="https://fazier.com/launches/www.cannaclear.app" target="_blank" rel="noopener">
+            <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&theme=dark" alt="Featured on Fazier" width="188" height="60" decoding="async">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="phone-stage">
+      <div class="float-card fc-days"><span class="n" data-count="30">0</span>days weed-free</div>
+      <img class="ph ph-back" src="/assets/new/mockup-breathing.webp" alt="CannaClear box breathing exercise for cravings" loading="lazy">
+      <img class="ph ph-front" src="/assets/new/mockup-home.webp" alt="CannaClear home dashboard showing sober days, money saved and amount not consumed" fetchpriority="high">
+      <div class="float-card fc-money"><span class="n" data-count="480" data-prefix="$">$0</span>saved so far</div>
+    </div>
+  </div>
+</header>
+
+<section class="loop">
+  <div class="wrap loop-grid">
+    <div class="rv">
+      <span class="eyebrow">Why quitting feels impossible</span>
+      <h2>Willpower isn't the problem. The loop is.</h2>
+      <p>Most people fail to quit cannabis because they fight an invisible process with motivation alone. When you can't see progress, every hard day feels like proof that nothing is changing — so you go back. CannaClear makes the invisible visible.</p>
+    </div>
+    <div class="loop-list rv">
+      <div class="loop-item"><span class="dot"></span><div><strong>Day 1–2: "This is fine."</strong><span>Motivation is high, symptoms haven't peaked yet.</span></div></div>
+      <div class="loop-item"><span class="dot"></span><div><strong>Day 3–7: "Why do I feel worse?"</strong><span>Sleep breaks down, irritability and cravings spike — the point where most people relapse.</span></div></div>
+      <div class="loop-item"><span class="dot"></span><div><strong>Day 8+: "Was it even worth it?"</strong><span>Without visible progress, one bad evening undoes everything.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section timeline" id="timeline">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">The recovery timeline</span>
+      <h2>Know exactly what's coming — day by day.</h2>
+      <p>Withdrawal stops being scary when it stops being a mystery. Drag through your first 30 days and watch the fog clear. This is the timeline you'll follow inside the app.</p>
+    </div>
+    <div class="tl-card rv">
+      <div class="tl-top">
+        <div class="tl-day">
+          <span class="lbl">Day</span>
+          <span class="num" id="tlNum">1</span>
+        </div>
+        <div class="tl-body">
+          <div class="tl-fog" id="tlFog"></div>
+          <h3 id="tlTitle">The decision day</h3>
+          <p id="tlText">You've stopped. THC is still in your system, so you may feel almost normal — this is the calm before the adjustment. The app locks in your quit date and baseline.</p>
+          <div class="tl-tags" id="tlTags"></div>
+        </div>
+      </div>
+      <div class="tl-slider">
+        <label for="tlRange">Drag to explore your first 30 days</label>
+        <input type="range" id="tlRange" min="1" max="30" value="1" step="1" aria-label="Recovery day">
+        <div class="tl-scale"><span>Day 1</span><span>Day 7</span><span>Day 14</span><span>Day 21</span><span>Day 30</span></div>
+      </div>
+    </div>
+    <p class="tl-note">Timelines vary from person to person. CannaClear explains what's typical, what's normal, and what helps — it is not a medical service and doesn't replace professional support.</p>
+  </div>
+</section>
+
+<section class="section features" id="features">
+  <div class="wrap">
+    <div class="rv" style="max-width:44rem">
+      <span class="eyebrow">What you get</span>
+      <h2 style="font-size:clamp(1.9rem,3.8vw,2.8rem);margin:.9rem 0 1rem">A system, not a streak counter.</h2>
+      <p style="color:var(--ink-soft)">Tracking is just the start. CannaClear combines structure, science, and in-the-moment support so you don't have to figure out recovery alone.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat rv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4M16 2v4"/><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></svg></div>
+        <h3>Sobriety & streak tracker</h3>
+        <p>Sober days, money saved, and grams not consumed in one calm dashboard — so progress is something you see, not something you hope for.</p>
+      </div>
+      <div class="feat sos-card rv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+        <h3>Craving SOS tools</h3>
+        <p>When an urge hits, open SOS: box breathing, grounding ideas, and one simple next step. Cravings peak at 15–20 minutes — the app helps you outlast them.</p>
+      </div>
+      <div class="feat rv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+        <h3>Learn & Grow library</h3>
+        <p>Understand dopamine recovery, the first 72 hours, and why day 4 feels worse than day 1. No myths, no bro science — just clear explanations that make it easier.</p>
+      </div>
+      <div class="feat rv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-6 4 3 5-8"/></svg></div>
+        <h3>Journal, patterns & insights</h3>
+        <p>Daily check-ins turn hard days into data: your average mood, craving trend, most common trigger, and what actually helped — so you can plan instead of guess.</p>
+      </div>
+    </div>
+    <div class="feat-screens rv">
+      <figure>
+        <img src="/assets/new/mockup-progress.webp" alt="CannaClear progress screen with patterns, insights and detox milestones" loading="lazy">
+        <figcaption>Progress & insights</figcaption>
+      </figure>
+      <figure>
+        <img src="/assets/new/mockup-sos.webp" alt="CannaClear SOS screen with box breathing and calm next steps" loading="lazy">
+        <figcaption>Craving SOS</figcaption>
+      </figure>
+      <figure>
+        <img src="/assets/new/mockup-journal.webp" alt="CannaClear journal with daily check-ins, mood, triggers and notes" loading="lazy">
+        <figcaption>Journal</figcaption>
+      </figure>
+      <figure>
+        <img src="/assets/new/mockup-learn.webp" alt="CannaClear Learn and Grow library with recovery articles" loading="lazy">
+        <figcaption>Learn & Grow</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section sos-split">
+  <div class="wrap sos-grid">
+    <div class="rv">
+      <span class="eyebrow">The hardest 20 minutes</span>
+      <h2>Cravings peak at 15–20 minutes. You can outlast this.</h2>
+      <p>That's the message the SOS screen opens with — because it's true, and because remembering it changes everything. Instead of arguing with the urge, you get a plan for the next few minutes:</p>
+      <div class="sos-steps">
+        <div class="sos-step"><span class="tick">1</span><div><b>Start box breathing.</b> Inhale 4s, hold 4s, exhale 4s, hold 4s — six guided rounds that calm your nervous system.</div></div>
+        <div class="sos-step"><span class="tick">2</span><div><b>Pick one small action.</b> Drink something cold, step outside, text someone who supports your goal.</div></div>
+        <div class="sos-step"><span class="tick">3</span><div><b>Log it and move on.</b> The craving becomes a data point in your journal — not a defeat.</div></div>
+      </div>
+    </div>
+    <div class="sos-phone rv">
+      <img src="/assets/new/mockup-breathing.webp" alt="CannaClear guided box breathing exercise" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="calc-card rv">
+      <div>
+        <span class="eyebrow">Do the math</span>
+        <h2>Weed is expensive. Clarity pays you back.</h2>
+        <p>CannaClear tracks your money saved and the amount not consumed from day one — two of the most motivating numbers in the app. See what your habit really costs.</p>
+        <p class="calc-cta">The yearly plan costs about what most people spend on weed in a single day.</p>
+      </div>
+      <div class="calc-panel">
+        <label for="spend">Your weekly spend on weed <output id="spendOut">$40</output></label>
+        <input type="range" id="spend" min="10" max="200" step="5" value="40" aria-label="Weekly spend on weed in dollars">
+        <div class="calc-out">
+          <div class="calc-box"><span class="v" id="save30">$171</span><span class="l">saved in your first 30 days</span></div>
+          <div class="calc-box"><span class="v" id="save365">$2,080</span><span class="l">saved in one year</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section pricing" id="pricing">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Simple pricing</span>
+      <h2>Try everything free for 3 days.</h2>
+      <p>Full access from day one. If it's not for you, cancel in seconds — you won't be charged.</p>
+    </div>
+    <div class="price-grid">
+      <div class="price rv">
+        <h3>Free trial</h3>
+        <div class="amt">$0</div>
+        <div class="per">for 3 days · full access</div>
+        <ul>
+          <li>Complete recovery timeline</li>
+          <li>All SOS craving tools</li>
+          <li>Tracker, journal & insights</li>
+        </ul>
+        <a class="btn btn-ghost" href="/download">Start free</a>
+      </div>
+      <div class="price hot rv">
+        <span class="tag">Best value · save 50%</span>
+        <h3>Yearly</h3>
+        <div class="amt">$29.99</div>
+        <div class="per">per year · about $2.50/month</div>
+        <ul>
+          <li>Everything in the trial, all year</li>
+          <li>One decision, no monthly friction</li>
+          <li>Cancel anytime in the App Store</li>
+        </ul>
+        <a class="btn btn-primary" href="/download">Start 3-day free trial</a>
+      </div>
+      <div class="price rv">
+        <h3>Monthly</h3>
+        <div class="amt">$4.99</div>
+        <div class="per">per month</div>
+        <ul>
+          <li>Full access, month by month</li>
+          <li>Perfect for a 30-day reset</li>
+          <li>Cancel anytime in the App Store</li>
+        </ul>
+        <a class="btn btn-ghost" href="/download">Start free</a>
+      </div>
+    </div>
+    <p class="price-note">Subscription renews automatically unless canceled at least 24 hours before the period ends. Manage or cancel in your App Store settings.</p>
+  </div>
+</section>
+
+<section class="section faq" id="faq">
+  <div class="wrap faq-grid">
+    <div class="side rv">
+      <span class="eyebrow">FAQ</span>
+      <h2>Honest answers before you start.</h2>
+      <p>Everything about quitting weed, withdrawal, and how CannaClear supports both cutting down and stopping completely.</p>
+    </div>
+    <div class="rv">
+      <details open>
+        <summary>What is CannaClear and who is it for?</summary>
+        <div class="a">CannaClear is an iOS app for people who want to quit weed, reduce cannabis use, or get more structure during a cannabis detox. It combines a sobriety tracker, craving tools, and progress check-ins so recovery feels visible instead of chaotic — designed for everyday support, not pressure or shame.</div>
+      </details>
+      <details>
+        <summary>What does weed withdrawal usually feel like?</summary>
+        <div class="a">Common symptoms include poor sleep, irritability, anxiety, cravings, lower appetite, and mood swings. Most people feel the strongest symptoms around days 3 to 7. It can feel intense, but it usually improves steadily with time and consistency — and knowing that in advance makes it far easier to get through.</div>
+      </details>
+      <details>
+        <summary>How long do cannabis cravings last?</summary>
+        <div class="a">Cravings come in waves rather than lasting all day. A single urge typically rises, peaks, and fades within about 15–20 minutes — even if it returns later. Over time they become less frequent and easier to manage. The SOS tools are built exactly for those minutes.</div>
+      </details>
+      <details>
+        <summary>Does it work if I only want to cut down, not quit?</summary>
+        <div class="a">Yes. Some people use CannaClear to stop completely, others to reduce first and rebuild control. The app supports both paths with tracking, structure, and calm daily guidance — a short reset, a 30-day break, or a long-term change.</div>
+      </details>
+      <details>
+        <summary>Can a tracker really make a difference?</summary>
+        <div class="a">Tracking turns vague effort into something you can see. Sober days, cravings, and patterns become visible progress — especially during the hard first weeks, when memory alone tells you nothing is changing. Seeing the numbers move is often what keeps people going.</div>
+      </details>
+      <details>
+        <summary>Is my data private?</summary>
+        <div class="a">Yes. Journal entries and check-ins are not linked to your identity. There's no social feed and nothing to share — this is a private space for your reset. See the <a href="/privacy">privacy policy</a> for details.</div>
+      </details>
+      <details>
+        <summary>Is CannaClear a medical service?</summary>
+        <div class="a">No. CannaClear supports people who want to reduce or quit cannabis, but it doesn't replace professional medical, psychological, or emergency support. If you're struggling severely, please reach out to a professional.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <span class="eyebrow" style="color:#F7E9C8">Together, we've got this</span>
+    <h2>The fog lifts. You stay.</h2>
+    <p>Download CannaClear, set your quit date, and let the first three days show you the difference. Free trial, cancel anytime.</p>
+    <a href="/download" aria-label="Download CannaClear on the App Store"><img class="store-badge" src="/assets/new/download-on-the-app-store.svg" alt="Download on the App Store"></a>
+    <p class="trial-note">3-day free trial · $4.99/month or $29.99/year · cancel anytime</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <a class="brand" href="/" style="color:#fff">
+        <img src="/assets/new/app-icon.webp" alt="" width="36" height="36">
+        CannaClear
+      </a>
+      <div class="foot-links">
+        <a href="/quit-weed">How to Quit Weed</a>
+        <a href="/weed-withdrawal">Weed Withdrawal</a>
+        <a href="/quit-weed-timeline">Quit Weed Timeline</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+        <a href="/legal-notice">Legal Notice</a>
+      </div>
+    </div>
+    <p class="foot-legal">CannaClear is intended to support people who want to reduce or quit cannabis. It is not a medical service and does not replace professional medical, psychological, or emergency support. © 2026 Lukas Pietruschka.</p>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a class="btn btn-primary" href="/download">Start 3-day free trial</a>
+</div>
+
+<script>
+/* ---- recovery timeline ---- */
+const stages=[
+  {d:1,t:"The decision day",x:"You've stopped. THC is still in your system, so you may feel almost normal — this is the calm before the adjustment. The app locks in your quit date and baseline.",tags:["Set quit date","First check-in"]},
+  {d:2,t:"First signals",x:"Mild restlessness and shorter patience are common. Nothing dramatic yet — a good day to prepare your evening routine before sleep gets harder.",tags:["Restlessness","Plan your evenings"]},
+  {d:4,t:"The peak zone begins",x:"Days 3–7 are typically the hardest: broken sleep, irritability, vivid dreams, stronger cravings. This is chemistry, not weakness — and it's temporary. SOS tools matter most here.",tags:["Peak cravings","Sleep disruption","Use SOS"]},
+  {d:7,t:"Over the worst of it",x:"For most people the sharpest symptoms start easing now. Appetite begins to return and urges get shorter. Your streak is a week old — the number most relapses never reach.",tags:["Symptoms easing","1-week milestone"]},
+  {d:10,t:"Sleep starts repairing",x:"REM sleep rebounds, which is why dreams feel intense. Mornings slowly get lighter. Your journal starts revealing which situations trigger you.",tags:["Better mornings","Trigger patterns"]},
+  {d:14,t:"Two weeks clear",x:"Cravings are less frequent and more predictable. Energy and focus noticeably improve for many people. Money saved becomes a real number worth looking at.",tags:["More focus","2-week milestone"]},
+  {d:21,t:"New defaults forming",x:"Evenings without weed start feeling normal rather than empty. This is where structure beats willpower: routines you built in week one carry you now.",tags:["Habits sticking","Stable mood"]},
+  {d:30,t:"Thirty days. Clear.",x:"Sleep, mood, and motivation are on a visibly better baseline. Whether you stop here or keep going, you've proven the loop can be broken — with data to show it.",tags:["30-day milestone","Clarity baseline"]}
+];
+const range=document.getElementById('tlRange'),num=document.getElementById('tlNum'),
+title=document.getElementById('tlTitle'),text=document.getElementById('tlText'),
+tags=document.getElementById('tlTags'),fog=document.getElementById('tlFog');
+function stageFor(d){let s=stages[0];for(const st of stages){if(d>=st.d)s=st}return s}
+function setFill(el){const p=(el.value-el.min)/(el.max-el.min)*100;el.style.setProperty('--fill',p+'%')}
+function renderTL(){
+  const d=+range.value,s=stageFor(d);
+  num.textContent=d;title.textContent=s.t;text.textContent=s.x;
+  tags.innerHTML=s.tags.map(t=>`<span class="tl-tag">${t}</span>`).join('');
+  fog.style.opacity=Math.max(0,1-(d-1)/12);
+  setFill(range);
+}
+range.addEventListener('input',renderTL);renderTL();
+
+/* ---- savings calculator ---- */
+const spend=document.getElementById('spend'),spendOut=document.getElementById('spendOut'),
+s30=document.getElementById('save30'),s365=document.getElementById('save365');
+const fmt=n=>'$'+Math.round(n).toLocaleString('en-US');
+function renderCalc(){
+  const w=+spend.value;
+  spendOut.textContent=fmt(w);
+  s30.textContent=fmt(w/7*30);
+  s365.textContent=fmt(w*52);
+  setFill(spend);
+}
+spend.addEventListener('input',renderCalc);renderCalc();
+
+/* ---- scroll reveal ---- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+/* ---- hero counters ---- */
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.querySelectorAll('[data-count]').forEach(el=>{
+  const end=+el.dataset.count,pre=el.dataset.prefix||'';
+  if(reduced){el.textContent=pre+end;return}
+  const t0=performance.now(),dur=1800;
+  function tick(t){
+    const p=Math.min(1,(t-t0)/dur),ease=1-Math.pow(1-p,3);
+    el.textContent=pre+Math.round(end*ease);
+    if(p<1)requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+});
+</script>
+</body>
 </html>
