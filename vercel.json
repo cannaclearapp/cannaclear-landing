@@ -10,6 +10,9 @@
   ],
   "rewrites": [
     { "source": "/support", "destination": "/support/index.html" },
+    { "source": "/about", "destination": "/about/index.html" },
+    { "source": "/editorial-policy", "destination": "/editorial-policy/index.html" },
+    { "source": "/medical-disclaimer", "destination": "/medical-disclaimer/index.html" },
     { "source": "/privacy", "destination": "/privacy/index.html" },
     { "source": "/terms", "destination": "/terms/index.html" },
     { "source": "/legal-notice", "destination": "/legal-notice/index.html" },
