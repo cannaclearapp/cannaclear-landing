@@ -97,200 +97,367 @@
         ]
       }
     </script>
-    <link rel="stylesheet" href="/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "How to Quit Weed: A Practical, Evidence-Based Guide",
+        "author": {
+          "@type": "Person",
+          "name": "Lukas Pietruschka",
+          "url": "https://www.cannaclear.app/about"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "CannaClear",
+          "url": "https://www.cannaclear.app"
+        },
+        "dateModified": "2026-07-07",
+        "mainEntityOfPage": "https://www.cannaclear.app/quit-weed"
+      }
+    </script>
+    <link rel="stylesheet" href="/assets/article.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <a class="top-link" href="/">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M3 10.5L12 3l9 7.5"></path>
-          <path d="M5 9.5V21h14V9.5"></path>
-        </svg>
-        Home
-      </a>
-      <main class="content-card seo-card">
-        <div class="brand-row content-brand">
-          <img class="brand-icon brand-icon-small" src="/assets/app-icon.avif?v=1" alt="CannaClear icon" />
-          <div>
-            <p class="eyebrow">CannaClear</p>
-            <h1>How to Quit Weed: A Practical, Evidence-Based Guide</h1>
-          </div>
-        </div>
+    <div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
 
-                <p class="lede">Stopping cannabis use is a meaningful decision with measurable benefits for mental clarity, sleep, motivation, and long-term health. This guide covers what the evidence says about quitting effectively — including preparation, the first days, common pitfalls, and how to build lasting change.</p>
-        <section class="section">
-          <h2>Before you quit: what the evidence says about preparation</h2>
-          <p>Unplanned quit attempts have significantly lower success rates than prepared ones. Research on cannabis cessation suggests that people who set a clear quit date, identify their triggers in advance, and have a plan for cravings are substantially more likely to maintain abstinence at 30 and 90 days.</p>
-          <p>Preparation does not need to be elaborate. It means:</p>
-          <ol>
-            <li><strong>Setting a specific quit date</strong> — within the next 7–14 days, not &quot;soon&quot;</li>
-            <li><strong>Telling at least one person</strong> — social accountability consistently improves outcomes</li>
-            <li><strong>Identifying your top 3 triggers</strong> — situations, times, or emotions most associated with use</li>
-            <li><strong>Deciding your approach</strong> — abrupt cessation vs. gradual reduction (see below)</li>
+    <header class="nav">
+      <div class="nav-in">
+        <a href="/" class="brand"><img src="/assets/new/app-icon.webp" alt="" width="32" height="32" />CannaClear</a>
+        <nav class="nav-links" aria-label="Main">
+          <a href="/quit-weed">Guides</a>
+          <a href="/about">About</a>
+          <a href="/download" class="nav-cta">Get the app</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="shell">
+      <div class="grid">
+        <aside class="toc-desktop" aria-label="Table of contents">
+          <div class="toc-title">On this page</div>
+          <ol id="tocDesktop">
+            <li><a href="#preparation">Before you quit: what the evidence says about preparation</a></li>
+            <li><a href="#approach">Abrupt cessation vs. gradual reduction</a></li>
+            <li><a href="#first-72-hours">The first 72 hours</a></li>
+            <li><a href="#cravings">Understanding and managing cravings</a></li>
+            <li><a href="#replacement-habits">Building replacement habits</a></li>
+            <li><a href="#relapse">Handling relapse</a></li>
+            <li><a href="#benefits">The timeline of benefits after quitting</a></li>
+            <li><a href="#support">When professional support is appropriate</a></li>
+            <li><a href="#faq">Frequently asked questions</a></li>
           </ol>
-        </section>
+        </aside>
 
-        <section class="section">
-          <h2>Abrupt cessation vs. gradual reduction</h2>
-          <p>Both approaches can work. The right choice depends on your usage pattern and personal preference.</p>
-          <p><strong>Abrupt cessation (cold turkey)</strong> works well for people with high motivation and a strong social support system. Symptoms tend to be more intense early but resolve faster. Most clinical research on cannabis cessation uses this approach.</p>
-          <p><strong>Gradual reduction</strong> can reduce the severity of withdrawal symptoms and suits people who find cold turkey psychologically difficult. The key is setting a firm endpoint — reducing without a defined quit date often leads to prolonged low-level use without reaching abstinence.</p>
-          <p>If you prefer easing in first, use this <a href="/cannabis-reduction-step-by-step">step-by-step cannabis reduction plan</a> to build momentum before full abstinence.</p>
-          <p>Whichever you choose, having a structured tracking system makes a significant difference. Seeing your progress in concrete terms — days sober, money saved, milestones reached — reinforces continued effort.</p>
-        </section>
+        <main class="main">
+          <div class="hero">
+            <div class="crumb"><a href="/">Home</a> <span aria-hidden="true">›</span> How to Quit Weed</div>
+            <h1>How to Quit Weed: A Practical, Evidence-Based Guide</h1>
+            <p class="hero-sub">
+              Stopping cannabis use is a meaningful decision with measurable benefits for mental clarity, sleep, motivation, and long-term health. This guide covers what the evidence says about quitting effectively — including preparation, the first days, common pitfalls, and how to build lasting change.
+            </p>
+            <div class="meta">
+              <span class="meta-item"><span class="avatar" aria-hidden="true">LP</span> By Lukas Pietruschka</span>
+              <span class="meta-item"><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-calendar"></use></svg> Updated July 2026</span>
+              <span class="meta-item"><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-clock"></use></svg> <span id="readTime">8</span> min read</span>
+              <span class="badge-research"><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-shield"></use></svg> Research-based educational content</span>
+            </div>
 
-        <section class="section">
-          <h2>The first 72 hours</h2>
-          <p>The first three days are typically the hardest logistically. Cravings are frequent, sleep may be disrupted, and irritability peaks. A few practical strategies:</p>
-          <ul>
-            <li><strong>Remove cannabis and paraphernalia from your environment.</strong> Reducing access removes the decision point from moments of high craving.</li>
-            <li><strong>Expect discomfort — and plan for it.</strong> Knowing that days 2–5 are the most difficult helps contextualise the experience. Discomfort is a sign the process is working, not evidence that you cannot succeed.</li>
-            <li><strong>Have a craving response ready.</strong> Box breathing (4-4-4-4), cold water, a brief walk, or a distraction task you enjoy. Cravings typically peak and pass within 15–30 minutes if not acted on.</li>
-            <li><strong>Keep your schedule full.</strong> Unstructured time is when most relapses occur. Plan the first week in advance.</li>
-          </ul>
-        </section>
+            <div class="takeaways reveal">
+              <div class="takeaways-head"><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-brain"></use></svg> Key takeaways</div>
+              <ul>
+                <li><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-check"></use></svg> Prepared quit attempts are more likely to last than unplanned ones.</li>
+                <li><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-check"></use></svg> The first three days are usually the hardest logistically, with cravings, poor sleep, and irritability.</li>
+                <li><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-check"></use></svg> Cravings are conditioned responses that rise, peak, and pass, even if you do not act on them.</li>
+                <li><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-check"></use></svg> Long-term success depends less on perfection than on continuing after setbacks.</li>
+              </ul>
+            </div>
 
-        <section class="section">
-          <h2>Understanding and managing cravings</h2>
-          <p>Cravings are conditioned responses — learned associations between specific cues (people, places, emotions, times of day) and cannabis use. They are not evidence of weakness or addiction severity; they are a normal neurological process.</p>
-          <h3>The craving cycle</h3>
-          <p>A craving is typically triggered by a cue, rises in intensity for several minutes, peaks, and then subsides — whether or not the substance is used. This peak-and-pass pattern is important to internalise: you do not need to resolve the craving, only wait it out.</p>
-          <p>For practical in-the-moment tactics, read <a href="/understanding-cannabis-cravings">how cannabis cravings work and what helps fast</a>.</p>
-          <h3>Common triggers in cannabis cessation</h3>
-          <ul>
-            <li><strong>Time-based cues:</strong> end of the work day, evenings, weekends</li>
-            <li><strong>Social cues:</strong> being around people you used with, or conversely, being alone</li>
-            <li><strong>Emotional cues:</strong> stress, boredom, anxiety, or even positive emotions like celebration</li>
-            <li><strong>Environmental cues:</strong> specific rooms, music, or smells</li>
-          </ul>
-          <p>Tracking which triggers cause the most intense cravings — and preparing a specific response for each — is one of the most effective behavioural strategies in cessation research.</p>
-          <p>For fast practical tactics, use this guide to <a href="/stop-weed-cravings">stop weed cravings</a> before they turn into automatic use.</p>
-        </section>
-
-        <section class="section">
-          <h2>Building replacement habits</h2>
-          <p>Cannabis often serves a functional role: stress relief, sleep aid, social lubricant, or boredom management. Quitting without addressing the underlying function increases the likelihood of relapse.</p>
-          <p>Consider what cannabis was doing for you, and find an evidence-supported replacement:</p>
-          <table class="seo-table seo-table--two-col">
-            <thead><tr><th>Function</th><th>Evidence-based alternatives</th></tr></thead>
-          <tbody>
-            <tr><td data-label="Function">Stress relief</td><td data-label="Evidence-based alternatives">Exercise, mindfulness, breathing techniques, social connection</td></tr>
-            <tr><td data-label="Function">Sleep</td><td data-label="Evidence-based alternatives">Sleep hygiene protocol, magnesium, melatonin (short-term), CBT-I</td></tr>
-            <tr><td data-label="Function">Boredom</td><td data-label="Evidence-based alternatives">Structured hobbies, exercise, creative projects</td></tr>
-            <tr><td data-label="Function">Social connection</td><td data-label="Evidence-based alternatives">Finding communities not centred on use</td></tr>
-            <tr><td data-label="Function">Anxiety management</td><td data-label="Evidence-based alternatives">Breathwork, progressive muscle relaxation, therapy if severe</td></tr>
-          </tbody>
-          </table>
-          <p>The goal is not to eliminate all pleasure or ease, but to find sources of relief that do not carry dependency risk.</p>
-        </section>
-
-        <section class="section">
-          <h2>Handling relapse</h2>
-          <p>Relapse is common in cannabis cessation — studies suggest that most people make several attempts before achieving sustained abstinence. A relapse is not a failure; it is data about what did not work.</p>
-          <p>If you use after a quit attempt:</p>
-          <ul>
-            <li><strong>Stop as quickly as possible.</strong> A single use does not need to become a return to regular use.</li>
-            <li><strong>Identify what triggered it.</strong> What cue, emotion, or situation preceded the relapse?</li>
-            <li><strong>Adjust your plan.</strong> Was the trigger one you hadn&#39;t prepared for? Was support insufficient? Was the environment not changed enough?</li>
-            <li><strong>Reset and continue.</strong> Streaks matter, but they are recoverable. The cumulative time spent sober still has value.</li>
-          </ul>
-          <p>The most important factor in long-term success is not avoiding any single relapse — it is the decision to continue trying after one.</p>
-          <p>Use this guide on <a href="/preventing-cannabis-relapse">preventing cannabis relapse</a> to build a trigger-first prevention system.</p>
-          <p>If you want a more condensed decision framework, this guide on the <a href="/best-way-to-quit-weed">best way to quit weed</a> turns the process into a practical system.</p>
-        </section>
-
-        <section class="section">
-          <h2>The timeline of benefits after quitting</h2>
-          <p>Knowing what to expect in terms of positive change can reinforce motivation during difficult periods.</p>
-          <ul>
-            <li><strong>24–48 hours:</strong> THC begins clearing from the bloodstream. Cravings begin.</li>
-            <li><strong>72 hours:</strong> Lung function starts improving for those who smoked.</li>
-            <li><strong>1 week:</strong> Sleep begins stabilising. Mental fog may still be present.</li>
-            <li><strong>2–4 weeks:</strong> Mood stabilises. Motivation and energy begin returning. Anxiety often improves noticeably.</li>
-            <li><strong>1–3 months:</strong> Working memory and executive function show measurable improvement in research settings. Many people report feeling &quot;like themselves again.&quot;</li>
-            <li><strong>3–6 months:</strong> Lung function substantially recovered (for smokers). Long-term mood, motivation, and cognitive clarity typically at or above pre-use levels.</li>
-          </ul>
-        </section>
-
-        <section class="section">
-          <h2>When professional support is appropriate</h2>
-          <p>Most people successfully quit cannabis without clinical intervention. However, professional support is worth pursuing if:</p>
-          <ul>
-            <li>You have tried multiple times without sustained success</li>
-            <li>Your use is linked to managing a diagnosed anxiety disorder, depression, or PTSD</li>
-            <li>You are experiencing significant functional impairment (work, relationships, finances)</li>
-            <li>You are also using other substances</li>
-          </ul>
-          <p>A GP can refer to addiction medicine specialists or CBT-based programs that have a strong evidence base for cannabis use disorder.</p>
-        </section>
-
-                <section class="section faq-section">
-          <div class="faq-section__intro">
-            <p class="faq-section__eyebrow">FAQs</p>
-            <h2>Frequently asked questions</h2>
+            <details class="toc-mobile">
+              <summary><svg class="icon" aria-hidden="true" style="color:var(--teal)"><use href="/assets/article-icons.svg#i-list"></use></svg> On this page <svg class="icon chev" aria-hidden="true"><use href="/assets/article-icons.svg#i-chevdown"></use></svg></summary>
+              <ol id="tocMobile"></ol>
+            </details>
           </div>
-          <div class="faq-section__grid">
-<article class="faq-section__item">
-  <div class="faq-section__content">
-    <h3>How long does it take to quit weed?</h3>
-    <p>Acute withdrawal resolves within 2–3 weeks for most people. Building stable new habits typically takes 60–90 days of consistent practice.</p>
-  </div>
-</article>
-<article class="faq-section__item">
-  <div class="faq-section__content">
-    <h3>Is quitting weed hard?</h3>
-    <p>It is challenging for regular users, particularly in the first two weeks. The difficulty is real and neurologically grounded — but it is also temporary and manageable with the right approach.</p>
-  </div>
-</article>
-<article class="faq-section__item">
-  <div class="faq-section__content">
-    <h3>Can I quit weed on my own?</h3>
-    <p>Yes. Many people successfully quit without formal clinical support. Structured self-monitoring, craving management tools, and social accountability are the key ingredients.</p>
-  </div>
-</article>
-<article class="faq-section__item">
-  <div class="faq-section__content">
-    <h3>What if I fail the first time?</h3>
-    <p>Multiple attempts are normal and do not predict long-term outcomes negatively. Each attempt provides information about what needs to change. Persistence is the primary determinant of eventual success.</p>
-  </div>
-</article>
-<article class="faq-section__item">
-  <div class="faq-section__content">
-    <h3>Will my mental health improve after quitting?</h3>
-    <p>For most people, yes — particularly those who used cannabis to manage anxiety or low mood. Short-term there may be a temporary worsening (withdrawal); medium-to-long-term, the majority of people report significant improvement in mood, motivation, and clarity.</p>
-  </div>
-</article>
-          </div>
-        </section>
 
-        <section class="section">
-          <h2>Start your quit with CannaClear</h2>
-          <p>CannaClear tracks your sober days, identifies craving patterns, provides SOS tools for difficult moments, and gives you a clear view of your progress — one day at a time.</p>
-          <p><a href="/download">Download on the App Store →</a></p>
-        </section>
+          <div class="article-body" id="articleBody">
+            <section id="preparation">
+              <h2>Before you quit: what the evidence says about preparation</h2>
+              <p>Unplanned quit attempts have significantly lower success rates than prepared ones. Research on cannabis cessation suggests that people who set a clear quit date, identify their triggers in advance, and have a plan for cravings are substantially more likely to maintain abstinence at 30 and 90 days.</p>
+              <p>Preparation does not need to be elaborate. It means:</p>
+              <div class="timeline">
+                <div class="t-item reveal">
+                  <div class="t-icon"><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-calendar"></use></svg></div>
+                  <div class="t-body"><h3>Setting a specific quit date</h3><p>Within the next 7–14 days, not "soon".</p></div>
+                </div>
+                <div class="t-item reveal">
+                  <div class="t-icon"><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-users"></use></svg></div>
+                  <div class="t-body"><h3>Telling at least one person</h3><p>Social accountability consistently improves outcomes.</p></div>
+                </div>
+                <div class="t-item reveal">
+                  <div class="t-icon"><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-target"></use></svg></div>
+                  <div class="t-body"><h3>Identifying your top 3 triggers</h3><p>Situations, times, or emotions most associated with use.</p></div>
+                </div>
+                <div class="t-item reveal">
+                  <div class="t-icon"><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-map"></use></svg></div>
+                  <div class="t-body"><h3>Deciding your approach</h3><p>Abrupt cessation vs. gradual reduction (see below).</p></div>
+                </div>
+              </div>
+            </section>
 
-<section class="app-promo-banner">
-          <h2>Build your reset with CannaClear</h2>
-          <p>Track sober days, stay motivated during cravings, and keep your progress visible every day.</p>
-          <div class="app-store-wrap" aria-label="Download CannaClear on the App Store">
-            <a class="app-store-button" href="/download" aria-label="Download CannaClear on the App Store"><img class="app-store-badge" src="/assets/download-on-the-app-store.svg" alt="Download on the App Store" /></a>
-          </div>
-        </section>
+            <section id="approach">
+              <h2>Abrupt cessation vs. gradual reduction</h2>
+              <p>Both approaches can work. The right choice depends on your usage pattern and personal preference.</p>
+              <div class="phases">
+                <div class="phase reveal">
+                  <span class="when">Cold turkey</span>
+                  <b>Abrupt cessation</b>
+                  <p>Works well for people with high motivation and a strong social support system. Symptoms tend to be more intense early but resolve faster. Most clinical research on cannabis cessation uses this approach.</p>
+                </div>
+                <div class="phase reveal">
+                  <span class="when">Step-down</span>
+                  <b>Gradual reduction</b>
+                  <p>Can reduce the severity of withdrawal symptoms and suits people who find cold turkey psychologically difficult. The key is setting a firm endpoint — reducing without a defined quit date often leads to prolonged low-level use without reaching abstinence.</p>
+                </div>
+              </div>
+              <p>If you prefer easing in first, use this <a href="/cannabis-reduction-step-by-step">step-by-step cannabis reduction plan</a> to build momentum before full abstinence.</p>
+              <p>Whichever you choose, having a structured tracking system makes a significant difference. Seeing your progress in concrete terms — days sober, money saved, milestones reached — reinforces continued effort.</p>
+            </section>
 
-        <section class="section related-links">
-          <h2>Related Guides</h2>
-          <div class="related-grid">
-            <a href="/weed-withdrawal">Weed Withdrawal</a>
-            <a href="/quit-weed-timeline">Quit Weed Timeline</a>
-            <a href="/weed-withdrawal-symptoms">Weed Withdrawal Symptoms</a>
-            <a href="/how-quit-weed-app-helps">How a Quit-Weed App Helps</a>
+            <section id="first-72-hours">
+              <h2>The first 72 hours</h2>
+              <p>The first three days are typically the hardest logistically. Cravings are frequent, sleep may be disrupted, and irritability peaks. A few practical strategies:</p>
+              <div class="action reveal">
+                <div class="action-head">
+                  <svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-target"></use></svg><b>First 72-hour checklist</b>
+                  <button class="action-copy" data-copy><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-copy"></use></svg> Copy list</button>
+                </div>
+                <label><input type="checkbox" /><span><strong>Remove cannabis and paraphernalia from your environment.</strong> Reducing access removes the decision point from moments of high craving.</span></label>
+                <label><input type="checkbox" /><span><strong>Expect discomfort — and plan for it.</strong> Knowing that days 2–5 are the most difficult helps contextualise the experience. Discomfort is a sign the process is working, not evidence that you cannot succeed.</span></label>
+                <label><input type="checkbox" /><span><strong>Have a craving response ready.</strong> Box breathing (4-4-4-4), cold water, a brief walk, or a distraction task you enjoy. Cravings typically peak and pass within 15–30 minutes if not acted on.</span></label>
+                <label><input type="checkbox" /><span><strong>Keep your schedule full.</strong> Unstructured time is when most relapses occur. Plan the first week in advance.</span></label>
+              </div>
+            </section>
+
+            <section id="cravings">
+              <h2>Understanding and managing cravings</h2>
+              <p>Cravings are conditioned responses — learned associations between specific cues (people, places, emotions, times of day) and cannabis use. They are not evidence of weakness or addiction severity; they are a normal neurological process.</p>
+              <div class="callout co-science reveal">
+                <div class="co-icon"><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-flask"></use></svg></div>
+                <div>
+                  <b>The craving cycle</b>
+                  <p>A craving is typically triggered by a cue, rises in intensity for several minutes, peaks, and then subsides — whether or not the substance is used. This peak-and-pass pattern is important to internalise: you do not need to resolve the craving, only wait it out.</p>
+                </div>
+              </div>
+              <p>For practical in-the-moment tactics, read <a href="/understanding-cannabis-cravings">how cannabis cravings work and what helps fast</a>.</p>
+              <h3>Common triggers in cannabis cessation</h3>
+              <ul class="checklist">
+                <li><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-check"></use></svg> <span><strong>Time-based cues:</strong> end of the work day, evenings, weekends</span></li>
+                <li><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-check"></use></svg> <span><strong>Social cues:</strong> being around people you used with, or conversely, being alone</span></li>
+                <li><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-check"></use></svg> <span><strong>Emotional cues:</strong> stress, boredom, anxiety, or even positive emotions like celebration</span></li>
+                <li><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-check"></use></svg> <span><strong>Environmental cues:</strong> specific rooms, music, or smells</span></li>
+              </ul>
+              <p>Tracking which triggers cause the most intense cravings — and preparing a specific response for each — is one of the most effective behavioural strategies in cessation research.</p>
+              <p>For fast practical tactics, use this guide to <a href="/stop-weed-cravings">stop weed cravings</a> before they turn into automatic use.</p>
+            </section>
+
+            <section id="replacement-habits">
+              <h2>Building replacement habits</h2>
+              <p>Cannabis often serves a functional role: stress relief, sleep aid, social lubricant, or boredom management. Quitting without addressing the underlying function increases the likelihood of relapse.</p>
+              <p>Consider what cannabis was doing for you, and find an evidence-supported replacement:</p>
+              <div class="callout co-tip reveal">
+                <div class="co-icon"><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-bulb"></use></svg></div>
+                <div>
+                  <b>Replacement matters</b>
+                  <p>The goal is not to eliminate all pleasure or ease, but to find sources of relief that do not carry dependency risk.</p>
+                </div>
+              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Function</th>
+                    <th>Evidence-based alternatives</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Stress relief</td>
+                    <td>Exercise, mindfulness, breathing techniques, social connection</td>
+                  </tr>
+                  <tr>
+                    <td>Sleep</td>
+                    <td>Sleep hygiene protocol, magnesium, melatonin (short-term), CBT-I</td>
+                  </tr>
+                  <tr>
+                    <td>Boredom</td>
+                    <td>Structured hobbies, exercise, creative projects</td>
+                  </tr>
+                  <tr>
+                    <td>Social connection</td>
+                    <td>Finding communities not centred on use</td>
+                  </tr>
+                  <tr>
+                    <td>Anxiety management</td>
+                    <td>Breathwork, progressive muscle relaxation, therapy if severe</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <section id="relapse">
+              <h2>Handling relapse</h2>
+              <p>Relapse is common in cannabis cessation — studies suggest that most people make several attempts before achieving sustained abstinence. A relapse is not a failure; it is data about what did not work.</p>
+              <div class="timeline">
+                <div class="t-item reveal">
+                  <div class="t-icon"><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-refresh"></use></svg></div>
+                  <div class="t-body"><h3>Stop as quickly as possible</h3><p>A single use does not need to become a return to regular use.</p></div>
+                </div>
+                <div class="t-item reveal">
+                  <div class="t-icon"><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-search"></use></svg></div>
+                  <div class="t-body"><h3>Identify what triggered it</h3><p>What cue, emotion, or situation preceded the relapse?</p></div>
+                </div>
+                <div class="t-item reveal">
+                  <div class="t-icon"><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-settings"></use></svg></div>
+                  <div class="t-body"><h3>Adjust your plan</h3><p>Was the trigger one you had not prepared for? Was support insufficient? Was the environment not changed enough?</p></div>
+                </div>
+                <div class="t-item reveal">
+                  <div class="t-icon"><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-flag"></use></svg></div>
+                  <div class="t-body"><h3>Reset and continue</h3><p>Streaks matter, but they are recoverable. The cumulative time spent sober still has value.</p></div>
+                </div>
+              </div>
+              <p>The most important factor in long-term success is not avoiding any single relapse — it is the decision to continue trying after one.</p>
+              <p>Use this guide on <a href="/preventing-cannabis-relapse">preventing cannabis relapse</a> to build a trigger-first prevention system.</p>
+              <p>If you want a more condensed decision framework, this guide on the <a href="/best-way-to-quit-weed">best way to quit weed</a> turns the process into a practical system.</p>
+            </section>
+
+            <section id="benefits">
+              <h2>The timeline of benefits after quitting</h2>
+              <p>Knowing what to expect in terms of positive change can reinforce motivation during difficult periods.</p>
+              <div class="milestones">
+                <div class="mile reveal"><span>24–48 hours</span><strong>THC begins clearing from the bloodstream.</strong><p>Cravings begin.</p></div>
+                <div class="mile reveal"><span>72 hours</span><strong>Lung function starts improving for those who smoked.</strong></div>
+                <div class="mile reveal"><span>1 week</span><strong>Sleep begins stabilising.</strong><p>Mental fog may still be present.</p></div>
+                <div class="mile reveal"><span>2–4 weeks</span><strong>Mood stabilises.</strong><p>Motivation and energy begin returning. Anxiety often improves noticeably.</p></div>
+                <div class="mile reveal"><span>1–3 months</span><strong>Working memory and executive function show measurable improvement in research settings.</strong><p>Many people report feeling "like themselves again."</p></div>
+                <div class="mile reveal"><span>3–6 months</span><strong>Lung function substantially recovered (for smokers).</strong><p>Long-term mood, motivation, and cognitive clarity typically at or above pre-use levels.</p></div>
+              </div>
+            </section>
+
+            <section id="support">
+              <h2>When professional support is appropriate</h2>
+              <p>Most people successfully quit cannabis without clinical intervention. However, professional support is worth pursuing if:</p>
+              <ul class="checklist">
+                <li><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-check"></use></svg> You have tried multiple times without sustained success</li>
+                <li><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-check"></use></svg> Your use is linked to managing a diagnosed anxiety disorder, depression, or PTSD</li>
+                <li><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-check"></use></svg> You are experiencing significant functional impairment (work, relationships, finances)</li>
+                <li><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-check"></use></svg> You are also using other substances</li>
+              </ul>
+              <p>A GP can refer to addiction medicine specialists or CBT-based programs that have a strong evidence base for cannabis use disorder.</p>
+            </section>
+
+            <section id="faq">
+              <h2>Frequently asked questions</h2>
+              <div class="faq">
+                <details class="reveal">
+                  <summary>How long does it take to quit weed?<svg class="icon chev" aria-hidden="true"><use href="/assets/article-icons.svg#i-chevdown"></use></svg></summary>
+                  <p>Acute withdrawal resolves within 2–3 weeks for most people. Building stable new habits typically takes 60–90 days of consistent practice.</p>
+                </details>
+                <details class="reveal">
+                  <summary>Is quitting weed hard?<svg class="icon chev" aria-hidden="true"><use href="/assets/article-icons.svg#i-chevdown"></use></svg></summary>
+                  <p>It is challenging for regular users, particularly in the first two weeks. The difficulty is real and neurologically grounded — but it is also temporary and manageable with the right approach.</p>
+                </details>
+                <details class="reveal">
+                  <summary>Can I quit weed on my own?<svg class="icon chev" aria-hidden="true"><use href="/assets/article-icons.svg#i-chevdown"></use></svg></summary>
+                  <p>Yes. Many people successfully quit without formal clinical support. Structured self-monitoring, craving management tools, and social accountability are the key ingredients.</p>
+                </details>
+                <details class="reveal">
+                  <summary>What if I fail the first time?<svg class="icon chev" aria-hidden="true"><use href="/assets/article-icons.svg#i-chevdown"></use></svg></summary>
+                  <p>Multiple attempts are normal and do not predict long-term outcomes negatively. Each attempt provides information about what needs to change. Persistence is the primary determinant of eventual success.</p>
+                </details>
+                <details class="reveal">
+                  <summary>Will my mental health improve after quitting?<svg class="icon chev" aria-hidden="true"><use href="/assets/article-icons.svg#i-chevdown"></use></svg></summary>
+                  <p>For most people, yes — particularly those who used cannabis to manage anxiety or low mood. Short-term there may be a temporary worsening (withdrawal); medium-to-long-term, the majority of people report significant improvement in mood, motivation, and clarity.</p>
+                </details>
+              </div>
+            </section>
           </div>
-        </section>
-      </main>
+
+          <section class="evidence reveal" aria-labelledby="evidence-title">
+            <div class="evidence-head">
+              <svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-flask"></use></svg>
+              <h2 id="evidence-title">How we create our content</h2>
+            </div>
+            <p>Every article published on CannaClear is based on current scientific literature, clinical guidelines, and evidence-based recovery principles.</p>
+            <p>We review peer-reviewed research, public health recommendations, and real-world recovery experiences to create content that is accurate, practical, and easy to understand.</p>
+            <p>Our goal is to translate complex science into actionable advice for people recovering from cannabis dependence.</p>
+            <p>Articles are reviewed and updated regularly to reflect the latest available evidence.</p>
+            <p><a href="/editorial-policy">Learn more about our Editorial Policy →</a></p>
+          </section>
+
+          <section class="cta reveal">
+            <div>
+              <p class="kicker">Start your quit with CannaClear</p>
+              <h2>Track sober days, cravings, and milestones in one calm place.</h2>
+              <p>CannaClear tracks your sober days, identifies craving patterns, provides SOS tools for difficult moments, and gives you a clear view of your progress — one day at a time.</p>
+            </div>
+            <a href="/download" class="btn-primary">Download on the App Store</a>
+          </section>
+
+          <section class="disclaimer reveal">
+            <h2>Medical Disclaimer</h2>
+            <p>The information on CannaClear is provided for educational purposes only and should not replace professional medical advice, diagnosis, or treatment.</p>
+            <p>If you experience severe withdrawal symptoms, depression, suicidal thoughts, or any medical emergency, seek immediate help from a qualified healthcare professional.</p>
+            <p><a href="/medical-disclaimer">Read the full medical disclaimer</a></p>
+          </section>
+
+          <section class="author reveal">
+            <div class="author-photo" aria-hidden="true">LP</div>
+            <div>
+              <p class="author-kicker">About the Author</p>
+              <h2>Lukas Pietruschka</h2>
+              <p class="author-role">Founder of CannaClear • Recovery Researcher • Product Builder</p>
+              <p>Lukas Pietruschka is the founder of CannaClear, a recovery platform that helps people quit cannabis and stay motivated throughout withdrawal and long-term recovery.</p>
+              <p>He researches cannabis withdrawal, dopamine recovery, habit formation, behavioral psychology, and long-term recovery by reviewing scientific literature, clinical guidelines, and thousands of real recovery experiences shared by the community.</p>
+              <p>His goal is to translate complex scientific research into practical, evidence-based guidance that anyone can understand.</p>
+              <div class="author-links">
+                <a href="/about">About Lukas</a>
+                <a href="/editorial-policy">Editorial Policy</a>
+              </div>
+            </div>
+          </section>
+
+          <section class="related reveal">
+            <h2>Keep reading</h2>
+            <div class="related-grid">
+              <a class="related-card" href="/weed-withdrawal">
+                <svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-wave"></use></svg>
+                <strong>Weed Withdrawal</strong>
+                <span>A broader guide to what withdrawal feels like and why it happens.</span>
+              </a>
+              <a class="related-card" href="/quit-weed-timeline">
+                <svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-calendar"></use></svg>
+                <strong>Quit Weed Timeline</strong>
+                <span>A day-by-day view of symptom peaks, stabilisation, and recovery milestones.</span>
+              </a>
+              <a class="related-card" href="/how-quit-weed-app-helps">
+                <svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-smartphone"></use></svg>
+                <strong>How a Quit-Weed App Helps</strong>
+                <span>See which tracking and craving tools actually support consistency.</span>
+              </a>
+            </div>
+          </section>
+        </main>
+      </div>
     </div>
+
+    <a class="sticky-mobile-cta" href="/download">
+      <span>Get the app</span>
+      <strong>Track your quit with CannaClear</strong>
+    </a>
+
     <script defer src="/_vercel/insights/script.js"></script>
     <script defer src="/_vercel/speed-insights/script.js"></script>
     <script src="/assets/newsletter.js" defer></script>
-      <script src="/assets/trust.js" defer></script>
+    <script src="/assets/trust.js" defer></script>
+    <script src="/assets/article.js" defer></script>
   </body>
 </html>
