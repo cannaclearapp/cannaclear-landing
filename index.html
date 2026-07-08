@@ -233,11 +233,22 @@ a:hover>.store-badge{transform:translateY(-2px)}
   .hero-proof{margin-top:2rem;padding-top:1.35rem}
   .phone-stage{margin-top:.35rem}
   .hero-trust-stack{display:none}
-  .hero-mobile-trust{display:block;margin-top:.2rem;padding-top:.95rem;border-top:1px solid var(--line)}
-  .hero-mobile-badges{display:flex;gap:.8rem;overflow-x:auto;overflow-y:hidden;padding:0 1rem 4px;scroll-padding-inline:1rem;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
-  .hero-mobile-badges::-webkit-scrollbar{display:none}
-  .hero-mobile-badge{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;min-width:max-content;scroll-snap-align:center}
+  .hero-mobile-trust{display:block;position:relative;margin-top:.45rem;padding:1.2rem 0 1.35rem;border-top:1px solid var(--line);overflow:hidden}
+  .hero-mobile-trust::before,.hero-mobile-trust::after{content:"";position:absolute;top:0;bottom:0;width:72px;z-index:2;pointer-events:none}
+  .hero-mobile-trust::before{left:0;background:linear-gradient(90deg,var(--ice) 0%,rgba(244,250,252,0) 100%)}
+  .hero-mobile-trust::after{right:0;background:linear-gradient(270deg,var(--ice) 0%,rgba(244,250,252,0) 100%)}
+  .hero-mobile-badges{--badge-gap:1rem;display:flex;align-items:center;gap:var(--badge-gap);width:max-content;padding:0 1rem;animation:heroBadgeMarquee 16s linear infinite}
+  .hero-mobile-trust:hover .hero-mobile-badges{animation-play-state:paused}
+  .hero-mobile-badge{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;min-width:max-content}
   .hero-mobile-badge img{display:block;width:auto;max-height:42px}
+  .hero-mobile-badge--clone{pointer-events:none}
+  @keyframes heroBadgeMarquee{
+    from{transform:translateX(0)}
+    to{transform:translateX(calc(-50% - (var(--badge-gap) / 2)))}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .hero-mobile-badges{animation:none}
+  }
 }
 
 /* phones */
@@ -487,15 +498,36 @@ footer a:hover{color:#fff}
   </div>
   <div class="wrap hero-mobile-trust">
     <div class="hero-mobile-badges" aria-label="Featured badges">
+      <span class="hero-mobile-badge">
+        <img src="assets/new/badge-research-backed.png" alt="Research backed evidence-based badge" width="112" height="112" decoding="async">
+      </span>
       <a class="hero-mobile-badge" href="https://fazier.com/launches/www.cannaclear.app" target="_blank" rel="noopener">
         <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=neutral" alt="Featured on Fazier launch badge" width="96" height="48" decoding="async">
       </a>
       <a class="hero-mobile-badge" href="https://rankinpublic.xyz/products/www.cannaclear.app" target="_blank" rel="noopener">
         <img src="https://rankinpublic.xyz/api/badges/badge-featured.png?site=www.cannaclear.app" alt="Featured on RankInPublic" title="Featured on RankInPublic" width="150" height="48" decoding="async">
       </a>
+      <span class="hero-mobile-badge">
+        <img src="assets/new/badge-secure-guaranteed.png" alt="100 percent secure guaranteed badge" width="112" height="112" decoding="async">
+      </span>
       <a class="hero-mobile-badge" href="https://fazier.com/launches/www.cannaclear.app" target="_blank" rel="noopener">
         <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&theme=dark" alt="Featured on Fazier" width="150" height="48" decoding="async">
       </a>
+      <span class="hero-mobile-badge hero-mobile-badge--clone" aria-hidden="true">
+        <img src="assets/new/badge-research-backed.png" alt="" width="112" height="112" decoding="async">
+      </span>
+      <span class="hero-mobile-badge hero-mobile-badge--clone" aria-hidden="true">
+        <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=neutral" alt="" width="96" height="48" decoding="async">
+      </span>
+      <span class="hero-mobile-badge hero-mobile-badge--clone" aria-hidden="true">
+        <img src="https://rankinpublic.xyz/api/badges/badge-featured.png?site=www.cannaclear.app" alt="" width="150" height="48" decoding="async">
+      </span>
+      <span class="hero-mobile-badge hero-mobile-badge--clone" aria-hidden="true">
+        <img src="assets/new/badge-secure-guaranteed.png" alt="" width="112" height="112" decoding="async">
+      </span>
+      <span class="hero-mobile-badge hero-mobile-badge--clone" aria-hidden="true">
+        <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&theme=dark" alt="" width="150" height="48" decoding="async">
+      </span>
     </div>
   </div>
 </header>
