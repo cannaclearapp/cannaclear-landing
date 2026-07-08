@@ -80,6 +80,64 @@
     });
   });
 
+  var lightboxTriggers = document.querySelectorAll("[data-lightbox-src]");
+  if (lightboxTriggers.length) {
+    var lightbox = document.createElement("div");
+    lightbox.className = "lightbox";
+    lightbox.setAttribute("aria-hidden", "true");
+    lightbox.innerHTML =
+      '<div class="lightbox__dialog" role="dialog" aria-modal="true" aria-label="Infographic preview">' +
+        '<button class="lightbox__close" type="button" aria-label="Close image preview">' +
+          '<svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-close"></use></svg>' +
+        '</button>' +
+        '<div class="lightbox__frame"><img class="lightbox__img" alt="" /></div>' +
+        '<div class="lightbox__caption" hidden></div>' +
+      '</div>';
+    document.body.appendChild(lightbox);
+
+    var lightboxImg = lightbox.querySelector(".lightbox__img");
+    var lightboxCaption = lightbox.querySelector(".lightbox__caption");
+    var lightboxClose = lightbox.querySelector(".lightbox__close");
+    var lastTrigger = null;
+
+    function closeLightbox() {
+      lightbox.classList.remove("is-open");
+      lightbox.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("lightbox-open");
+      if (lastTrigger) lastTrigger.focus();
+    }
+
+    lightboxTriggers.forEach(function(trigger){
+      trigger.addEventListener("click", function(){
+        lastTrigger = trigger;
+        lightboxImg.src = trigger.getAttribute("data-lightbox-src") || "";
+        lightboxImg.alt = trigger.getAttribute("data-lightbox-alt") || "";
+        var caption = trigger.getAttribute("data-lightbox-caption") || "";
+        if (caption) {
+          lightboxCaption.hidden = false;
+          lightboxCaption.textContent = caption;
+        } else {
+          lightboxCaption.hidden = true;
+          lightboxCaption.textContent = "";
+        }
+        lightbox.classList.add("is-open");
+        lightbox.setAttribute("aria-hidden", "false");
+        document.body.classList.add("lightbox-open");
+        lightboxClose.focus();
+      });
+    });
+
+    lightboxClose.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", function(event){
+      if (event.target === lightbox) closeLightbox();
+    });
+    document.addEventListener("keydown", function(event){
+      if (event.key === "Escape" && lightbox.classList.contains("is-open")) {
+        closeLightbox();
+      }
+    });
+  }
+
   var sticky = document.getElementById("stickybar");
   var stickyClose = document.getElementById("stickyClose");
   if (sticky && stickyClose) {

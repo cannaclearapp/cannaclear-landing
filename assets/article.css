@@ -168,6 +168,29 @@ a{color:var(--teal);text-decoration:none}
 .co-research .co-icon{color:var(--muted);background:var(--ice)}
 .co-research b{color:var(--teal-ink)}
 
+.infographic{margin:26px 0 30px}
+.infographic--narrow{max-width:420px;margin-inline:auto}
+.infographic-trigger{display:block;width:100%;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);padding:14px;box-shadow:var(--shadow-card);cursor:zoom-in;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.infographic-trigger:hover{transform:translateY(-2px);box-shadow:var(--shadow-float);border-color:var(--mint-strong)}
+.infographic-trigger img{display:block;width:100%;height:auto;border-radius:calc(var(--r-lg) - 10px)}
+.infographic figcaption{margin-top:10px;font-size:13.5px;line-height:1.5;color:var(--muted);text-align:center}
+
+.lightbox-open{overflow:hidden}
+.lightbox{position:fixed;inset:0;z-index:90;display:grid;place-items:center;padding:24px;background:rgba(11,59,67,.78);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);opacity:0;pointer-events:none;transition:opacity .22s ease}
+.lightbox.is-open{opacity:1;pointer-events:auto}
+.lightbox__dialog{position:relative;max-width:min(96vw,1200px);max-height:92vh;display:grid;gap:12px;justify-items:center}
+.lightbox__frame{background:var(--paper);border:1px solid rgba(255,255,255,.14);border-radius:22px;padding:14px;box-shadow:0 24px 70px rgba(0,0,0,.28)}
+.lightbox__img{display:block;max-width:min(92vw,1120px);max-height:78vh;width:auto;height:auto;border-radius:16px}
+.lightbox__caption{max-width:min(90vw,760px);font-size:14px;line-height:1.55;color:#F4FAFC;text-align:center}
+.lightbox__close{position:absolute;top:-4px;right:-4px;width:44px;height:44px;border:none;border-radius:999px;background:#fff;color:var(--teal-ink);display:grid;place-items:center;box-shadow:0 12px 28px rgba(0,0,0,.18);cursor:pointer}
+.lightbox__close .icon{width:18px;height:18px}
+@media(max-width:640px){
+  .lightbox{padding:16px}
+  .lightbox__frame{padding:10px}
+  .lightbox__img{max-width:calc(100vw - 44px);max-height:74vh}
+  .lightbox__close{top:-8px;right:-2px}
+}
+
 .timeline{position:relative;margin:26px 0 10px;padding-left:34px}
 .timeline::before{content:"";position:absolute;left:11px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--mint-strong),var(--teal) 60%,var(--turquoise));border-radius:2px}
 .t-item{position:relative;padding:0 0 30px}
