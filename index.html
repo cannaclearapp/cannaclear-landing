@@ -220,6 +220,7 @@ a:hover>.store-badge{transform:translateY(-2px)}
 .hero-badge img{display:block;width:auto;max-height:48px}
 .hero-badge--fazier-compact img{max-height:48px}
 .hero-badge--rankin img{max-height:48px}
+.hero-mobile-trust{display:none}
 @media(max-width:760px){
   .nav-in{height:72px}
   .hero-in{padding:74px 0 80px;gap:32px}
@@ -231,7 +232,14 @@ a:hover>.store-badge{transform:translateY(-2px)}
   .trial-note{margin-top:1.2rem}
   .hero-proof{margin-top:2rem;padding-top:1.35rem}
   .phone-stage{margin-top:.35rem}
-  .hero-badges{justify-content:flex-start;flex-wrap:wrap}
+  .hero-mobile-trust{display:block;grid-column:1/-1}
+  .hero-trust-stack{margin-top:.35rem;padding-top:.9rem;border-top:1px solid var(--line)}
+  .hero-badges{position:relative;display:grid;place-items:center;min-height:48px}
+  .hero-badge{grid-area:1/1;opacity:0;transform:translateY(6px);pointer-events:none;transition:opacity .28s ease,transform .28s ease}
+  .hero-badge.is-active{opacity:1;transform:translateY(0);pointer-events:auto}
+  .hero-badge img{max-height:42px}
+  .hero-badge--fazier-compact img{max-height:42px}
+  .hero-badge--rankin img{max-height:42px}
 }
 
 /* phones */
@@ -458,6 +466,7 @@ footer a:hover{color:#fff}
         <span class="proof-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Private by default</span>
         <span class="proof-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>Supportive and calm</span>
       </div>
+      <div class="hero-trust-anchor" aria-hidden="true"></div>
       <div class="hero-trust-stack">
         <div class="hero-badges" aria-label="Featured badges">
           <a class="hero-badge hero-badge--fazier-compact" href="https://fazier.com/launches/www.cannaclear.app" target="_blank" rel="noopener">
@@ -478,6 +487,7 @@ footer a:hover{color:#fff}
       <img class="ph ph-front" src="/assets/new/mockup-home.webp" alt="CannaClear home dashboard showing sober days, money saved and amount not consumed" fetchpriority="high">
       <div class="float-card fc-money"><span class="n" data-count="480" data-prefix="$">$0</span>saved so far</div>
     </div>
+    <div class="hero-mobile-trust"></div>
   </div>
 </header>
 
@@ -793,6 +803,55 @@ document.querySelectorAll('[data-count]').forEach(el=>{
   }
   requestAnimationFrame(tick);
 });
+
+/* ---- mobile trust badges ---- */
+const trustStack=document.querySelector('.hero-trust-stack');
+const trustAnchor=document.querySelector('.hero-trust-anchor');
+const trustMobileHost=document.querySelector('.hero-mobile-trust');
+const trustBadges=[...document.querySelectorAll('.hero-badge')];
+const trustMq=matchMedia('(max-width: 760px)');
+let trustIndex=0;
+let trustTimer=null;
+
+function setActiveTrustBadge(index){
+  trustBadges.forEach((badge,i)=>badge.classList.toggle('is-active',i===index));
+}
+
+function startTrustRotation(){
+  if(trustTimer || trustBadges.length < 2 || !trustMq.matches) return;
+  setActiveTrustBadge(trustIndex);
+  trustTimer=window.setInterval(()=>{
+    trustIndex=(trustIndex+1)%trustBadges.length;
+    setActiveTrustBadge(trustIndex);
+  },2400);
+}
+
+function stopTrustRotation(){
+  if(trustTimer){
+    window.clearInterval(trustTimer);
+    trustTimer=null;
+  }
+  trustBadges.forEach(badge=>badge.classList.remove('is-active'));
+}
+
+function syncTrustPlacement(){
+  if(!trustStack || !trustAnchor || !trustMobileHost) return;
+  if(trustMq.matches){
+    trustMobileHost.appendChild(trustStack);
+    setActiveTrustBadge(trustIndex);
+    startTrustRotation();
+  }else{
+    stopTrustRotation();
+    trustAnchor.insertAdjacentElement('afterend',trustStack);
+  }
+}
+
+syncTrustPlacement();
+if(typeof trustMq.addEventListener==='function'){
+  trustMq.addEventListener('change',syncTrustPlacement);
+}else if(typeof trustMq.addListener==='function'){
+  trustMq.addListener(syncTrustPlacement);
+}
 </script>
 </body>
 </html>

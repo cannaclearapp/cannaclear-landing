@@ -185,7 +185,9 @@ a{color:var(--teal);text-decoration:none}
 .mile:hover{transform:translateY(-3px);box-shadow:var(--shadow-float)}
 .mile .m-icon{width:44px;height:44px;margin:0 auto 12px;border-radius:14px;background:var(--mint);color:var(--teal);display:grid;place-items:center}
 .mile .when{font-size:12px;font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:.07em}
-.mile b{display:block;font-family:var(--display);font-size:15px;margin-top:3px;line-height:1.35}
+.mile>span:first-child{display:block;font-family:var(--display);font-size:28px;line-height:1;color:var(--teal-deep);margin-bottom:10px}
+.mile b,.mile strong{display:block;font-family:var(--display);font-size:15px;margin-top:3px;line-height:1.35}
+.mile p{font-size:14px;color:var(--muted);line-height:1.6;margin:12px 0 0}
 
 .action{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--turquoise);border-radius:var(--r-md);padding:20px 22px;margin:24px 0;box-shadow:var(--shadow-card)}
 .action-head{display:flex;align-items:center;gap:10px;margin-bottom:12px}
