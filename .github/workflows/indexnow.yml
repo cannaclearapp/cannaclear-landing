@@ -1,0 +1,43 @@
+name: Submit IndexNow URLs
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow-${{ github.ref_name || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  submit-indexnow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Show trigger context
+        run: |
+          echo "event_name=${{ github.event_name }}"
+          echo "ref=${{ github.ref }}"
+          echo "sha=${{ github.sha }}"
+
+      - name: Submit sitemap URLs to IndexNow
+        working-directory: .
+        run: |
+          python scripts/submit-indexnow.py \
+            --wait-for-deploy \
+            --expected-sitemap-path sitemap.xml
