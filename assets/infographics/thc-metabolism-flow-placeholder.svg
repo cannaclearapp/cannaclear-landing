@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" fill="none">
+  <rect width="1200" height="680" rx="32" fill="#F8FEFF"/>
+  <rect x="24" y="24" width="1152" height="632" rx="28" fill="white" stroke="#CBEAF0" stroke-width="2"/>
+  <text x="80" y="108" fill="#0F5060" font-family="Arial, sans-serif" font-size="54" font-weight="700">THC Metabolism Flow</text>
+  <text x="80" y="152" fill="#178796" font-family="Arial, sans-serif" font-size="24">Placeholder diagram for the article layout</text>
+  <g font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#0F5060">
+    <rect x="80" y="240" width="140" height="84" rx="18" fill="#E8F6F9" stroke="#CBEAF0"/>
+    <text x="116" y="292">Use</text>
+    <rect x="264" y="240" width="140" height="84" rx="18" fill="#E8F6F9" stroke="#CBEAF0"/>
+    <text x="292" y="292">Blood</text>
+    <rect x="448" y="240" width="140" height="84" rx="18" fill="#E8F6F9" stroke="#CBEAF0"/>
+    <text x="486" y="292">Brain</text>
+    <rect x="632" y="240" width="140" height="84" rx="18" fill="#E8F6F9" stroke="#CBEAF0"/>
+    <text x="672" y="292">Liver</text>
+    <rect x="816" y="210" width="160" height="64" rx="18" fill="#E8F6F9" stroke="#CBEAF0"/>
+    <text x="843" y="250">11-OH-THC</text>
+    <rect x="816" y="292" width="160" height="64" rx="18" fill="#E8F6F9" stroke="#CBEAF0"/>
+    <text x="851" y="332">THC-COOH</text>
+    <rect x="1020" y="240" width="120" height="84" rx="18" fill="#E8F6F9" stroke="#CBEAF0"/>
+    <text x="1038" y="292">Exit</text>
+  </g>
+  <g stroke="#178796" stroke-width="6" stroke-linecap="round">
+    <path d="M220 282H252"/>
+    <path d="M404 282H436"/>
+    <path d="M588 282H620"/>
+    <path d="M772 252H804"/>
+    <path d="M772 324H804"/>
+    <path d="M976 282H1008"/>
+  </g>
+  <g fill="#178796">
+    <path d="M252 282l-14-10v20l14-10z"/>
+    <path d="M436 282l-14-10v20l14-10z"/>
+    <path d="M620 282l-14-10v20l14-10z"/>
+    <path d="M804 252l-14-10v20l14-10z"/>
+    <path d="M804 324l-14-10v20l14-10z"/>
+    <path d="M1008 282l-14-10v20l14-10z"/>
+  </g>
+  <text x="80" y="420" fill="#4F7380" font-family="Arial, sans-serif" font-size="24">Concept: parent THC moves quickly, metabolites persist longer, and testing often follows the later steps rather than the first psychoactive phase.</text>
+</svg>

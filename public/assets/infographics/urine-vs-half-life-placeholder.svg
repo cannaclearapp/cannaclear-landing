@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <rect width="1600" height="900" rx="40" fill="#F8FDFF"/>
+  <rect x="32" y="32" width="1536" height="836" rx="32" fill="white" stroke="#CDECF2" stroke-width="4"/>
+  <text x="100" y="120" fill="#0D4350" font-family="Arial, sans-serif" font-size="56" font-weight="700">Half-Life, Metabolites, Urine Detection, Feeling Sober</text>
+  <text x="100" y="174" fill="#327082" font-family="Arial, sans-serif" font-size="28">Four related ideas, four different timelines</text>
+  <text x="100" y="290" fill="#0D4350" font-family="Arial, sans-serif" font-size="28" font-weight="700">Feeling sober</text>
+  <rect x="430" y="255" width="220" height="48" rx="24" fill="#A7E1B7"/>
+  <text x="100" y="390" fill="#0D4350" font-family="Arial, sans-serif" font-size="28" font-weight="700">THC half-life</text>
+  <rect x="430" y="355" width="360" height="48" rx="24" fill="#8BD4C9"/>
+  <text x="100" y="490" fill="#0D4350" font-family="Arial, sans-serif" font-size="28" font-weight="700">Metabolite persistence</text>
+  <rect x="430" y="455" width="620" height="48" rx="24" fill="#63C3C0"/>
+  <text x="100" y="590" fill="#0D4350" font-family="Arial, sans-serif" font-size="28" font-weight="700">Urine detection cutoff window</text>
+  <rect x="430" y="555" width="780" height="48" rx="24" fill="#178796"/>
+  <text x="1238" y="585" fill="#178796" font-family="Arial, sans-serif" font-size="24" font-weight="700">Longest</text>
+  <rect x="100" y="680" width="1400" height="120" rx="28" fill="#F5FBFC" stroke="#CDECF2" stroke-width="4"/>
+  <text x="150" y="750" fill="#327082" font-family="Arial, sans-serif" font-size="28">A person can feel normal while metabolites are still present above a urine cutoff.</text>
+</svg>

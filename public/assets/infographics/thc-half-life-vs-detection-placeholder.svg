@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" fill="none">
+  <rect width="1200" height="720" rx="32" fill="#F8FEFF"/>
+  <rect x="24" y="24" width="1152" height="672" rx="28" fill="white" stroke="#CBEAF0" stroke-width="2"/>
+  <text x="80" y="108" fill="#0F5060" font-family="Arial, sans-serif" font-size="54" font-weight="700">Half-Life Is Not Detection</text>
+  <text x="80" y="150" fill="#178796" font-family="Arial, sans-serif" font-size="24">Placeholder comparison timeline</text>
+  <g font-family="Arial, sans-serif" font-size="24" font-weight="700">
+    <text x="80" y="260" fill="#0F5060">Feeling high</text>
+    <text x="80" y="370" fill="#0F5060">Parent THC decline</text>
+    <text x="80" y="480" fill="#0F5060">Metabolite detection</text>
+  </g>
+  <line x1="280" y1="250" x2="930" y2="250" stroke="#9CD5DE" stroke-width="22" stroke-linecap="round"/>
+  <line x1="280" y1="360" x2="1020" y2="360" stroke="#178796" stroke-width="22" stroke-linecap="round"/>
+  <line x1="280" y1="470" x2="1080" y2="470" stroke="#59B9C7" stroke-width="22" stroke-linecap="round"/>
+  <rect x="920" y="220" width="140" height="60" rx="30" fill="#E8F6F9"/>
+  <rect x="1010" y="330" width="120" height="60" rx="30" fill="#E8F6F9"/>
+  <rect x="1070" y="440" width="80" height="60" rx="30" fill="#E8F6F9"/>
+  <text x="936" y="259" fill="#0F5060" font-family="Arial, sans-serif" font-size="20">shorter</text>
+  <text x="1025" y="369" fill="#0F5060" font-family="Arial, sans-serif" font-size="20">longer</text>
+  <text x="1081" y="479" fill="#0F5060" font-family="Arial, sans-serif" font-size="20">often longest</text>
+  <text x="80" y="620" fill="#4F7380" font-family="Arial, sans-serif" font-size="24">Concept: the subjective high, parent THC decline, and metabolite-based testing can all run on different timelines.</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <rect width="1600" height="900" rx="40" fill="#F8FDFF"/>
+  <rect x="32" y="32" width="1536" height="836" rx="32" fill="white" stroke="#CDECF2" stroke-width="4"/>
+  <text x="100" y="110" fill="#0D4350" font-family="Arial, sans-serif" font-size="54" font-weight="700">How Long Does Weed Stay in Blood?</text>
+  <text x="100" y="160" fill="#327082" font-family="Arial, sans-serif" font-size="28">Active THC, metabolites, estimated detection, and why blood does not equal impairment</text>
+  <circle cx="170" cy="305" r="70" fill="#E8F6F9" stroke="#CDECF2" stroke-width="4"/>
+  <text x="128" y="314" fill="#178796" font-family="Arial, sans-serif" font-size="26" font-weight="700">Use</text>
+  <path d="M250 305H355" stroke="#178796" stroke-width="8" stroke-linecap="round"/>
+  <path d="M335 287L370 305L335 323" fill="#178796"/>
+  <circle cx="455" cy="305" r="70" fill="#E8F6F9" stroke="#CDECF2" stroke-width="4"/>
+  <text x="385" y="297" fill="#178796" font-family="Arial, sans-serif" font-size="24" font-weight="700">Bloodstream</text>
+  <text x="402" y="330" fill="#327082" font-family="Arial, sans-serif" font-size="18">Active THC</text>
+  <path d="M535 305H640" stroke="#178796" stroke-width="8" stroke-linecap="round"/>
+  <path d="M620 287L655 305L620 323" fill="#178796"/>
+  <circle cx="740" cy="305" r="70" fill="#E8F6F9" stroke="#CDECF2" stroke-width="4"/>
+  <text x="688" y="297" fill="#178796" font-family="Arial, sans-serif" font-size="24" font-weight="700">Metabolism</text>
+  <text x="699" y="330" fill="#327082" font-family="Arial, sans-serif" font-size="18">Liver</text>
+  <path d="M820 305H925" stroke="#178796" stroke-width="8" stroke-linecap="round"/>
+  <path d="M905 287L940 305L905 323" fill="#178796"/>
+  <circle cx="1025" cy="305" r="70" fill="#E8F6F9" stroke="#CDECF2" stroke-width="4"/>
+  <text x="973" y="297" fill="#178796" font-family="Arial, sans-serif" font-size="24" font-weight="700">Fat storage</text>
+  <text x="973" y="330" fill="#327082" font-family="Arial, sans-serif" font-size="18">Redistribution</text>
+  <path d="M1105 305H1210" stroke="#178796" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1190 287L1225 305L1190 323" fill="#178796"/>
+  <circle cx="1310" cy="305" r="70" fill="#E8F6F9" stroke="#CDECF2" stroke-width="4"/>
+  <text x="1260" y="297" fill="#178796" font-family="Arial, sans-serif" font-size="24" font-weight="700">Metabolites</text>
+  <text x="1268" y="330" fill="#327082" font-family="Arial, sans-serif" font-size="18">Elimination</text>
+  <rect x="100" y="430" width="880" height="260" rx="28" fill="#F5FBFC" stroke="#CDECF2" stroke-width="4"/>
+  <text x="140" y="490" fill="#0D4350" font-family="Arial, sans-serif" font-size="32" font-weight="700">Estimated blood detection pattern</text>
+  <text x="140" y="555" fill="#0D4350" font-family="Arial, sans-serif" font-size="24" font-weight="700">Occasional use</text>
+  <rect x="360" y="530" width="180" height="28" rx="14" fill="#9DD8C1"/>
+  <text x="140" y="615" fill="#0D4350" font-family="Arial, sans-serif" font-size="24" font-weight="700">Regular use</text>
+  <rect x="360" y="590" width="300" height="28" rx="14" fill="#62C1C0"/>
+  <text x="140" y="675" fill="#0D4350" font-family="Arial, sans-serif" font-size="24" font-weight="700">Heavy use</text>
+  <rect x="360" y="650" width="460" height="28" rx="14" fill="#178796"/>
+  <rect x="1030" y="430" width="420" height="260" rx="28" fill="#F5FBFC" stroke="#CDECF2" stroke-width="4"/>
+  <text x="1070" y="490" fill="#0D4350" font-family="Arial, sans-serif" font-size="32" font-weight="700">Key point</text>
+  <text x="1070" y="560" fill="#327082" font-family="Arial, sans-serif" font-size="28">Blood does not</text>
+  <text x="1070" y="600" fill="#327082" font-family="Arial, sans-serif" font-size="28">automatically equal</text>
+  <text x="1070" y="640" fill="#327082" font-family="Arial, sans-serif" font-size="28">impairment.</text>
+  <text x="100" y="790" fill="#178796" font-family="Arial, sans-serif" font-size="26" font-weight="700">Estimates only. No universal timeline.</text>
+</svg>

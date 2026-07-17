@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" fill="none">
+  <rect width="1200" height="720" rx="32" fill="#F8FEFF"/>
+  <rect x="24" y="24" width="1152" height="672" rx="28" fill="white" stroke="#CBEAF0" stroke-width="2"/>
+  <text x="80" y="108" fill="#0F5060" font-family="Arial, sans-serif" font-size="54" font-weight="700">Half-Life vs Elimination</text>
+  <text x="80" y="150" fill="#178796" font-family="Arial, sans-serif" font-size="24">Placeholder decay curve for concept explanation</text>
+  <line x1="120" y1="580" x2="1080" y2="580" stroke="#9CD5DE" stroke-width="4"/>
+  <line x1="120" y1="180" x2="120" y2="580" stroke="#9CD5DE" stroke-width="4"/>
+  <path d="M140 220C260 260 340 330 430 390C520 450 640 500 780 540C860 562 950 572 1040 576" stroke="#178796" stroke-width="8" stroke-linecap="round"/>
+  <line x1="320" y1="180" x2="320" y2="580" stroke="#CBEAF0" stroke-width="2" stroke-dasharray="10 10"/>
+  <line x1="530" y1="180" x2="530" y2="580" stroke="#CBEAF0" stroke-width="2" stroke-dasharray="10 10"/>
+  <line x1="760" y1="180" x2="760" y2="580" stroke="#CBEAF0" stroke-width="2" stroke-dasharray="10 10"/>
+  <text x="270" y="630" fill="#0F5060" font-family="Arial, sans-serif" font-size="22" font-weight="700">1 half-life</text>
+  <text x="480" y="630" fill="#0F5060" font-family="Arial, sans-serif" font-size="22" font-weight="700">2 half-lives</text>
+  <text x="710" y="630" fill="#0F5060" font-family="Arial, sans-serif" font-size="22" font-weight="700">3 half-lives</text>
+  <text x="138" y="210" fill="#0F5060" font-family="Arial, sans-serif" font-size="22">100%</text>
+  <text x="308" y="318" fill="#0F5060" font-family="Arial, sans-serif" font-size="22">50%</text>
+  <text x="518" y="408" fill="#0F5060" font-family="Arial, sans-serif" font-size="22">25%</text>
+  <text x="748" y="486" fill="#0F5060" font-family="Arial, sans-serif" font-size="22">12.5%</text>
+  <text x="80" y="670" fill="#4F7380" font-family="Arial, sans-serif" font-size="24">Concept: concentration can keep declining through multiple half-lives before practical elimination is complete.</text>
+</svg>

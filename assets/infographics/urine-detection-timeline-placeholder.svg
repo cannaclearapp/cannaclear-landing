@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <rect width="1600" height="900" rx="40" fill="#F8FDFF"/>
+  <rect x="32" y="32" width="1536" height="836" rx="32" fill="white" stroke="#CDECF2" stroke-width="4"/>
+  <text x="100" y="120" fill="#0D4350" font-family="Arial, sans-serif" font-size="56" font-weight="700">Estimated Urine THC Detection Timeline</text>
+  <text x="100" y="174" fill="#327082" font-family="Arial, sans-serif" font-size="28">Ranges broaden as use becomes more frequent</text>
+  <text x="100" y="270" fill="#0D4350" font-family="Arial, sans-serif" font-size="28" font-weight="700">One-time use</text>
+  <rect x="420" y="236" width="180" height="54" rx="27" fill="#A7E1B7"/>
+  <text x="458" y="271" fill="#0D4350" font-family="Arial, sans-serif" font-size="24" font-weight="700">Shorter</text>
+  <text x="100" y="370" fill="#0D4350" font-family="Arial, sans-serif" font-size="28" font-weight="700">Occasional use</text>
+  <rect x="420" y="336" width="280" height="54" rx="27" fill="#8BD4C9"/>
+  <text x="500" y="371" fill="#0D4350" font-family="Arial, sans-serif" font-size="24" font-weight="700">Moderate</text>
+  <text x="100" y="470" fill="#0D4350" font-family="Arial, sans-serif" font-size="28" font-weight="700">Regular use</text>
+  <rect x="420" y="436" width="430" height="54" rx="27" fill="#63C3C0"/>
+  <text x="570" y="471" fill="#0D4350" font-family="Arial, sans-serif" font-size="24" font-weight="700">Longer</text>
+  <text x="100" y="570" fill="#0D4350" font-family="Arial, sans-serif" font-size="28" font-weight="700">Daily use</text>
+  <rect x="420" y="536" width="620" height="54" rx="27" fill="#39A8B1"/>
+  <text x="650" y="571" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="700">Often weeks</text>
+  <text x="100" y="670" fill="#0D4350" font-family="Arial, sans-serif" font-size="28" font-weight="700">Heavy long-term use</text>
+  <rect x="420" y="636" width="840" height="54" rx="27" fill="#178796"/>
+  <text x="665" y="671" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="700">Broadest uncertainty</text>
+  <line x1="420" y1="760" x2="1350" y2="760" stroke="#CDECF2" stroke-width="6" stroke-linecap="round"/>
+  <text x="420" y="810" fill="#327082" font-family="Arial, sans-serif" font-size="22">Shorter window</text>
+  <text x="1180" y="810" fill="#327082" font-family="Arial, sans-serif" font-size="22">Longer window</text>
+  <text x="980" y="174" fill="#178796" font-family="Arial, sans-serif" font-size="26" font-weight="700">Estimates, not guarantees</text>
+</svg>
