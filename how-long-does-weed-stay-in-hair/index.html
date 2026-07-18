@@ -37,22 +37,106 @@
     </script>
     <script type="application/ld+json">
       {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          { "@type": "Question", "name": "How long does THC stay in hair?", "acceptedAnswer": { "@type": "Answer", "text": "Hair testing is usually discussed as a longer retrospective method. Detection depends on hair growth, sample length, use pattern, laboratory method, cutoff level, and individual biology, so no universal timeline applies." } },
-          { "@type": "Question", "name": "Can a hair test detect one-time use?", "acceptedAnswer": { "@type": "Answer", "text": "A hair test may be less reliable for very limited one-time exposure than for repeated exposure, but outcomes depend on the lab method, analyte, sample, and cutoff." } },
-          { "@type": "Question", "name": "Do hair tests detect recent use?", "acceptedAnswer": { "@type": "Answer", "text": "Generally not immediately. New exposure has to be incorporated into growing hair and emerge far enough from the scalp to be collected and analyzed." } },
-          { "@type": "Question", "name": "Can shampoo remove THC from hair?", "acceptedAnswer": { "@type": "Answer", "text": "No scientifically proven shampoo can guarantee a negative hair drug test." } },
-          { "@type": "Question", "name": "Does hair color matter?", "acceptedAnswer": { "@type": "Answer", "text": "Hair biology can influence interpretation, and some research has discussed pigmentation and hair characteristics, but no single trait can predict an individual result." } },
-          { "@type": "Question", "name": "How much hair is needed?", "acceptedAnswer": { "@type": "Answer", "text": "Programs vary, but hair testing commonly analyzes a defined hair segment rather than the entire length of hair." } },
-          { "@type": "Question", "name": "Why is hair different from urine?", "acceptedAnswer": { "@type": "Answer", "text": "Urine usually detects metabolites excreted after use, while hair reflects markers incorporated into growing hair over time." } },
-          { "@type": "Question", "name": "Does a positive hair test prove impairment?", "acceptedAnswer": { "@type": "Answer", "text": "No. Hair testing reflects exposure history and cannot prove current impairment." } },
-          { "@type": "Question", "name": "Can body hair be used for cannabis testing?", "acceptedAnswer": { "@type": "Answer", "text": "Some programs may use body hair when head hair is unavailable, but body hair has different growth patterns and can be harder to interpret as a timeline." } },
-          { "@type": "Question", "name": "Can bleaching guarantee a negative hair test?", "acceptedAnswer": { "@type": "Answer", "text": "No cosmetic treatment should be treated as a guaranteed way to change a hair drug test result." } },
-          { "@type": "Question", "name": "Do hair tests show exactly when cannabis was used?", "acceptedAnswer": { "@type": "Answer", "text": "No. Segment testing may provide broad historical context, but hair testing does not provide an exact timestamp for cannabis use." } },
-          { "@type": "Question", "name": "What affects THC detection in hair?", "acceptedAnswer": { "@type": "Answer", "text": "Frequency of use, hair growth, sample length, head versus body hair, hair treatments, laboratory method, cutoff level, and contamination controls can all affect interpretation." } }
-        ]
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                      {
+                              "@type": "Question",
+                              "name": "How long does THC stay in hair?",
+                              "acceptedAnswer": {
+                                      "@type": "Answer",
+                                      "text": "Hair testing is usually discussed as a longer retrospective method. Detection depends on hair growth, sample length, use pattern, laboratory method, cutoff level, and individual biology."
+                              }
+                      },
+                      {
+                              "@type": "Question",
+                              "name": "Can a hair test detect one-time use?",
+                              "acceptedAnswer": {
+                                      "@type": "Answer",
+                                      "text": "It may be less reliable for very limited one-time exposure than repeated exposure, but results depend on the method, analyte, sample, and cutoff."
+                              }
+                      },
+                      {
+                              "@type": "Question",
+                              "name": "Do hair tests detect recent use?",
+                              "acceptedAnswer": {
+                                      "@type": "Answer",
+                                      "text": "Generally not immediately. Hair must grow enough for newly incorporated markers to be collected and analyzed."
+                              }
+                      },
+                      {
+                              "@type": "Question",
+                              "name": "Can shampoo remove THC?",
+                              "acceptedAnswer": {
+                                      "@type": "Answer",
+                                      "text": "No scientifically proven shampoo can guarantee a negative hair drug test."
+                              }
+                      },
+                      {
+                              "@type": "Question",
+                              "name": "Does hair color matter?",
+                              "acceptedAnswer": {
+                                      "@type": "Answer",
+                                      "text": "Hair characteristics can influence interpretation, but hair color alone does not predict a personal result."
+                              }
+                      },
+                      {
+                              "@type": "Question",
+                              "name": "How much hair is needed?",
+                              "acceptedAnswer": {
+                                      "@type": "Answer",
+                                      "text": "Programs vary, but labs commonly analyze a defined hair segment rather than the entire length of hair."
+                              }
+                      },
+                      {
+                              "@type": "Question",
+                              "name": "Why is hair different from urine?",
+                              "acceptedAnswer": {
+                                      "@type": "Answer",
+                                      "text": "Urine measures metabolites excreted after use, while hair reflects markers incorporated into growing hair over time. If urine is your main question, see our urine-focused testing guide."
+                              }
+                      },
+                      {
+                              "@type": "Question",
+                              "name": "Does a positive hair test prove impairment?",
+                              "acceptedAnswer": {
+                                      "@type": "Answer",
+                                      "text": "No. Hair testing reflects exposure history and cannot prove current impairment. The cannabis test interpretation guide explains why detection and impairment should be interpreted separately."
+                              }
+                      },
+                      {
+                              "@type": "Question",
+                              "name": "Can body hair be used for cannabis testing?",
+                              "acceptedAnswer": {
+                                      "@type": "Answer",
+                                      "text": "Some programs may use body hair when head hair is unavailable, but body hair has different growth patterns and can be harder to interpret as a timeline."
+                              }
+                      },
+                      {
+                              "@type": "Question",
+                              "name": "Can bleaching guarantee a negative hair test?",
+                              "acceptedAnswer": {
+                                      "@type": "Answer",
+                                      "text": "No cosmetic treatment should be treated as a guaranteed way to change a hair drug test result."
+                              }
+                      },
+                      {
+                              "@type": "Question",
+                              "name": "Do hair tests show exactly when cannabis was used?",
+                              "acceptedAnswer": {
+                                      "@type": "Answer",
+                                      "text": "No. Segment testing can provide broad context, but it does not provide an exact timestamp. For a cross-test view of timing limits, review the THC detection overview."
+                              }
+                      },
+                      {
+                              "@type": "Question",
+                              "name": "What affects THC detection in hair?",
+                              "acceptedAnswer": {
+                                      "@type": "Answer",
+                                      "text": "Frequency, hair growth, sample length, head versus body hair, hair treatments, laboratory method, cutoff level, and contamination controls all matter. Our THC half-life explainer explains why this is different from simple elimination timing."
+                              }
+                      }
+              ]
       }
     </script>
     <script type="application/ld+json">
@@ -136,6 +220,7 @@
             <section id="what-does-a-hair-drug-test-detect">
               <h2>What does a hair drug test detect?</h2>
               <p><strong>A cannabis hair test is looking for cannabis-related markers that have become incorporated into hair over time.</strong> Hair differs from blood and saliva because it is not mainly a recent-use fluid. It differs from urine because it is not simply measuring excreted metabolites in a current sample.</p>
+              <p>For the broader comparison of drug testing methods, the <a href="/weed-drug-test">drug-testing methods guide</a> explains screening, confirmation, cutoffs, and result interpretation.</p>
               <div class="callout co-science reveal"><div class="co-icon"><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-flask"></use></svg></div><div><b>Science explained</b><p>Hair testing is retrospective. Cannabinoid markers may reach hair through blood supply to the follicle, sweat, sebum, and environmental contact. Because contamination and incorporation routes are complex, careful lab interpretation matters.</p></div></div>
               <p>For cannabis specifically, toxicology research pays close attention to which analyte is measured. Finding parent THC in hair is not identical to finding a metabolite such as THC-COOH. This matters because parent THC can be more vulnerable to contamination questions, while metabolite evidence can be more informative in some interpretations.</p>
             </section>
@@ -182,7 +267,9 @@
                   <tr><td data-label="Question">Limitations</td><td data-label="Hair">Poor for exact timing and impairment</td><td data-label="Urine">Does not prove current impairment</td><td data-label="Blood">Still not a perfect impairment measure</td><td data-label="Saliva">Method-dependent and affected by oral contamination</td></tr>
                 </tbody>
               </table>
-              <p>For matrix-specific details, read the dedicated pages on <a href="/how-long-does-weed-stay-in-urine">how long weed stays in urine</a>, <a href="/how-long-does-weed-stay-in-blood">how long weed stays in blood</a>, and <a href="/how-long-does-weed-stay-in-saliva">how long weed stays in saliva</a>.</p>
+              <p>If you are looking specifically for urine testing, read <a href="/how-long-does-weed-stay-in-urine">how long weed stays in urine</a>.</p>
+              <p>For blood-based detection, see <a href="/how-long-does-weed-stay-in-blood">how long weed stays in blood</a>.</p>
+              <p>For recent mouth-swab testing, use the guide to <a href="/how-long-does-weed-stay-in-saliva">how long weed stays in saliva</a>.</p>
             </section>
             <section id="can-hair-tests-detect-recent-cannabis-use">
               <h2>Can hair tests detect recent cannabis use?</h2>
@@ -249,12 +336,12 @@
               <details><summary>Can shampoo remove THC? <svg class="icon chev" aria-hidden="true"><use href="/assets/article-icons.svg#i-chevdown"></use></svg></summary><div class="faq-a"><div><p>No scientifically proven shampoo can guarantee a negative hair drug test.</p></div></div></details>
               <details><summary>Does hair color matter? <svg class="icon chev" aria-hidden="true"><use href="/assets/article-icons.svg#i-chevdown"></use></svg></summary><div class="faq-a"><div><p>Hair characteristics can influence interpretation, but hair color alone does not predict a personal result.</p></div></div></details>
               <details><summary>How much hair is needed? <svg class="icon chev" aria-hidden="true"><use href="/assets/article-icons.svg#i-chevdown"></use></svg></summary><div class="faq-a"><div><p>Programs vary, but labs commonly analyze a defined hair segment rather than the entire length of hair.</p></div></div></details>
-              <details><summary>Why is hair different from urine? <svg class="icon chev" aria-hidden="true"><use href="/assets/article-icons.svg#i-chevdown"></use></svg></summary><div class="faq-a"><div><p>Urine measures metabolites excreted after use, while hair reflects markers incorporated into growing hair over time.</p></div></div></details>
-              <details><summary>Does a positive hair test prove impairment? <svg class="icon chev" aria-hidden="true"><use href="/assets/article-icons.svg#i-chevdown"></use></svg></summary><div class="faq-a"><div><p>No. Hair testing reflects exposure history and cannot prove current impairment.</p></div></div></details>
+              <details><summary>Why is hair different from urine? <svg class="icon chev" aria-hidden="true"><use href="/assets/article-icons.svg#i-chevdown"></use></svg></summary><div class="faq-a"><div><p>Urine measures metabolites excreted after use, while hair reflects markers incorporated into growing hair over time. If urine is your main question, see our <a href="/how-long-does-weed-stay-in-urine">urine-focused testing guide</a>.</p></div></div></details>
+              <details><summary>Does a positive hair test prove impairment? <svg class="icon chev" aria-hidden="true"><use href="/assets/article-icons.svg#i-chevdown"></use></svg></summary><div class="faq-a"><div><p>No. Hair testing reflects exposure history and cannot prove current impairment. The <a href="/weed-drug-test">cannabis test interpretation guide</a> explains why detection and impairment should be interpreted separately.</p></div></div></details>
               <details><summary>Can body hair be used for cannabis testing? <svg class="icon chev" aria-hidden="true"><use href="/assets/article-icons.svg#i-chevdown"></use></svg></summary><div class="faq-a"><div><p>Some programs may use body hair when head hair is unavailable, but body hair has different growth patterns and can be harder to interpret as a timeline.</p></div></div></details>
               <details><summary>Can bleaching guarantee a negative hair test? <svg class="icon chev" aria-hidden="true"><use href="/assets/article-icons.svg#i-chevdown"></use></svg></summary><div class="faq-a"><div><p>No cosmetic treatment should be treated as a guaranteed way to change a hair drug test result.</p></div></div></details>
-              <details><summary>Do hair tests show exactly when cannabis was used? <svg class="icon chev" aria-hidden="true"><use href="/assets/article-icons.svg#i-chevdown"></use></svg></summary><div class="faq-a"><div><p>No. Segment testing can provide broad context, but it does not provide an exact timestamp.</p></div></div></details>
-              <details><summary>What affects THC detection in hair? <svg class="icon chev" aria-hidden="true"><use href="/assets/article-icons.svg#i-chevdown"></use></svg></summary><div class="faq-a"><div><p>Frequency, hair growth, sample length, head versus body hair, hair treatments, laboratory method, cutoff level, and contamination controls all matter.</p></div></div></details>
+              <details><summary>Do hair tests show exactly when cannabis was used? <svg class="icon chev" aria-hidden="true"><use href="/assets/article-icons.svg#i-chevdown"></use></svg></summary><div class="faq-a"><div><p>No. Segment testing can provide broad context, but it does not provide an exact timestamp. For a cross-test view of timing limits, <a href="/how-long-does-thc-stay-in-your-system">review the THC detection overview</a>.</p></div></div></details>
+              <details><summary>What affects THC detection in hair? <svg class="icon chev" aria-hidden="true"><use href="/assets/article-icons.svg#i-chevdown"></use></svg></summary><div class="faq-a"><div><p>Frequency, hair growth, sample length, head versus body hair, hair treatments, laboratory method, cutoff level, and contamination controls all matter. Our <a href="/thc-half-life">THC half-life explainer</a> explains why this is different from simple elimination timing.</p></div></div></details>
             </section>
             <section id="references" class="references">
               <h2>Scientific references</h2>
