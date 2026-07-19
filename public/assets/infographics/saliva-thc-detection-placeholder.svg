@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <rect width="1600" height="900" rx="40" fill="#F8FDFF"/>
+  <rect x="32" y="32" width="1536" height="836" rx="32" fill="white" stroke="#CDECF2" stroke-width="4"/>
+  <text x="100" y="115" fill="#0D4350" font-family="Arial, sans-serif" font-size="56" font-weight="700">How Long Does Weed Stay in Saliva?</text>
+  <text x="100" y="168" fill="#178796" font-family="Arial, sans-serif" font-size="30" font-weight="700">Oral fluid tests usually reflect recent exposure, not long-term use.</text>
+  <circle cx="190" cy="315" r="72" fill="#E8F6F9" stroke="#CDECF2" stroke-width="4"/>
+  <text x="150" y="325" fill="#178796" font-family="Arial, sans-serif" font-size="26" font-weight="700">Use</text>
+  <path d="M275 315H390" stroke="#0D4350" stroke-width="8" stroke-linecap="round"/>
+  <path d="M370 297L405 315L370 333" fill="#0D4350"/>
+  <circle cx="500" cy="315" r="72" fill="#E8F6F9" stroke="#CDECF2" stroke-width="4"/>
+  <text x="450" y="305" fill="#178796" font-family="Arial, sans-serif" font-size="24" font-weight="700">THC in</text>
+  <text x="445" y="338" fill="#178796" font-family="Arial, sans-serif" font-size="24" font-weight="700">mouth</text>
+  <path d="M585 315H700" stroke="#0D4350" stroke-width="8" stroke-linecap="round"/>
+  <path d="M680 297L715 315L680 333" fill="#0D4350"/>
+  <circle cx="810" cy="315" r="72" fill="#E8F6F9" stroke="#CDECF2" stroke-width="4"/>
+  <text x="762" y="305" fill="#178796" font-family="Arial, sans-serif" font-size="24" font-weight="700">Saliva</text>
+  <text x="744" y="338" fill="#178796" font-family="Arial, sans-serif" font-size="24" font-weight="700">detection</text>
+  <path d="M895 315H1010" stroke="#0D4350" stroke-width="8" stroke-linecap="round"/>
+  <path d="M990 297L1025 315L990 333" fill="#0D4350"/>
+  <circle cx="1120" cy="315" r="72" fill="#E8F6F9" stroke="#CDECF2" stroke-width="4"/>
+  <text x="1076" y="305" fill="#178796" font-family="Arial, sans-serif" font-size="24" font-weight="700">Decline</text>
+  <text x="1084" y="338" fill="#178796" font-family="Arial, sans-serif" font-size="24" font-weight="700">over time</text>
+  <rect x="100" y="455" width="910" height="245" rx="28" fill="#F5FBFC" stroke="#CDECF2" stroke-width="4"/>
+  <text x="140" y="515" fill="#0D4350" font-family="Arial, sans-serif" font-size="34" font-weight="700">Estimated detection window</text>
+  <text x="140" y="585" fill="#0D4350" font-family="Arial, sans-serif" font-size="24" font-weight="700">Occasional</text>
+  <rect x="350" y="562" width="210" height="28" rx="14" fill="#9DD8C1"/>
+  <text x="140" y="642" fill="#0D4350" font-family="Arial, sans-serif" font-size="24" font-weight="700">Regular</text>
+  <rect x="350" y="619" width="340" height="28" rx="14" fill="#62C1C0"/>
+  <text x="140" y="699" fill="#0D4350" font-family="Arial, sans-serif" font-size="24" font-weight="700">Heavy</text>
+  <rect x="350" y="676" width="520" height="28" rx="14" fill="#178796"/>
+  <rect x="1060" y="455" width="390" height="245" rx="28" fill="#F5FBFC" stroke="#CDECF2" stroke-width="4"/>
+  <text x="1100" y="515" fill="#0D4350" font-family="Arial, sans-serif" font-size="34" font-weight="700">Key facts</text>
+  <text x="1100" y="575" fill="#178796" font-family="Arial, sans-serif" font-size="26" font-weight="700">Recent exposure</text>
+  <text x="1100" y="625" fill="#178796" font-family="Arial, sans-serif" font-size="26" font-weight="700">Parent THC</text>
+  <text x="1100" y="675" fill="#178796" font-family="Arial, sans-serif" font-size="26" font-weight="700">Detection != impairment</text>
+  <text x="100" y="790" fill="#327082" font-family="Arial, sans-serif" font-size="26">Estimates only. Cutoffs, devices, product type, and timing can change interpretation.</text>
+</svg>

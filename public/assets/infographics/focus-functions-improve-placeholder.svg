@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Focus functions improve over time placeholder</title>
+  <desc id="desc">A placeholder infographic showing attention, task switching, deep work, mental clarity, and processing speed improving over time.</desc>
+  <rect width="1200" height="760" rx="36" fill="#f7fcfd"/>
+  <rect x="42" y="42" width="1116" height="676" rx="30" fill="#fff" stroke="#cfe9ef" stroke-width="2"/>
+  <text x="80" y="118" font-family="Arial, sans-serif" font-size="50" font-weight="800" fill="#083b43">Focus Functions Improve Over Time</text>
+  <text x="80" y="164" font-family="Arial, sans-serif" font-size="24" fill="#52727b">Different focus skills can recover at different speeds after quitting weed.</text>
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(96 242)"><rect width="1008" height="66" rx="18" fill="#e8f6f9"/><text x="32" y="42" font-size="24" font-weight="800" fill="#083b43">Sustained attention</text><rect x="390" y="22" width="520" height="22" rx="11" fill="#178796"/></g>
+    <g transform="translate(96 340)"><rect width="1008" height="66" rx="18" fill="#e8f6f9"/><text x="32" y="42" font-size="24" font-weight="800" fill="#083b43">Mental clarity</text><rect x="390" y="22" width="600" height="22" rx="11" fill="#178796"/></g>
+    <g transform="translate(96 438)"><rect width="1008" height="66" rx="18" fill="#e8f6f9"/><text x="32" y="42" font-size="24" font-weight="800" fill="#083b43">Deep work</text><rect x="390" y="22" width="420" height="22" rx="11" fill="#178796"/></g>
+    <g transform="translate(96 536)"><rect width="1008" height="66" rx="18" fill="#e8f6f9"/><text x="32" y="42" font-size="24" font-weight="800" fill="#083b43">Task switching</text><rect x="390" y="22" width="470" height="22" rx="11" fill="#178796"/></g>
+  </g>
+  <text x="446" y="222" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#52727b">Week 1</text>
+  <text x="620" y="222" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#52727b">Month 1</text>
+  <text x="810" y="222" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#52727b">Month 3</text>
+  <text x="982" y="222" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#52727b">Month 6+</text>
+  <text x="96" y="670" font-family="Arial, sans-serif" font-size="21" fill="#52727b">Placeholder overview. Recovery speed differs from person to person.</text>
+</svg>

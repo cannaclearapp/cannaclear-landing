@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">How Long Does Weed Stay in Hair?</title>
+  <desc id="desc">Minimal infographic showing cannabis use, bloodstream, hair follicle, hair growth, hair testing, historical detection, and key facts.</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8ffff"/>
+      <stop offset="1" stop-color="#edf8f4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#0a4248" flood-opacity=".10"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <text x="800" y="92" text-anchor="middle" font-family="Arial, sans-serif" font-size="64" font-weight="800" fill="#071638">How Long Does Weed Stay in Hair?</text>
+  <text x="800" y="142" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#08743b">Hair tests reflect historical exposure, not immediate impairment.</text>
+
+  <g transform="translate(110 205)">
+    <g fill="#f8fffb" stroke="#d9e9df" stroke-width="2" filter="url(#shadow)">
+      <circle cx="95" cy="80" r="72"/><circle cx="400" cy="80" r="72"/><circle cx="705" cy="80" r="72"/><circle cx="1010" cy="80" r="72"/><circle cx="1315" cy="80" r="72"/>
+    </g>
+    <g stroke="#08743b" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M177 80h130m-26-24 26 24-26 24"/>
+      <path d="M482 80h130m-26-24 26 24-26 24"/>
+      <path d="M787 80h130m-26-24 26 24-26 24"/>
+      <path d="M1092 80h130m-26-24 26 24-26 24"/>
+    </g>
+    <g fill="#0a142f" font-family="Arial, sans-serif" text-anchor="middle">
+      <text x="95" y="105" font-size="44" font-weight="900" fill="#08743b">THC</text>
+      <text x="400" y="105" font-size="44" font-weight="900" fill="#b91c1c">BLOOD</text>
+      <text x="705" y="105" font-size="44" font-weight="900" fill="#08743b">ROOT</text>
+      <text x="1010" y="105" font-size="44" font-weight="900" fill="#0d7180">HAIR</text>
+      <text x="1315" y="105" font-size="44" font-weight="900" fill="#263d67">LAB</text>
+      <text x="95" y="185" font-size="27" font-weight="800">1. Use</text>
+      <text x="400" y="185" font-size="27" font-weight="800">2. Bloodstream</text>
+      <text x="705" y="185" font-size="27" font-weight="800">3. Hair follicle</text>
+      <text x="1010" y="185" font-size="27" font-weight="800">4. Hair growth</text>
+      <text x="1315" y="185" font-size="27" font-weight="800">5. Hair test</text>
+      <text x="95" y="225" font-size="22" fill="#44515f">Cannabis is used.</text>
+      <text x="400" y="225" font-size="22" fill="#44515f">Compounds circulate.</text>
+      <text x="705" y="225" font-size="22" fill="#44515f">Markers incorporate.</text>
+      <text x="1010" y="225" font-size="22" fill="#44515f">Hair emerges later.</text>
+      <text x="1315" y="225" font-size="22" fill="#44515f">Lab analyzes segment.</text>
+    </g>
+  </g>
+
+  <g transform="translate(80 500)" filter="url(#shadow)">
+    <rect x="0" y="0" width="1440" height="210" rx="26" fill="#ffffff" stroke="#dbe9ee" stroke-width="2"/>
+    <text x="720" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#071638">Hair Detection Timeline</text>
+    <line x1="150" y1="122" x2="1290" y2="122" stroke="#aeb9c2" stroke-width="3"/>
+    <line x1="150" y1="108" x2="150" y2="136" stroke="#aeb9c2" stroke-width="3"/>
+    <line x1="530" y1="108" x2="530" y2="136" stroke="#aeb9c2" stroke-width="3"/>
+    <line x1="910" y1="108" x2="910" y2="136" stroke="#aeb9c2" stroke-width="3"/>
+    <line x1="1290" y1="108" x2="1290" y2="136" stroke="#aeb9c2" stroke-width="3"/>
+    <rect x="200" y="95" width="250" height="20" rx="10" fill="#cbd7dd"/>
+    <rect x="575" y="95" width="630" height="20" rx="10" fill="#08743b"/>
+    <g font-family="Arial, sans-serif" text-anchor="middle">
+      <text x="150" y="165" font-size="23" font-weight="800" fill="#071638">Recent use</text>
+      <text x="530" y="165" font-size="23" font-weight="800" fill="#071638">Hair emerges</text>
+      <text x="910" y="165" font-size="23" font-weight="800" fill="#071638">Historical window</text>
+      <text x="1290" y="165" font-size="23" font-weight="800" fill="#071638">Segment analyzed</text>
+    </g>
+  </g>
+
+  <g transform="translate(80 742)" filter="url(#shadow)">
+    <rect x="0" y="0" width="1440" height="100" rx="24" fill="#ffffff" stroke="#dbe9ee" stroke-width="2"/>
+    <g font-family="Arial, sans-serif" fill="#071638">
+      <text x="150" y="42" font-size="26" font-weight="800">Long-term exposure</text>
+      <text x="150" y="76" font-size="22" fill="#44515f">Hair is retrospective.</text>
+      <text x="585" y="42" font-size="26" font-weight="800">Hair growth matters</text>
+      <text x="585" y="76" font-size="22" fill="#44515f">New use is delayed.</text>
+      <text x="1040" y="42" font-size="26" font-weight="800">Detection != impairment</text>
+      <text x="1040" y="76" font-size="22" fill="#44515f">A result is not a current-use clock.</text>
+    </g>
+  </g>
+</svg>

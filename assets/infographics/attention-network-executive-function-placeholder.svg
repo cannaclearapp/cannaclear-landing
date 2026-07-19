@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Attention network and executive function placeholder</title>
+  <desc id="desc">A placeholder infographic explaining attention, executive function, working memory, and task control after quitting weed.</desc>
+  <rect width="1200" height="760" rx="36" fill="#e8f6f9"/>
+  <rect x="42" y="42" width="1116" height="676" rx="30" fill="#fff" stroke="#cfe9ef" stroke-width="2"/>
+  <text x="80" y="118" font-family="Arial, sans-serif" font-size="50" font-weight="800" fill="#083b43">Attention Network &amp; Executive Function</text>
+  <text x="80" y="164" font-family="Arial, sans-serif" font-size="24" fill="#52727b">Focus depends on attention, working memory, inhibition, planning, and effort regulation.</text>
+  <g stroke="#178796" stroke-width="8" stroke-linecap="round" fill="none">
+    <path d="M600 256v86M600 418v86M438 380H270M762 380h168M486 296 330 214M714 296l156-82M486 464 330 546M714 464l156 82"/>
+  </g>
+  <circle cx="600" cy="380" r="86" fill="#178796"/>
+  <text x="600" y="374" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#fff">Task</text>
+  <text x="600" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#fff">Control</text>
+  <g font-family="Arial, sans-serif" fill="#083b43">
+    <g transform="translate(120 170)"><rect width="300" height="94" rx="22" fill="#f7fcfd" stroke="#cfe9ef"/><text x="28" y="40" font-size="24" font-weight="800">Attention</text><text x="28" y="70" font-size="18" fill="#52727b">Select what matters.</text></g>
+    <g transform="translate(780 170)"><rect width="300" height="94" rx="22" fill="#f7fcfd" stroke="#cfe9ef"/><text x="28" y="40" font-size="24" font-weight="800">Working memory</text><text x="28" y="70" font-size="18" fill="#52727b">Hold information briefly.</text></g>
+    <g transform="translate(120 498)"><rect width="300" height="94" rx="22" fill="#f7fcfd" stroke="#cfe9ef"/><text x="28" y="40" font-size="24" font-weight="800">Inhibition</text><text x="28" y="70" font-size="18" fill="#52727b">Resist distractions.</text></g>
+    <g transform="translate(780 498)"><rect width="300" height="94" rx="22" fill="#f7fcfd" stroke="#cfe9ef"/><text x="28" y="40" font-size="24" font-weight="800">Planning</text><text x="28" y="70" font-size="18" fill="#52727b">Sequence next steps.</text></g>
+  </g>
+</svg>
