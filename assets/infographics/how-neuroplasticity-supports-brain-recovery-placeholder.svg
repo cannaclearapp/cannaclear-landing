@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">How Neuroplasticity Supports Brain Recovery</title>
+  <desc id="desc">A placeholder infographic showing sleep, movement, learning, routine, social connection and stress reduction supporting brain recovery after quitting weed.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8feff"/>
+      <stop offset="1" stop-color="#e8f6f9"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#178796"/>
+      <stop offset="1" stop-color="#2fbd8d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#0b3b43" flood-opacity=".12"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="760" rx="42" fill="url(#bg)"/>
+  <text x="600" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="50" font-weight="800" fill="#092f36">How Neuroplasticity Supports Brain Recovery</text>
+  <text x="600" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#54727a">Repeated sober inputs help the brain strengthen healthier pathways.</text>
+  <circle cx="600" cy="365" r="116" fill="#fff" filter="url(#shadow)"/>
+  <circle cx="600" cy="365" r="76" fill="#e8f6f9"/>
+  <path d="M566 360c0-32 23-55 54-55 25 0 47 17 52 41 25 8 42 29 42 55 0 34-27 61-61 61H558c-36 0-65-29-65-65 0-30 21-56 50-63 7-38 40-67 80-67" fill="none" stroke="#178796" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="600" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="800" fill="#092f36">Brain adaptation</text>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <g transform="translate(230 250)">
+      <rect x="-105" y="-58" width="210" height="116" rx="26" fill="#fff" filter="url(#shadow)"/>
+      <circle cx="-58" cy="0" r="26" fill="#e8f6f9"/>
+      <path d="M-69 3c12 11 26 11 38 0M-64-6c8-11 20-11 28 0" fill="none" stroke="#178796" stroke-width="5" stroke-linecap="round"/>
+      <text x="30" y="-8" font-size="21" font-weight="800" fill="#092f36">Sleep</text>
+      <text x="30" y="22" font-size="16" fill="#54727a">Consolidation</text>
+    </g>
+    <g transform="translate(970 250)">
+      <rect x="-105" y="-58" width="210" height="116" rx="26" fill="#fff" filter="url(#shadow)"/>
+      <circle cx="-58" cy="0" r="26" fill="#e8f6f9"/>
+      <path d="M-69 11l11-29 10 18 17-8" fill="none" stroke="#178796" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="30" y="-8" font-size="21" font-weight="800" fill="#092f36">Movement</text>
+      <text x="30" y="22" font-size="16" fill="#54727a">Brain health</text>
+    </g>
+    <g transform="translate(230 500)">
+      <rect x="-105" y="-58" width="210" height="116" rx="26" fill="#fff" filter="url(#shadow)"/>
+      <circle cx="-58" cy="0" r="26" fill="#e8f6f9"/>
+      <path d="M-73-15h30c10 0 18 8 18 18s-8 18-18 18h-30zM-43-15v36" fill="none" stroke="#178796" stroke-width="5" stroke-linecap="round"/>
+      <text x="30" y="-8" font-size="21" font-weight="800" fill="#092f36">Learning</text>
+      <text x="30" y="22" font-size="16" fill="#54727a">New pathways</text>
+    </g>
+    <g transform="translate(970 500)">
+      <rect x="-105" y="-58" width="210" height="116" rx="26" fill="#fff" filter="url(#shadow)"/>
+      <circle cx="-58" cy="0" r="26" fill="#e8f6f9"/>
+      <path d="M-74 4c13-24 33-24 46 0M-72 20h44M-50-24v17" fill="none" stroke="#178796" stroke-width="5" stroke-linecap="round"/>
+      <text x="30" y="-8" font-size="21" font-weight="800" fill="#092f36">Connection</text>
+      <text x="30" y="22" font-size="16" fill="#54727a">Reward signals</text>
+    </g>
+  </g>
+  <path d="M345 250 C450 250 480 320 515 345" stroke="url(#teal)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M855 250 C750 250 720 320 685 345" stroke="url(#teal)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M345 500 C450 500 480 430 515 390" stroke="url(#teal)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M855 500 C750 500 720 430 685 390" stroke="url(#teal)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <rect x="210" y="620" width="780" height="70" rx="24" fill="#fff" filter="url(#shadow)"/>
+  <text x="600" y="664" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#092f36">Small repeated habits are the raw material of long-term recovery.</text>
+</svg>
