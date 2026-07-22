@@ -15,6 +15,13 @@
   ],
   "rewrites": [
     { "source": "/support", "destination": "/support/index.html" },
+    { "source": "/guides", "destination": "/guides/index.html" },
+    { "source": "/features/sobriety-tracker", "destination": "/features/sobriety-tracker/index.html" },
+    { "source": "/features/symptom-tracking", "destination": "/features/symptom-tracking/index.html" },
+    { "source": "/features/craving-sos", "destination": "/features/craving-sos/index.html" },
+    { "source": "/features/recovery-journal", "destination": "/features/recovery-journal/index.html" },
+    { "source": "/features/money-saved", "destination": "/features/money-saved/index.html" },
+    { "source": "/features/progress-insights", "destination": "/features/progress-insights/index.html" },
     { "source": "/about", "destination": "/about/index.html" },
     { "source": "/editorial-policy", "destination": "/editorial-policy/index.html" },
     { "source": "/medical-disclaimer", "destination": "/medical-disclaimer/index.html" },
