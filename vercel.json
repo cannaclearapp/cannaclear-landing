@@ -16,6 +16,7 @@
   "rewrites": [
     { "source": "/support", "destination": "/support/index.html" },
     { "source": "/guides", "destination": "/guides/index.html" },
+    { "source": "/features", "destination": "/features/index.html" },
     { "source": "/features/sobriety-tracker", "destination": "/features/sobriety-tracker/index.html" },
     { "source": "/features/symptom-tracking", "destination": "/features/symptom-tracking/index.html" },
     { "source": "/features/craving-sos", "destination": "/features/craving-sos/index.html" },
