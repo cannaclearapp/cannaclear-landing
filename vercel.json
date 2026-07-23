@@ -3,6 +3,12 @@
   "redirects": [
     {
       "source": "/:path*",
+      "has": [{ "type": "host", "value": "cannaclear-landing.vercel.app" }],
+      "destination": "https://www.cannaclear.app/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
       "has": [{ "type": "host", "value": "cannaclear.app" }],
       "destination": "https://www.cannaclear.app/:path*",
       "permanent": true
