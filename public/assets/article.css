@@ -462,6 +462,10 @@ section.related>h2{margin-bottom:18px}
 .footer .shell{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center}
 .footer a{color:var(--muted)}
 .footer a:hover{color:var(--teal)}
+.footer .footer-badge{margin-left:auto;display:inline-flex;align-items:center;line-height:0;border-radius:6px;overflow:hidden;transition:transform .2s ease,opacity .2s ease}
+.footer .footer-badge:hover{transform:translateY(-1px);opacity:.92}
+.footer .footer-badge img{display:block;width:220px;height:48px}
+@media(max-width:760px){.footer .footer-badge{flex-basis:100%;margin:8px 0 0}}
 
 .stickybar{position:fixed;left:12px;right:12px;bottom:12px;z-index:55;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow-float);padding:10px 12px;display:flex;align-items:center;gap:12px;transform:translateY(140%);transition:transform .4s cubic-bezier(.2,.8,.2,1)}
 .stickybar.show{transform:none}
