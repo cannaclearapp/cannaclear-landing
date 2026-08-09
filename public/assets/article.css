@@ -205,8 +205,10 @@ a{color:var(--teal);text-decoration:none}
 .lightbox__frame{background:var(--paper);border:1px solid rgba(255,255,255,.14);border-radius:22px;padding:14px;box-shadow:0 24px 70px rgba(0,0,0,.28)}
 .lightbox__img{display:block;max-width:min(92vw,1120px);max-height:78vh;width:auto;height:auto;border-radius:16px}
 .lightbox__caption{max-width:min(90vw,760px);font-size:14px;line-height:1.55;color:#F4FAFC;text-align:center}
-.lightbox__close{position:absolute;top:-4px;right:-4px;width:44px;height:44px;border:none;border-radius:999px;background:#fff;color:var(--teal-ink);display:grid;place-items:center;box-shadow:0 12px 28px rgba(0,0,0,.18);cursor:pointer}
-.lightbox__close .icon{width:18px;height:18px}
+.lightbox__close{position:absolute;top:-4px;right:-4px;width:44px;height:44px;border:2px solid rgba(23,135,150,.28);border-radius:999px;background:#fff;color:var(--teal-ink);display:grid;place-items:center;box-shadow:0 12px 28px rgba(0,0,0,.18);cursor:pointer;transition:background .2s ease,color .2s ease,border-color .2s ease,transform .2s ease}
+.lightbox__close:hover{background:var(--teal);color:#fff;border-color:var(--teal);transform:scale(1.05)}
+.lightbox__close:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.lightbox__close .icon{width:20px;height:20px;stroke-width:2.6}
 @media(max-width:640px){
   .lightbox{padding:16px}
   .lightbox__frame{padding:10px}

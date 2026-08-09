@@ -88,7 +88,7 @@
     lightbox.innerHTML =
       '<div class="lightbox__dialog" role="dialog" aria-modal="true" aria-label="Infographic preview">' +
         '<button class="lightbox__close" type="button" aria-label="Close image preview">' +
-          '<svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-close"></use></svg>' +
+          '<svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-x"></use></svg>' +
         '</button>' +
         '<div class="lightbox__frame"><img class="lightbox__img" alt="" /></div>' +
         '<div class="lightbox__caption" hidden></div>' +
