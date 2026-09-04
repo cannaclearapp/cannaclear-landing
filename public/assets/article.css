@@ -499,7 +499,7 @@ section.related>h2{margin-bottom:18px}
 .stickybar{position:fixed;left:12px;right:12px;bottom:12px;z-index:55;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow-float);padding:10px 12px;display:flex;align-items:center;gap:12px;transform:translateY(140%);transition:transform .4s cubic-bezier(.2,.8,.2,1)}
 .stickybar.show{transform:none}
 .sticky-mobile-cta{position:fixed;left:12px;right:12px;bottom:12px;z-index:55;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow-float);padding:14px 16px;display:none;align-items:center;gap:14px;color:var(--teal-ink)}
-.sticky-mobile-cta::before{content:"";width:42px;height:42px;flex:none;border-radius:12px;background:#fff url('/assets/new/app-icon.webp') center/cover no-repeat;box-shadow:0 4px 12px rgba(11,59,67,.12)}
+.sticky-mobile-cta::before{content:"";width:42px;height:42px;flex:none;border-radius:12px;background:#fff url('/assets/cannaclear-app-icon.webp') center/cover no-repeat;box-shadow:0 4px 12px rgba(11,59,67,.12)}
 .sticky-mobile-cta::after{content:"›";margin-left:auto;font-family:var(--display);font-size:30px;line-height:1;color:var(--teal);transform:translateY(-1px)}
 .sticky-mobile-cta span{display:none}
 .sticky-mobile-cta strong{display:block;font-family:var(--display);font-size:17px;line-height:1.18;max-width:22ch}

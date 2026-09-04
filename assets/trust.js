@@ -68,7 +68,7 @@
         "@type": "Organization",
         name: "CannaClear",
         url: "https://www.cannaclear.app",
-        logo: "https://www.cannaclear.app/assets/app-icon.avif"
+        logo: "https://www.cannaclear.app/assets/cannaclear-app-icon.webp"
       })
     );
   }
@@ -262,7 +262,7 @@
           name: "CannaClear",
           url: "https://www.cannaclear.app"
         },
-        image: "https://www.cannaclear.app/assets/app-icon.avif"
+        image: "https://www.cannaclear.app/assets/cannaclear-app-icon.webp"
       })
     );
   }

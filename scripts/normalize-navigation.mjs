@@ -14,7 +14,7 @@ const ignoredDirectories = new Set([
 
 const navigation = `    <header class="nav">
       <div class="nav-in">
-        <a href="/" class="brand"><img src="/assets/new/app-icon.webp" alt="" width="32" height="32" />CannaClear</a>
+        <a href="/" class="brand"><img src="/assets/cannaclear-app-icon.webp" alt="" width="32" height="32" />CannaClear</a>
         <details class="nav-menu">
           <summary aria-label="Open navigation"><svg class="icon" aria-hidden="true"><use href="/assets/article-icons.svg#i-list"></use></svg></summary>
           <nav class="nav-menu-panel" aria-label="Mobile navigation">
